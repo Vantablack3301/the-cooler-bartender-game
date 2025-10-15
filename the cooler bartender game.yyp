@@ -35,6 +35,7 @@
   },
   "name":"the cooler bartender game",
   "resources":[
+    {"id":{"name":"Drink","path":"objects/Drink/Drink.yy",},},
     {"id":{"name":"fuckassobject","path":"objects/fuckassobject/fuckassobject.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
