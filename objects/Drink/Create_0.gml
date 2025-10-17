@@ -1,8 +1,9 @@
 liquids = ds_map_create()
 hasIce = false
 garnishes = ds_list_create()
-isMixed = false
+isShaken = false
 isStirred = false
+
 
 
 // adding soemthing to the cup
@@ -58,7 +59,7 @@ has_garnish = function(item)
 
 mix = function() 
 {
-	isMixed = true	
+	isShaken = true	
 }
 
 stir = function()

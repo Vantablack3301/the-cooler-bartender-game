@@ -38,7 +38,6 @@
   "resources":[
     {"id":{"name":"buttonMaster","path":"objects/buttonMaster/buttonMaster.yy",},},
     {"id":{"name":"Drink","path":"objects/Drink/Drink.yy",},},
-    {"id":{"name":"fuckassobject","path":"objects/fuckassobject/fuckassobject.yy",},},
     {"id":{"name":"recipeBook","path":"objects/recipeBook/recipeBook.yy",},},
     {"id":{"name":"recipeBookButton","path":"objects/recipeBookButton/recipeBookButton.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
