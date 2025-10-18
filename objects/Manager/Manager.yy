@@ -1,22 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"recipeBookButton",
+  "%Name":"Manager",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"recipeBookButton",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Parent_Clickable","path":"objects/Parent_Clickable/Parent_Clickable.yy",},"propertyId":{"name":"buttonCoverText","path":"objects/Parent_Clickable/Parent_Clickable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"RecipeBook",},
-  ],
+  "name":"Manager",
+  "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/Objects/UI.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"Parent_Clickable",
-    "path":"objects/Parent_Clickable/Parent_Clickable.yy",
-  },
+  "parentObjectId":null,
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite1",
-    "path":"sprites/Sprite1/Sprite1.yy",
+    "name":"BlackBox",
+    "path":"sprites/BlackBox/BlackBox.yy",
   },
   "spriteMaskId":null,
   "visible":true,
