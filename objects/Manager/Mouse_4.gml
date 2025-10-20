@@ -1,5 +1,5 @@
 var instances_clicked = ds_list_create()
-if( not instance_position_list(mouse_x, mouse_y, Parent_Clickable, instances_clicked, false))
+if(not instance_position_list(mouse_x, mouse_y, Parent_Clickable, instances_clicked, false))
 	return
 
 var currItem = instances_clicked[| 0]

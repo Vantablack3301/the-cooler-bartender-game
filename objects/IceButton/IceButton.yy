@@ -1,20 +1,23 @@
 {
   "$GMObject":"",
-  "%Name":"Manager",
+  "%Name":"IceButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Manager",
-  "overriddenProperties":[],
+  "name":"IceButton",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"Parent_Clickable","path":"objects/Parent_Clickable/Parent_Clickable.yy",},"propertyId":{"name":"buttonCoverText","path":"objects/Parent_Clickable/Parent_Clickable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Ice",},
+  ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"UI",
+    "path":"folders/Objects/UI.yy",
   },
-  "parentObjectId":null,
-  "persistent":true,
+  "parentObjectId":{
+    "name":"Parent_Clickable",
+    "path":"objects/Parent_Clickable/Parent_Clickable.yy",
+  },
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -32,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"BlackBox",
-    "path":"sprites/BlackBox/BlackBox.yy",
+    "name":"WhiteOutline",
+    "path":"sprites/WhiteOutline/WhiteOutline.yy",
   },
   "spriteMaskId":null,
   "visible":true,
