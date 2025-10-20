@@ -37,6 +37,7 @@
   },
   "name":"the cooler bartender game",
   "resources":[
+    {"id":{"name":"Customer","path":"objects/Customer/Customer.yy",},},
     {"id":{"name":"Drink","path":"objects/Drink/Drink.yy",},},
     {"id":{"name":"IceButton","path":"objects/IceButton/IceButton.yy",},},
     {"id":{"name":"JDBottle","path":"objects/JDBottle/JDBottle.yy",},},
