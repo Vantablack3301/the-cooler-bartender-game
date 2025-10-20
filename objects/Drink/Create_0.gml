@@ -61,7 +61,7 @@ has_garnish = function(item)
 	return ds_list_find_index(garnishes, item) != -1
 }
 
-mix = function() 
+shake = function() 
 {
 	isShaken = true	
 }
@@ -70,3 +70,5 @@ stir = function()
 {
 	isStirred = true	
 }
+
+

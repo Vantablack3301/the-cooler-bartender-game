@@ -36,5 +36,5 @@
     "path":"sprites/BlackBox/BlackBox.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

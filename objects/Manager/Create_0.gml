@@ -1,7 +1,8 @@
-drink = instance_create_layer(0,0, "Instances", Drink)
+drink = instance_create_layer(1024,668, "Instances", Drink)
+
 
 currRoom = 0
 
 // stores which bottle/liquid item you have 'picked up'; serves as argyment 
 // to pass into add_liquid 
-selectedBottle = ""
+selected = ""

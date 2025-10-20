@@ -3,11 +3,11 @@ onClick = function()
 	if (visible)
 	{
 		visible = false
-		Manager.selectedBottle = "JD"
+		Manager.selected = bottleName
 	}
 	else 
 	{
 		visible = true
-		Manager.selectedBottle = ""
+		Manager.selected = ""
 	}
 }
