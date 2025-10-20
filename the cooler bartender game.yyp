@@ -39,6 +39,7 @@
     {"id":{"name":"fuckassobject","path":"objects/fuckassobject/fuckassobject.yy",},},
     {"id":{"name":"LiquidFillObj","path":"objects/LiquidFillObj/LiquidFillObj.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"liquidWaves","path":"shaders/liquidWaves/liquidWaves.yy",},},
     {"id":{"name":"Bar_Background_Customer_POV_Empty","path":"sprites/Bar_Background_Customer_POV_Empty/Bar_Background_Customer_POV_Empty.yy",},},
     {"id":{"name":"Bar_Mat","path":"sprites/Bar_Mat/Bar_Mat.yy",},},
     {"id":{"name":"Beer_Tap","path":"sprites/Beer_Tap/Beer_Tap.yy",},},
