@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"WhiteOutline",
-    "path":"sprites/WhiteOutline/WhiteOutline.yy",
+    "name":"spr_Bottle_Jack_Daniels",
+    "path":"sprites/spr_Bottle_Jack_Daniels/spr_Bottle_Jack_Daniels.yy",
   },
   "spriteMaskId":null,
   "visible":true,
