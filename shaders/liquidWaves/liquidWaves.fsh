@@ -11,7 +11,7 @@ uniform float springCount;
 void main()
 {
     vec2 p = v_vTexcoord;
-	float py = 1.0 - p.y;
+	/*float py = 1.0 - p.y;
 	float pixelsIn = (p.x / pixelW);
 	int chunk = int(floor(p.x * springCount));
 	int nextChunk = int(min(floor(p.x * springCount) + 1.0, 99.0));
@@ -20,6 +20,7 @@ void main()
 	p.y = ((sin(pixelsIn * 0.15) + time * 1.2) * (1.5 * pixelH)) * py;
 	p.y = p.y + (mix(springs[chunk] * pixelH, springs[nextChunk] * pixelH, chunkPercent) * py);
 	p.y = max(p.y, 0.0);
+	gl_FragColor = v_vColour * texture2D (gm_BaseTexture, p);*/
 	gl_FragColor = v_vColour * texture2D (gm_BaseTexture, p);
 	
 }

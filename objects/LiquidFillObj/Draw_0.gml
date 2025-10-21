@@ -25,6 +25,7 @@ surface_set_target(waterSurface)
 	draw_set_alpha(0.5)
 	draw_set_color(drinkColor)
 	draw_rectangle(0, transparencyBufferHeight, sprite_width, sprite_height + transparencyBufferHeight, false)
+	
 	draw_set_color(drinkHighlightColor)
 	draw_line(0, transparencyBufferHeight + 1, sprite_width, transparencyBufferHeight + 1)
 	
@@ -43,9 +44,11 @@ surface_set_target(resize_surface)
 	shader_set(liquidWaves)
 		shader_set_uniform_f(global.u_pixelH, pH)
 		shader_set_uniform_f(global.u_pixelW, pW)
-		shader_set_uniform_f(global.u_springCount, springCount)  //both of these two will be implemented once i figure out what springs are
+		shader_set_uniform_f(global.u_springCount, springCount)
 		shader_set_uniform_f_array(global.u_springs, springs)
 		shader_set_uniform_f(global.u_time, get_timer()*waveSpeed)
+		
+		draw_surface(waterSurface, 0, 0)
 	shader_reset()
 surface_reset_target()
 
