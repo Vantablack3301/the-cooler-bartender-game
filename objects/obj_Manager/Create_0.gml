@@ -44,9 +44,46 @@ changeSprite = function() {
 
 // Grading System
 gradeDrink = function(drinkMade, drinkGoal) {
+	drinkGoal = ds_map_find_value(obj_Intitialize.drinks, drinkGoal)
+	// Ice
 	iceScore = 0
 	if drinkMade.hasIce == ds_map_find_value(drinkGoal,"ice"){
 		iceScore = 100
 	}
+	// Stirred
+	// Shaken
+	
+	// Number of Liquids
+	drinkScore = 0
+	reqLiquids = ds_map_find_value(drinkGoal, "numLiquids")
+	drinkScore = ds_map_size(drinkMade.liquids) / reqLiquids
+	if drinkScore > 1{
+		drinkScore = 1 / drinkScore
+	}
+	drinkScore = int(drinkScore * 100)
+	// Amount of Liquids	
+	tempLiquidScores = []
+	tempLiquidScore = 0
+	var key = ds_map_find_first(drinkMade.liquids); // Get the first key in the map
+	while (!is_undefined(key)) {
+		var value = drinkMade.liquids[? key]; // Get the value associated with the current key
+		
+		if (!is_undefined(ds_map_find_value(drinkGoal, string(key)))) { //Check to see if you have required liquid
+			tempLiquidScore = value / ds_map_find_value(drinkGoal, string(key))
+			if tempLiquidScore > 1{
+				tempLiquidScore = 1 / tempLiquidScore
+			}
+			tempLiquidScore = tempLiquidScore
+			array_push(tempLiquidScores, tempLiquidScore)
+		}
+
+		key = ds_map_find_next(drinkMade.liquids, key); // Get the next key in the map
+	}
+	tempLiquidScore = 0
+	for (var i = 0; i < array_length(tempLiquidScores); i++) {
+		tempLiquidScore += tempLiquidScores[i]
+	}
+	tempLiquidScore = tempLiquidScore / array_length(tempLiquidScores) // Average of valid liquid amts
+	drinkScore = int(drinkScore * tempLiquidScore) //Final Drinkscore
 	
 }
