@@ -4,4 +4,5 @@ keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right))
 {
 	currRoom = (currRoom+1) % 2
 	room_goto(currRoom)
+	ui_backgroundImg.changeSprite()
 }

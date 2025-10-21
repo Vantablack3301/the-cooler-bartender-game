@@ -47,6 +47,7 @@
     {"id":{"name":"obj_Parent_Clickable","path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",},},
     {"id":{"name":"obj_Recipe_Book_Button","path":"objects/obj_Recipe_Book_Button/obj_Recipe_Book_Button.yy",},},
     {"id":{"name":"obj_Recipe_Book","path":"objects/obj_Recipe_Book/obj_Recipe_Book.yy",},},
+    {"id":{"name":"ui_backgroundImg","path":"objects/ui_backgroundImg/ui_backgroundImg.yy",},},
     {"id":{"name":"BarBack","path":"rooms/BarBack/BarBack.yy",},},
     {"id":{"name":"BarFront","path":"rooms/BarFront/BarFront.yy",},},
     {"id":{"name":"spr_Bar_Background_Bartender_POV_Empty","path":"sprites/spr_Bar_Background_Bartender_POV_Empty/spr_Bar_Background_Bartender_POV_Empty.yy",},},
