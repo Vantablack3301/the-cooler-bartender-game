@@ -36,7 +36,7 @@ get_liquid = function(item)
 {
 	
 	if (!ds_map_exists(liquids, item))
-		return -1
+		return 0
 	
 	return ds_map_find_value(liquids, item)
 }

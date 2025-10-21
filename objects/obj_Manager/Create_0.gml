@@ -25,6 +25,10 @@ currRoom = 0
 // stores which bottle/liquid item you have 'picked up'; serves as argyment 
 // to pass into add_liquid 
 selected = ""
+selectedSprite = noone
+
+// rn this is just to determine if the sprite should be rotated
+isPouring = false
 
 changeSprite = function() {
 	if room == BarFront {

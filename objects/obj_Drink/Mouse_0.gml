@@ -7,7 +7,8 @@ var selected = obj_Manager.selected
 		shake()
 		
 	else
-		add_liquid(selected, delta_time)
+		add_liquid(selected, delta_time/1000000)
 
+obj_Manager.isPouring = true
+//show_debug_message("currently selected: " + selected + "	current amount: " + string(get_liquid(selected)))
 
-show_debug_message(selected)
