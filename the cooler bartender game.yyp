@@ -44,6 +44,7 @@
     {"id":{"name":"obj_Customer","path":"objects/obj_Customer/obj_Customer.yy",},},
     {"id":{"name":"obj_Drink","path":"objects/obj_Drink/obj_Drink.yy",},},
     {"id":{"name":"obj_Ice_Button","path":"objects/obj_Ice_Button/obj_Ice_Button.yy",},},
+    {"id":{"name":"obj_Intitialize","path":"objects/obj_Intitialize/obj_Intitialize.yy",},},
     {"id":{"name":"obj_Manager","path":"objects/obj_Manager/obj_Manager.yy",},},
     {"id":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},},
     {"id":{"name":"obj_Parent_Clickable","path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",},},

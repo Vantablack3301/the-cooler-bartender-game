@@ -1,0 +1,23 @@
+drinks = ds_map_create()
+
+ginAndTonic = ds_map_create()
+ds_map_add(ginAndTonic, "gin", 6)
+ds_map_add(ginAndTonic, "tonic", 12)
+ds_map_add(ginAndTonic, "ice", true)
+//ds_map_add(ginAndTonic, "glass", "shortTumbler")
+ds_map_add(drinks, "ginAndTonic", ginAndTonic)
+
+vodkaRedbull = ds_map_create()
+ds_map_add(vodkaRedbull, "vodka", 6)
+ds_map_add(vodkaRedbull, "redbull", 12)
+ds_map_add(vodkaRedbull, "ice", true)
+//ds_map_add(vodkaRedbull, "glass", "shortTumbler")
+ds_map_add(drinks, "vodkaRedbull", vodkaRedbull)
+
+jackAndCoke = ds_map_create()
+ds_map_add(jackAndCoke, "jack", 6)
+ds_map_add(jackAndCoke, "coke", 12)
+ds_map_add(jackAndCoke, "ice", true)
+//ds_map_add(jackAndCoke, "glass", "shortTumbler")
+//ds_map_add(jackAndCoke, "garnish", {"lime"})
+ds_map_add(drinks, "vodkaRedbull", vodkaRedbull)
