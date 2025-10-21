@@ -38,10 +38,12 @@
   "name":"the cooler bartender game",
   "resources":[
     {"id":{"name":"obj_Apply_Settings","path":"objects/obj_Apply_Settings/obj_Apply_Settings.yy",},},
+    {"id":{"name":"obj_Bottle_Gin","path":"objects/obj_Bottle_Gin/obj_Bottle_Gin.yy",},},
+    {"id":{"name":"obj_Bottle_Jack","path":"objects/obj_Bottle_Jack/obj_Bottle_Jack.yy",},},
+    {"id":{"name":"obj_bottle_vodka","path":"objects/obj_bottle_vodka/obj_bottle_vodka.yy",},},
     {"id":{"name":"obj_Customer","path":"objects/obj_Customer/obj_Customer.yy",},},
     {"id":{"name":"obj_Drink","path":"objects/obj_Drink/obj_Drink.yy",},},
     {"id":{"name":"obj_Ice_Button","path":"objects/obj_Ice_Button/obj_Ice_Button.yy",},},
-    {"id":{"name":"obj_Jack_Daniels_Bottle","path":"objects/obj_Jack_Daniels_Bottle/obj_Jack_Daniels_Bottle.yy",},},
     {"id":{"name":"obj_Manager","path":"objects/obj_Manager/obj_Manager.yy",},},
     {"id":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},},
     {"id":{"name":"obj_Parent_Clickable","path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",},},

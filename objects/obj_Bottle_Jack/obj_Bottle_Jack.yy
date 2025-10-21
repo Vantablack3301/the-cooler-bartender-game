@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Jack_Daniels_Bottle",
+  "%Name":"obj_Bottle_Jack",
   "eventList":[],
   "managed":true,
-  "name":"obj_Jack_Daniels_Bottle",
+  "name":"obj_Bottle_Jack",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"bottleName","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"jackDaniels",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"bottleName","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"jack",},
   ],
   "parent":{
     "name":"BottleButtons",

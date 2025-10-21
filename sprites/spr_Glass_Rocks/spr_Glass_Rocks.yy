@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_Glass_Rocks",
   "bboxMode":2,
-  "bbox_bottom":130,
+  "bbox_bottom":0,
   "bbox_left":0,
   "bbox_right":126,
   "bbox_top":-272,
