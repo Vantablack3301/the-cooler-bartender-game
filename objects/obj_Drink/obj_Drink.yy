@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Glass_Rocks",
+    "path":"sprites/spr_Glass_Rocks/spr_Glass_Rocks.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

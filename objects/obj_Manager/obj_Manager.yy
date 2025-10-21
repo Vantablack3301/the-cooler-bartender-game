@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Bar_Background_Bartender_POV_Empty",
+    "path":"sprites/spr_Bar_Background_Bartender_POV_Empty/spr_Bar_Background_Bartender_POV_Empty.yy",
+  },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
