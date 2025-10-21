@@ -1,4 +1,0 @@
-onClick = function()
-{
-	recipeBook.toggleVisiblity()
-}
