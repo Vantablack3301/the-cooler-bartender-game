@@ -38,3 +38,15 @@ changeSprite = function() {
 		sprite_index = spr_Bar_Background_Bartender_POV_Empty;
 	}
 }
+
+
+
+
+// Grading System
+gradeDrink = function(drinkMade, drinkGoal) {
+	iceScore = 0
+	if drinkMade.hasIce == ds_map_find_value(drinkGoal,"ice"){
+		iceScore = 100
+	}
+	
+}
