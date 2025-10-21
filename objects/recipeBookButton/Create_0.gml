@@ -1,1 +1,4 @@
-onClick = function(){show_debug_message("recipeBookButton has depth: " + string(depth))}
+onClick = function()
+{
+	recipeBook.toggleVisiblity()
+}

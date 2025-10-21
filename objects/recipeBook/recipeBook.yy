@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"recipeBook",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"recipeBook",
   "overriddenProperties":[],
@@ -9,8 +11,11 @@
     "name":"UI",
     "path":"folders/Objects/UI.yy",
   },
-  "parentObjectId":null,
-  "persistent":false,
+  "parentObjectId":{
+    "name":"Parent_Clickable",
+    "path":"objects/Parent_Clickable/Parent_Clickable.yy",
+  },
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -27,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite1",
+    "path":"sprites/Sprite1/Sprite1.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
