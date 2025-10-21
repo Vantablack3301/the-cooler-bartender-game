@@ -51,6 +51,7 @@
     {"id":{"name":"Bottle_Malibu","path":"sprites/Bottle_Malibu/Bottle_Malibu.yy",},},
     {"id":{"name":"Bottle_Patron","path":"sprites/Bottle_Patron/Bottle_Patron.yy",},},
     {"id":{"name":"Bottle_Wine","path":"sprites/Bottle_Wine/Bottle_Wine.yy",},},
+    {"id":{"name":"Editor_LiquidFillZone","path":"sprites/Editor_LiquidFillZone/Editor_LiquidFillZone.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

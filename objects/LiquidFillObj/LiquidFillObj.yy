@@ -4,6 +4,7 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"LiquidFillObj",
@@ -27,13 +28,18 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"drinkColor","filters":[],"listItems":[],"multiselect":false,"name":"drinkColor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF2FA9D6","varType":7,},
+    {"$GMObjectProperty":"v1","%Name":"drinkColor","filters":[],"listItems":[],"multiselect":false,"name":"drinkColor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF1F7496","varType":7,},
     {"$GMObjectProperty":"v1","%Name":"waveSpeed","filters":[],"listItems":[],"multiselect":false,"name":"waveSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0000025","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"drinkHighlightColor","filters":[],"listItems":[],"multiselect":false,"name":"drinkHighlightColor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF35C3FC","varType":7,},
+    {"$GMObjectProperty":"v1","%Name":"WATERDIVISION","filters":[],"listItems":[],"multiselect":false,"name":"WATERDIVISION","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"35","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Editor_LiquidFillZone",
+    "path":"sprites/Editor_LiquidFillZone/Editor_LiquidFillZone.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
