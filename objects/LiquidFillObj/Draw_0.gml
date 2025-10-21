@@ -41,8 +41,8 @@ resize_surface = surface_create(sprite_width, sprite_height + transparencyBuffer
 surface_set_target(resize_surface)
 	draw_clear_alpha(c_white, 0)
 	shader_set(liquidWaves)
-		shader_set_uniform_f(global.u_pixelH_Wave, pH)
-		shader_set_uniform_f(global.u_pixelW_Wave, pW)
+		shader_set_uniform_f(global.u_pixelH, pH)
+		shader_set_uniform_f(global.u_pixelW, pW)
 		shader_set_uniform_f(global.u_springCount, springCount)  //both of these two will be implemented once i figure out what springs are
 		shader_set_uniform_f_array(global.u_springs, springs)
 		shader_set_uniform_f(global.u_time, get_timer()*waveSpeed)
