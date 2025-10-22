@@ -81,6 +81,7 @@
     {"id":{"name":"spr_Soda_Ginger_Ale","path":"sprites/spr_Soda_Ginger_Ale/spr_Soda_Ginger_Ale.yy",},},
     {"id":{"name":"spr_Soda_Sprite","path":"sprites/spr_Soda_Sprite/spr_Soda_Sprite.yy",},},
     {"id":{"name":"spr_Table","path":"sprites/spr_Table/spr_Table.yy",},},
+    {"id":{"name":"WHITEBOX","path":"sprites/WHITEBOX/WHITEBOX.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

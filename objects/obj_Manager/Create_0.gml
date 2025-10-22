@@ -45,6 +45,7 @@ changeSprite = function() {
 // Grading System
 gradeDrink = function(drinkMade, drinkGoal) {
 	drinkGoal = ds_map_find_value(obj_Intitialize.drinks, drinkGoal)
+	totalScore = 0
 	// Ice
 	iceScore = 0
 	if drinkMade.hasIce == ds_map_find_value(drinkGoal,"ice"){
@@ -54,7 +55,7 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	// Shaken
 	
 	// Number of Liquids
-	drinkScore = 0
+	drinkScore = 100
 	reqLiquids = ds_map_find_value(drinkGoal, "numLiquids")
 	drinkScore = ds_map_size(drinkMade.liquids) / reqLiquids
 	if drinkScore > 1{
@@ -85,5 +86,8 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	}
 	tempLiquidScore = tempLiquidScore / array_length(tempLiquidScores) // Average of valid liquid amts
 	drinkScore = int(drinkScore * tempLiquidScore) //Final Drinkscore
+	
+	totalScore = int(drinkScore + iceScore)
+	return (totalScore)
 	
 }
