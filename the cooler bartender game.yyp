@@ -42,6 +42,8 @@
     {"id":{"name":"obj_Bottle_Coke","path":"objects/obj_Bottle_Coke/obj_Bottle_Coke.yy",},},
     {"id":{"name":"obj_Bottle_Gin","path":"objects/obj_Bottle_Gin/obj_Bottle_Gin.yy",},},
     {"id":{"name":"obj_Bottle_Jack","path":"objects/obj_Bottle_Jack/obj_Bottle_Jack.yy",},},
+    {"id":{"name":"obj_bottle_redbull","path":"objects/obj_bottle_redbull/obj_bottle_redbull.yy",},},
+    {"id":{"name":"obj_bottle_tonic","path":"objects/obj_bottle_tonic/obj_bottle_tonic.yy",},},
     {"id":{"name":"obj_bottle_vodka","path":"objects/obj_bottle_vodka/obj_bottle_vodka.yy",},},
     {"id":{"name":"obj_Chair","path":"objects/obj_Chair/obj_Chair.yy",},},
     {"id":{"name":"obj_Customer","path":"objects/obj_Customer/obj_Customer.yy",},},
