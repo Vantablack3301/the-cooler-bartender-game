@@ -88,6 +88,10 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	drinkScore = int(drinkScore * tempLiquidScore) //Final Drinkscore
 	
 	totalScore = int(drinkScore + iceScore)
+	var inst = instance_create_layer(100, 100, "Instances", obj_ticket);
+	with (inst) {
+		ticketScore = totalScore
+    }
 	return (totalScore)
 	
 }

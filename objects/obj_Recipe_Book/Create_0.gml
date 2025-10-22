@@ -36,8 +36,21 @@ makePageContents = function() {
 	pageContents = ""
 	while(!is_undefined(drinkProp)){
 		var drinkVal = currentDrinkValue[? drinkProp]
-		if(drinkProp != "numLiquids"){ // Exclude Num Liquids
-			pageContents += drinkProp + string(drinkVal) + "\n"
+		if(drinkProp != "numLiquids"){// Exclude Num Liquids
+			switch (drinkVal) {
+				case 0:
+					drinkVal = "No"
+				break;
+				
+				case 1: 
+					drinkVal = "Yes"
+				break;
+				
+				default:
+					drinkVal = string(drinkVal) + " oz"
+				break;
+			}
+			pageContents += drinkProp + " " + string(drinkVal) + "\n"
 		}
 		drinkProp = ds_map_find_next(currentDrinkValue, drinkProp)
 	}

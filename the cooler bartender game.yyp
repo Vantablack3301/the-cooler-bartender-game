@@ -54,8 +54,10 @@
     {"id":{"name":"obj_Recipe_Book_Button","path":"objects/obj_Recipe_Book_Button/obj_Recipe_Book_Button.yy",},},
     {"id":{"name":"obj_Recipe_Book","path":"objects/obj_Recipe_Book/obj_Recipe_Book.yy",},},
     {"id":{"name":"obj_Table","path":"objects/obj_Table/obj_Table.yy",},},
+    {"id":{"name":"obj_ticket","path":"objects/obj_ticket/obj_ticket.yy",},},
     {"id":{"name":"BarBack","path":"rooms/BarBack/BarBack.yy",},},
     {"id":{"name":"BarFront","path":"rooms/BarFront/BarFront.yy",},},
+    {"id":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
     {"id":{"name":"spr_Bar_Background_Bartender_POV_Empty","path":"sprites/spr_Bar_Background_Bartender_POV_Empty/spr_Bar_Background_Bartender_POV_Empty.yy",},},
     {"id":{"name":"spr_Bar_Background_Customer_POV_Empty","path":"sprites/spr_Bar_Background_Customer_POV_Empty/spr_Bar_Background_Customer_POV_Empty.yy",},},
     {"id":{"name":"spr_Bar_Mat","path":"sprites/spr_Bar_Mat/spr_Bar_Mat.yy",},},
@@ -94,6 +96,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"BarFront","path":"rooms/BarFront/BarFront.yy",},},
     {"roomId":{"name":"BarBack","path":"rooms/BarBack/BarBack.yy",},},
+    {"roomId":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
