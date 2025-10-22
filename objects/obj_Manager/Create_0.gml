@@ -41,13 +41,14 @@ changeSprite = function() {
 
 
 
-
+/// @function myFunction(param1, param2, param3)
+/// @param {Id.Instance<obj_Drink>} drinkMade
+/// @param {Id.DsMap} drinkGoal
 // Grading System
 gradeDrink = function(drinkMade, drinkGoal) {
-	drinkGoal = ds_map_find_value(obj_Intitialize.drinks, drinkGoal)
-	totalScore = 0
+	var totalScore = 0
 	// Ice
-	iceScore = 0
+	var iceScore = 0
 	if drinkMade.hasIce == ds_map_find_value(drinkGoal,"ice"){
 		iceScore = 100
 	}
@@ -55,16 +56,16 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	// Shaken
 	
 	// Number of Liquids
-	drinkScore = 100
-	reqLiquids = ds_map_find_value(drinkGoal, "numLiquids")
+	var drinkScore = 100
+	var reqLiquids = ds_map_find_value(drinkGoal, "numLiquids")
 	drinkScore = ds_map_size(drinkMade.liquids) / reqLiquids
 	if drinkScore > 1{
 		drinkScore = 1 / drinkScore
 	}
-	drinkScore = int(drinkScore * 100)
+	drinkScore = round(drinkScore * 100)
 	// Amount of Liquids	
-	tempLiquidScores = []
-	tempLiquidScore = 0
+	var tempLiquidScores = []
+	var tempLiquidScore = 0
 	var key = ds_map_find_first(drinkMade.liquids); // Get the first key in the map
 	while (!is_undefined(key)) {
 		var value = drinkMade.liquids[? key]; // Get the value associated with the current key
@@ -84,14 +85,22 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	for (var i = 0; i < array_length(tempLiquidScores); i++) {
 		tempLiquidScore += tempLiquidScores[i]
 	}
-	tempLiquidScore = tempLiquidScore / array_length(tempLiquidScores) // Average of valid liquid amts
-	drinkScore = int(drinkScore * tempLiquidScore) //Final Drinkscore
+	if (array_length(tempLiquidScores) != 0)
+		tempLiquidScore = tempLiquidScore / array_length(tempLiquidScores) // Average of valid liquid amts
 	
-	totalScore = int(drinkScore + iceScore)
+
+	
+	drinkScore = round(drinkScore * tempLiquidScore) //Final Drinkscore
+	
+	// update denominator as more scores are added
+	totalScore = floor(drinkScore + iceScore)/2
+	
 	var inst = instance_create_layer(100, 100, "Instances", obj_ticket);
 	with (inst) {
 		ticketScore = totalScore
     }
+	
+	show_debug_message(totalScore)
 	return (totalScore)
 	
 }

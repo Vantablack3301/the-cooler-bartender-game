@@ -5,6 +5,14 @@ isShaken = false
 isStirred = false
 
 
+reset = function() 
+{
+	ds_map_clear(liquids)
+	hasIce = false
+	ds_list_clear(garnishes)
+	isShaken = false
+	isStirred = false	
+}
 
 // adding soemthing to the cup
 add_liquid = function(item, amount) 

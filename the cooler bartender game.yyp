@@ -53,6 +53,7 @@
     {"id":{"name":"obj_Parent_Clickable","path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",},},
     {"id":{"name":"obj_Recipe_Book_Button","path":"objects/obj_Recipe_Book_Button/obj_Recipe_Book_Button.yy",},},
     {"id":{"name":"obj_Recipe_Book","path":"objects/obj_Recipe_Book/obj_Recipe_Book.yy",},},
+    {"id":{"name":"obj_Submit_Drink","path":"objects/obj_Submit_Drink/obj_Submit_Drink.yy",},},
     {"id":{"name":"obj_Table","path":"objects/obj_Table/obj_Table.yy",},},
     {"id":{"name":"obj_ticket","path":"objects/obj_ticket/obj_ticket.yy",},},
     {"id":{"name":"BarBack","path":"rooms/BarBack/BarBack.yy",},},

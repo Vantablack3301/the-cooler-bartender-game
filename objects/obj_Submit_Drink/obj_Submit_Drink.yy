@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Ice_Button",
+  "%Name":"obj_Submit_Drink",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Ice_Button",
+  "name":"obj_Submit_Drink",
   "overriddenProperties":[],
   "parent":{
     "name":"UI",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Ice_Bin",
-    "path":"sprites/spr_Ice_Bin/spr_Ice_Bin.yy",
+    "name":"spr_Bar_Mat",
+    "path":"sprites/spr_Bar_Mat/spr_Bar_Mat.yy",
   },
   "spriteMaskId":null,
   "visible":true,
