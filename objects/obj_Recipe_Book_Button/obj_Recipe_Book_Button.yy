@@ -6,9 +6,7 @@
   ],
   "managed":true,
   "name":"obj_Recipe_Book_Button",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Clickable","path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",},"propertyId":{"name":"buttonCoverText","path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"RecipeBook",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"UI",
     "path":"folders/Objects/UI.yy",
@@ -35,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"WHITEBOX",
-    "path":"sprites/WHITEBOX/WHITEBOX.yy",
+    "name":"spr_Recipe_Book_Closed",
+    "path":"sprites/spr_Recipe_Book_Closed/spr_Recipe_Book_Closed.yy",
   },
   "spriteMaskId":null,
   "visible":true,

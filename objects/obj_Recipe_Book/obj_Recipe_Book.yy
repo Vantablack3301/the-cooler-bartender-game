@@ -13,10 +13,7 @@
     "name":"UI",
     "path":"folders/Objects/UI.yy",
   },
-  "parentObjectId":{
-    "name":"obj_Parent_Clickable",
-    "path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",
-  },
+  "parentObjectId":null,
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -37,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Recipe_Book_Open",
+    "path":"sprites/spr_Recipe_Book_Open/spr_Recipe_Book_Open.yy",
+  },
   "spriteMaskId":null,
   "visible":false,
 }
