@@ -1,13 +1,26 @@
 liquids = ds_map_create()
 hasIce = false
 garnishes = ds_list_create()
-isMixed = false
+isShaken = false
 isStirred = false
 
+
+reset = function() 
+{
+	ds_map_clear(liquids)
+	hasIce = false
+	ds_list_clear(garnishes)
+	isShaken = false
+	isStirred = false	
+}
 
 // adding soemthing to the cup
 add_liquid = function(item, amount) 
 {
+	
+	// if we're adding nothing, we should do, well... nothing... 
+	if (item == "")
+		return
 	
 	if (ds_map_exists(liquids, item)) 
 	{ 
@@ -31,7 +44,7 @@ get_liquid = function(item)
 {
 	
 	if (!ds_map_exists(liquids, item))
-		return -1
+		return 0
 	
 	return ds_map_find_value(liquids, item)
 }
@@ -56,12 +69,14 @@ has_garnish = function(item)
 	return ds_list_find_index(garnishes, item) != -1
 }
 
-mix = function() 
+shake = function() 
 {
-	isMixed = true	
+	isShaken = true	
 }
 
 stir = function()
 {
 	isStirred = true	
 }
+
+
