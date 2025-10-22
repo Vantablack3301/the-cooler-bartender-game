@@ -39,6 +39,7 @@
   "name":"the cooler bartender game",
   "resources":[
     {"id":{"name":"obj_Apply_Settings","path":"objects/obj_Apply_Settings/obj_Apply_Settings.yy",},},
+    {"id":{"name":"obj_Bottle_Coke","path":"objects/obj_Bottle_Coke/obj_Bottle_Coke.yy",},},
     {"id":{"name":"obj_Bottle_Gin","path":"objects/obj_Bottle_Gin/obj_Bottle_Gin.yy",},},
     {"id":{"name":"obj_Bottle_Jack","path":"objects/obj_Bottle_Jack/obj_Bottle_Jack.yy",},},
     {"id":{"name":"obj_bottle_vodka","path":"objects/obj_bottle_vodka/obj_bottle_vodka.yy",},},
