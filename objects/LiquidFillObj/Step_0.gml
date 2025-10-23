@@ -30,3 +30,9 @@ for (var i = 0; i <= springCount; i++)
 		springs[i + 1] += springDeltaR[i]
 	}
 }
+
+if (mouse_check_button_pressed(mb_left))
+{
+	self.x = mouse_x
+	self.y = mouse_y
+}
