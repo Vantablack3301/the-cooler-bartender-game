@@ -64,6 +64,7 @@
     {"id":{"name":"BarBack","path":"rooms/BarBack/BarBack.yy",},},
     {"id":{"name":"BarFront","path":"rooms/BarFront/BarFront.yy",},},
     {"id":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
+    {"id":{"name":"LiquidFillDemo","path":"rooms/LiquidFillDemo/LiquidFillDemo.yy",},},
     {"id":{"name":"liquidWaves","path":"shaders/liquidWaves/liquidWaves.yy",},},
     {"id":{"name":"Bar_Background_Customer_POV_Empty","path":"sprites/Bar_Background_Customer_POV_Empty/Bar_Background_Customer_POV_Empty.yy",},},
     {"id":{"name":"Bar_Mat","path":"sprites/Bar_Mat/Bar_Mat.yy",},},
@@ -114,6 +115,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"LiquidFillDemo","path":"rooms/LiquidFillDemo/LiquidFillDemo.yy",},},
     {"roomId":{"name":"BarFront","path":"rooms/BarFront/BarFront.yy",},},
     {"roomId":{"name":"BarBack","path":"rooms/BarBack/BarBack.yy",},},
     {"roomId":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
