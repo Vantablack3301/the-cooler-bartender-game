@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_Glass_Highball",
+  "%Name":"spr_Glass_Highball_Ice",
   "bboxMode":0,
   "bbox_bottom":239,
   "bbox_left":0,
@@ -12,28 +12,28 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"738b41db-8240-494c-8e53-d35bbc559b05","name":"738b41db-8240-494c-8e53-d35bbc559b05","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a3ee77f4-ef25-477b-be66-138f9108671a","name":"a3ee77f4-ef25-477b-be66-138f9108671a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":240,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"54769d05-e2f4-4d79-83ba-e65d565b81c0","blendMode":0,"displayName":"default","isLocked":false,"name":"54769d05-e2f4-4d79-83ba-e65d565b81c0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"6df71dcf-f6c3-4a27-84b0-10e26179a4df","blendMode":0,"displayName":"default","isLocked":false,"name":"6df71dcf-f6c3-4a27-84b0-10e26179a4df","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_Glass_Highball",
+  "name":"spr_Glass_Highball_Ice",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Glasses Empty",
-    "path":"folders/Sprites/Glasses Empty.yy",
+    "name":"Glasses Ice",
+    "path":"folders/Sprites/Glasses Ice.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_Glass_Highball",
+    "%Name":"spr_Glass_Highball_Ice",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_Glass_Highball",
+    "name":"spr_Glass_Highball_Ice",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -71,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"738b41db-8240-494c-8e53-d35bbc559b05","path":"sprites/spr_Glass_Highball/spr_Glass_Highball.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fc3048fb-7284-4178-a6e1-fb4fe2453e76","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a3ee77f4-ef25-477b-be66-138f9108671a","path":"sprites/spr_Glass_Highball_Ice/spr_Glass_Highball_Ice.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f575491a-cc35-42f4-b309-025038155e27","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
