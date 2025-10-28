@@ -62,34 +62,36 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	if drinkScore > 1{
 		drinkScore = 1 / drinkScore
 	}
-	drinkScore = round(drinkScore * 100)
+	drinkScore = round(drinkScore * 100) //Max score depending on number of correct liquids
 	// Amount of Liquids	
 	var tempLiquidScores = []
 	var tempLiquidScore = 0
-	var key = ds_map_find_first(drinkMade.liquids); // Get the first key in the map
-	while (!is_undefined(key)) {
-		var value = drinkMade.liquids[? key]; // Get the value associated with the current key
+	var liquidName = ds_map_find_first(drinkMade.liquids); // Get the first key in the map
+	while (!is_undefined(liquidName)) {
+		var value = drinkMade.liquids[? liquidName]; // Get the value associated with the current key
 		
-		if (!is_undefined(ds_map_find_value(drinkGoal, string(key)))) { //Check to see if you have required liquid
-			tempLiquidScore = value / ds_map_find_value(drinkGoal, string(key))
+		if (!is_undefined(ds_map_find_value(drinkGoal, string(liquidName)))) { //Check to see if you have required liquid
+			tempLiquidScore = value / ds_map_find_value(drinkGoal, string(liquidName))
 			if tempLiquidScore > 1{
 				tempLiquidScore = 1 / tempLiquidScore
 			}
-			tempLiquidScore = tempLiquidScore
+			tempLiquidScore = tempLiquidScore //Percentage based off the amount of liquid
+			
 			array_push(tempLiquidScores, tempLiquidScore)
 		}
-
-		key = ds_map_find_next(drinkMade.liquids, key); // Get the next key in the map
+		else {
+			array_push(tempLiquidScores, 0) // Adds 0 if its a wrong liquid
+		}
+		liquidName = ds_map_find_next(drinkMade.liquids, liquidName); // Get the next key in the map
 	}
 	tempLiquidScore = 0
 	for (var i = 0; i < array_length(tempLiquidScores); i++) {
 		tempLiquidScore += tempLiquidScores[i]
 	}
 	if (array_length(tempLiquidScores) != 0)
-		tempLiquidScore = tempLiquidScore / array_length(tempLiquidScores) // Average of valid liquid amts
-	
+		tempLiquidScore = tempLiquidScore / array_length(tempLiquidScores) // Average of all liquid amts, with 0s for wrong liquids
 
-	
+
 	drinkScore = round(drinkScore * tempLiquidScore) //Final Drinkscore
 	
 	// update denominator as more scores are added
@@ -100,7 +102,7 @@ gradeDrink = function(drinkMade, drinkGoal) {
 		ticketScore = totalScore
     }
 	
-	show_debug_message(totalScore)
+	//show_debug_message(totalScore)
 	return (totalScore)
 	
 }
