@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"fuckassobject",
-  "eventList":[],
+  "%Name":"obj_player_turn_notifier",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"fuckassobject",
+  "name":"obj_player_turn_notifier",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite33",
+    "path":"sprites/Sprite33/Sprite33.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

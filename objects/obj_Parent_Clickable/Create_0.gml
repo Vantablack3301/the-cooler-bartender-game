@@ -1,0 +1,2 @@
+// THIS MUST BE OVERRIDDEN BY ANY CLICKABLE
+onClick = function() {show_error("YOU NEED AN ONCLICK YOU FUCKER", true)}

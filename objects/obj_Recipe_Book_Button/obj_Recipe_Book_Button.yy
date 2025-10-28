@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"Drink",
+  "%Name":"obj_Recipe_Book_Button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Drink",
+  "name":"obj_Recipe_Book_Button",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"UI",
+    "path":"folders/Objects/UI.yy",
   },
-  "parentObjectId":null,
-  "persistent":false,
+  "parentObjectId":{
+    "name":"obj_Parent_Clickable",
+    "path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",
+  },
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -29,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Recipe_Book_Closed",
+    "path":"sprites/spr_Recipe_Book_Closed/spr_Recipe_Book_Closed.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
