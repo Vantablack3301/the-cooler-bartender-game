@@ -26,6 +26,8 @@ currRoom = 0
 // to pass into add_liquid 
 selected = ""
 selectedSprite = noone
+selectedSpriteScale_x = 1
+selectedSpriteScale_y = 1
 
 // rn this is just to determine if the sprite should be rotated
 isPouring = false
@@ -42,7 +44,7 @@ changeSprite = function() {
 
 
 /// @function myFunction(param1, param2, param3)
-/// @param {Id.Instance<obj_Drink>} drinkMade
+/// @arg {Id.Instance} drinkMade
 /// @param {Id.DsMap} drinkGoal
 // Grading System
 gradeDrink = function(drinkMade, drinkGoal) {

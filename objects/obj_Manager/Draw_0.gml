@@ -7,6 +7,6 @@ if (obj_Manager.selectedSprite != noone)
 	if (isPouring)
 		rotation = 225
 	
-	draw_sprite_ext(obj_Manager.selectedSprite, 0, mouse_x, mouse_y, 1, 1, rotation, c_white, 1)
+	draw_sprite_ext(obj_Manager.selectedSprite, 0, mouse_x, mouse_y, selectedSpriteScale_x, selectedSpriteScale_y, rotation, c_white, 1)
 }
 	
