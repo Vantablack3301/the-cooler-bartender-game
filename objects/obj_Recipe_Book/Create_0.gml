@@ -1,3 +1,7 @@
+// I don't know if this is the best way to put the book up front but it
+// works for now...
+depth = -256
+
 onClick = function(){}
 
 toggleVisiblity = function() {
