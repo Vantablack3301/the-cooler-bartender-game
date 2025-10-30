@@ -1,4 +1,4 @@
-drink = instance_create_layer(960,448, "Instances", obj_Drink)
+drink = noone
 
 var aspect_ratio = display_get_width() / display_get_height()
 
@@ -22,10 +22,11 @@ else //4:3
 
 currRoom = 0
 
-// stores which bottle/liquid item you have 'picked up'; serves as argyment 
+// stores which bottle/liquid item you have 'picked up'; serves as argument 
 // to pass into add_liquid 
 selected = ""
 selectedSprite = noone
+
 selectedSpriteScale_x = 1
 selectedSpriteScale_y = 1
 
