@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Apply_Settings",
+  "%Name":"obj_Settings_Button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Apply_Settings",
+  "name":"obj_Settings_Button",
   "overriddenProperties":[],
   "parent":{
     "name":"UI",
     "path":"folders/Objects/UI.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Parent_Clickable",
+    "path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",
+  },
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,9 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"GREYBOX",
-    "path":"sprites/GREYBOX/GREYBOX.yy",
+    "name":"WHITEBOX",
+    "path":"sprites/WHITEBOX/WHITEBOX.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
