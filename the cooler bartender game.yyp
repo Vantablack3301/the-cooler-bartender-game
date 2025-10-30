@@ -58,6 +58,7 @@
     {"id":{"name":"obj_player_turn_notifier","path":"objects/obj_player_turn_notifier/obj_player_turn_notifier.yy",},},
     {"id":{"name":"obj_Recipe_Book_Button","path":"objects/obj_Recipe_Book_Button/obj_Recipe_Book_Button.yy",},},
     {"id":{"name":"obj_Recipe_Book","path":"objects/obj_Recipe_Book/obj_Recipe_Book.yy",},},
+    {"id":{"name":"obj_Settings_Button","path":"objects/obj_Settings_Button/obj_Settings_Button.yy",},},
     {"id":{"name":"obj_Shop_Button","path":"objects/obj_Shop_Button/obj_Shop_Button.yy",},},
     {"id":{"name":"obj_shopManager","path":"objects/obj_shopManager/obj_shopManager.yy",},},
     {"id":{"name":"obj_Submit_Drink","path":"objects/obj_Submit_Drink/obj_Submit_Drink.yy",},},

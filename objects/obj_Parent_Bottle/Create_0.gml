@@ -25,3 +25,9 @@ onClick = function()
 		obj_Manager.selectedSprite = noone
 	}
 }
+
+drawOutline = function() {
+	var _w = 1;
+	draw_sprite_ext(sprite_index, image_index, x + _w, y + _w, image_xscale, image_yscale, image_angle, c_yellow, 0.5)
+	//draw_sprite(sprite_index, image_index, x, y);
+}
