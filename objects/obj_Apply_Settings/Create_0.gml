@@ -1,4 +1,4 @@
- //window_set_fullscreen(true)
+//window_set_fullscreen(true)
 depth = -256
 
 var aspect_ratio = display_get_width() / display_get_height()
