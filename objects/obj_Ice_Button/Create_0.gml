@@ -9,5 +9,7 @@ onClick = function()
 	{
 		obj_Manager.selected = "ice"
 		obj_Manager.selectedSprite = spr_Ice_Cubes
+		
+		obj_Stirrer.visible = true
 	}
 }
