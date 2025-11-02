@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"GREYBOX",
-    "path":"sprites/GREYBOX/GREYBOX.yy",
+    "name":"spr_Customer_1",
+    "path":"sprites/spr_Customer_1/spr_Customer_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
