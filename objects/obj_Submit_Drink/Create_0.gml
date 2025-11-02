@@ -1,4 +1,5 @@
 recipeReq = noone
+instance_create_layer(512, 224, "Instances", obj_Customer);
 
 onClick = function()
 {
@@ -7,6 +8,6 @@ onClick = function()
 		obj_Manager.drink.reset()
 		instance_destroy(obj_Customer)
 		recipeReq = noone
-		instance_create_layer(576, 64, "Instances", obj_Customer);
+		instance_create_layer(512, 224, "Instances", obj_Customer);
 	}
 }

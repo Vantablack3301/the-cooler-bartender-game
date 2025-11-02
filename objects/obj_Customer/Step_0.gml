@@ -3,6 +3,6 @@ if room == BarBack {
 	y = 9999
 }
 else {
-	x = 576
-	y = 64
+	x = 512
+	y = 224
 }

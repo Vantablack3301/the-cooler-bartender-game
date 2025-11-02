@@ -1,3 +1,10 @@
+image_xscale = 1.383234
+image_yscale = 1.357542
+
+boxSprite = spr_Order_Box_Green
+ordered = false
+
+
 generateRecipe = function()
 {
 	randomize()
@@ -18,4 +25,5 @@ wantedDrink = generateRecipe()
 onClick = function() 
 {
 	obj_Submit_Drink.recipeReq = wantedDrink
+	ordered = true
 }
