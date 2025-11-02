@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Alcohol Bottles",
+    "path":"folders/Sprites/Alcohol Bottles.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
