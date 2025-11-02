@@ -1,4 +1,4 @@
-drink = noone
+drink = instance_create_layer(960, 448, "Instances", obj_Drink);
 
 
 
