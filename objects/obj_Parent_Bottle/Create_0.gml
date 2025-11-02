@@ -17,6 +17,9 @@ onClick = function()
 		obj_Manager.selectedSpriteScale_x = image_xscale
 		obj_Manager.selectedSpriteScale_y = image_yscale
 		
+		if obj_Manager.selectedSprite == spr_Stirrer
+			obj_Manager.selectedSpriteScale_y *= -0.8
+			
 	}
 	else 
 	{
