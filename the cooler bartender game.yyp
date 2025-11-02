@@ -110,6 +110,8 @@
     {"id":{"name":"spr_Ice_Bin","path":"sprites/spr_Ice_Bin/spr_Ice_Bin.yy",},},
     {"id":{"name":"spr_Ice_Cubes","path":"sprites/spr_Ice_Cubes/spr_Ice_Cubes.yy",},},
     {"id":{"name":"spr_Light","path":"sprites/spr_Light/spr_Light.yy",},},
+    {"id":{"name":"spr_Play","path":"sprites/spr_Play/spr_Play.yy",},},
+    {"id":{"name":"spr_Quit","path":"sprites/spr_Quit/spr_Quit.yy",},},
     {"id":{"name":"spr_Recipe_Book_Closed","path":"sprites/spr_Recipe_Book_Closed/spr_Recipe_Book_Closed.yy",},},
     {"id":{"name":"spr_Recipe_Book_Open","path":"sprites/spr_Recipe_Book_Open/spr_Recipe_Book_Open.yy",},},
     {"id":{"name":"spr_ShopButton","path":"sprites/spr_ShopButton/spr_ShopButton.yy",},},
