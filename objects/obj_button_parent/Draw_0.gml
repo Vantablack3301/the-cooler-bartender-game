@@ -1,3 +1,4 @@
+var oldFont = draw_get_font();
 draw_self();
 
 draw_set_font(titleFont);
@@ -9,3 +10,4 @@ draw_text(x, y, button_text);
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+draw_set_font(defaultFont);

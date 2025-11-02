@@ -4,7 +4,7 @@ depth = -256
 
 onClick = function(){}
 
-toggleVisiblity = function() {
+toggleVisibility = function() {
 
 	if visible {
 		visible = false

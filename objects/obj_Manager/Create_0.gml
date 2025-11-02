@@ -4,7 +4,7 @@ drink = noone
 
 //window_set_size(1920, 1200)
 
-currRoom = 0
+currRoom = BarFront
 
 // stores which bottle/liquid item you have 'picked up'; serves as argument 
 // to pass into add_liquid 
