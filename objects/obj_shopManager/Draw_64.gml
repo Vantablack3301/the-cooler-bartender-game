@@ -28,7 +28,8 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
 
     // Buy button
     if (item.bought) {
-        draw_set_color(c_gray); 
+        draw_set_color(c_gray);
+		//take coins away here
     } else {
         draw_set_color(c_lime);
     }
