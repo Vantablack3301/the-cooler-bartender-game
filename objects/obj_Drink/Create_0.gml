@@ -21,6 +21,7 @@ reset = function()
 	isShaken = false
 	isStirred = false	
 	stirAmount = 0.0
+	liqText = ""
 }
 
 // adding soemthing to the cup
