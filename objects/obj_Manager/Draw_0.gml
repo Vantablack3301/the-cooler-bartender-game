@@ -10,3 +10,7 @@ if (obj_Manager.selectedSprite != noone)
 	draw_sprite_ext(obj_Manager.selectedSprite, 0, mouse_x, mouse_y, selectedSpriteScale_x, selectedSpriteScale_y, rotation, c_white, 1)
 }
 	
+if (obj_Manager.isPouring == true)
+{
+	part_particles_burst(part_sys, mouse_x, mouse_y, PouringEffect)
+}

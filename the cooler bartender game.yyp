@@ -88,6 +88,7 @@
     {"id":{"name":"obj_TableDecorSpot","path":"objects/obj_TableDecorSpot/obj_TableDecorSpot.yy",},},
     {"id":{"name":"obj_ticket","path":"objects/obj_ticket/obj_ticket.yy",},},
     {"id":{"name":"Object23","path":"objects/Object23/Object23.yy",},},
+    {"id":{"name":"PouringEffect","path":"particles/PouringEffect/PouringEffect.yy",},},
     {"id":{"name":"BarBack","path":"rooms/BarBack/BarBack.yy",},},
     {"id":{"name":"BarFront","path":"rooms/BarFront/BarFront.yy",},},
     {"id":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
