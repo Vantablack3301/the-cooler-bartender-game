@@ -99,4 +99,8 @@ stir = function()
 	isStirred = stirAmount >= 1
 }
 
+/*fillObj = instance_create_layer(x, y, self.layer, LiquidFillObj)
 
+fillObj.MaskSprite = self.sprite_index
+fillObj.image_xscale = bbox_right - bbox_left
+fillObj.image_yscale = bbox_top - bbox_bottom*/

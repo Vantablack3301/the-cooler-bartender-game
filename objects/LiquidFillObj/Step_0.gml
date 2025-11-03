@@ -31,8 +31,8 @@ for (var i = 0; i <= springCount; i++)
 	}
 }
 
-if (mouse_check_button_pressed(mb_left))
+/*if (mouse_check_button_pressed(mb_left))
 {
 	self.x = mouse_x
 	self.y = mouse_y
-}
+}*/
