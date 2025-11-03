@@ -5,6 +5,8 @@ isShaken = false
 isStirred = false
 stirAmount = 0.0
 
+liqText = ""
+
 // storing mouse positions and other metadata for sake of shaking/stirring
 prevStirMouseX = mouse_x
 prevStirMouseY = mouse_y
