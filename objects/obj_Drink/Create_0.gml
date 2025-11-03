@@ -3,15 +3,24 @@ hasIce = false
 garnishes = ds_list_create()
 isShaken = false
 isStirred = false
+stirAmount = 0.0
 
+liqText = ""
+
+// storing mouse positions and other metadata for sake of shaking/stirring
+prevStirMouseX = mouse_x
+prevStirMouseY = mouse_y
 
 reset = function() 
 {
+	//delete cup here when resetting the game after alpha
+	sprite_index = asset_get_index(spr_Glass_Rocks) //delete this line after implementing cup seletion system
 	ds_map_clear(liquids)
 	hasIce = false
 	ds_list_clear(garnishes)
 	isShaken = false
 	isStirred = false	
+	stirAmount = 0.0
 }
 
 // adding soemthing to the cup
@@ -76,7 +85,18 @@ shake = function()
 
 stir = function()
 {
-	isStirred = true	
+	var dx = abs(mouse_x-prevStirMouseX)
+	var dy = abs(mouse_y-prevStirMouseY)
+	
+	prevStirMouseX = mouse_x
+	prevStirMouseY = mouse_y
+	
+	totalDelta = sqrt(power(dx,2) + power(dy,2))
+	
+	show_debug_message(stirAmount)
+	
+	stirAmount += min(totalDelta/150.0, 0.10)
+	isStirred = stirAmount >= 1
 }
 
 

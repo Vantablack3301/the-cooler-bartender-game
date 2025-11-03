@@ -1,17 +1,14 @@
 // toggling between the front and the back of the bar when an arrow key is hit
-if (keyboard_check_pressed(ord("A")) or keyboard_check_pressed(ord("D")) or 
-keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right))
+if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(ord("D")) ||
+    keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right))
 {
-	currRoom = (currRoom+1) % 2
-	room_goto(currRoom)
-	changeSprite()
-}
+    if (currRoom == BarFront){
+        currRoom = BarBack;
+    }
+    else {
+        currRoom = BarFront;
+    }
 
-if keyboard_check_pressed(vk_f11){
-	if (window_get_fullscreen()) {
-		window_set_fullscreen(false)
-	}
-	else {
-		window_set_fullscreen(true)
-	}
+    changeSprite();
+    room_goto(currRoom);
 }
