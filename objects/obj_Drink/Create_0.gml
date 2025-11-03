@@ -13,6 +13,8 @@ prevStirMouseY = mouse_y
 
 reset = function() 
 {
+	//delete cup here when resetting the game after alpha
+	sprite_index = asset_get_index(spr_Glass_Rocks) //delete this line after implementing cup seletion system
 	ds_map_clear(liquids)
 	hasIce = false
 	ds_list_clear(garnishes)
