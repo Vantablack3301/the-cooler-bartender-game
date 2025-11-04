@@ -14,7 +14,7 @@ generateRecipe = function()
 		toReturn = ds_map_find_next(obj_Intitialize.drinks, toReturn);
 	}
 
-	show_debug_message(toReturn)
+	//show_debug_message(toReturn)
 	//wantedDrink = toReturn
 	return toReturn;
 }
