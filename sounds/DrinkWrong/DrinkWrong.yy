@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.7502041,
+  "duration":0.5485714,
   "name":"DrinkWrong",
   "parent":{
     "name":"Sounds",

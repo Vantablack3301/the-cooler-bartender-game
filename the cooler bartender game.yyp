@@ -92,6 +92,8 @@
     {"id":{"name":"BarFront","path":"rooms/BarFront/BarFront.yy",},},
     {"id":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
     {"id":{"name":"Shop","path":"rooms/Shop/Shop.yy",},},
+    {"id":{"name":"BookNextPage","path":"sounds/BookNextPage/BookNextPage.yy",},},
+    {"id":{"name":"BookOpen","path":"sounds/BookOpen/BookOpen.yy",},},
     {"id":{"name":"CoinSingle","path":"sounds/CoinSingle/CoinSingle.yy",},},
     {"id":{"name":"CoinStack","path":"sounds/CoinStack/CoinStack.yy",},},
     {"id":{"name":"DrinkCorrect","path":"sounds/DrinkCorrect/DrinkCorrect.yy",},},

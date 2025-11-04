@@ -19,6 +19,7 @@ onClick = function()
 		
 		if obj_Manager.selectedSprite == spr_Stirrer
 			obj_Manager.selectedSpriteScale_y *= -0.8
+		audio_play_sound(DrinkPickUp, 1, false);
 			
 	}
 	else 
@@ -26,6 +27,7 @@ onClick = function()
 		visible = true
 		obj_Manager.selected = ""
 		obj_Manager.selectedSprite = noone
+		audio_play_sound(DrinkPutDown, 1, false);
 	}
 }
 

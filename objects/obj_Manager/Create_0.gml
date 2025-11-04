@@ -145,8 +145,15 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	
 	var tipStartValue = 8.00
 	var tipReturnValue = tipStartValue * (totalScore/100)
-	if totalScore < 50{
+	if totalScore < 50 {
 		tipReturnValue = 0
+		audio_play_sound(DrinkWrong, 1, false);
+	}
+	else if totalScore >= 50 && totalScore < 90{
+		audio_play_sound(DrinkCorrect, 1, false);
+	}
+	else {
+		audio_play_sound(DrinkPerfect, 1, false);
 	}
 	obj_Manager.money += tipReturnValue
 	
