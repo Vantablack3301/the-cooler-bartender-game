@@ -1,6 +1,7 @@
 drink = instance_create_layer(960, 448, "Instances", obj_Drink);
 
 money = 0
+global.obj_manager = id;
 
 //window_set_size(1920, 1200)
 
