@@ -42,7 +42,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
 	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "tequilaShot", tequilaShot)
-
+/*
 	beer1 = ds_map_create()
 	ds_map_add(beer1, "numLiquids", 1)
 	ds_map_add(beer1, "lightBeer", 10)
@@ -72,7 +72,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
 	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "whiteWine", whiteWine)
-
+*/
 	redWine = ds_map_create()
 	ds_map_add(redWine, "numLiquids", 1)
 	ds_map_add(redWine, "redWine", 10)
@@ -117,6 +117,7 @@ if(global.gameDifficulty == "expert" || global.gameDifficulty == "novice")
 	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "jackAndCoke", jackAndCoke)
 
+/*
 	vodkaCran = ds_map_create()
 	ds_map_add(vodkaCran, "numLiquids", 2)
 	ds_map_add(vodkaCran, "vodka", 2)
@@ -127,7 +128,7 @@ if(global.gameDifficulty == "expert" || global.gameDifficulty == "novice")
 	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
 	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "vodkaCran", vodkaCran)
-
+*/
 	vodkaSoda = ds_map_create()
 	ds_map_add(vodkaSoda, "numLiquids", 2)
 	ds_map_add(vodkaSoda, "vodka", 2)
@@ -142,6 +143,7 @@ if(global.gameDifficulty == "expert" || global.gameDifficulty == "novice")
 
 if(global.gameDifficulty == "expert")
 {
+	/*
 	mojito = ds_map_create()
 	ds_map_add(mojito, "numLiquids", 4)
 	ds_map_add(mojito, "whiteRum", 2)
@@ -154,4 +156,5 @@ if(global.gameDifficulty == "expert")
 	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
 	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "mojito", mojito)
+	*/
 }
