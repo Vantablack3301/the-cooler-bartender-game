@@ -25,7 +25,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 
 	vodkaShot = ds_map_create()
 	ds_map_add(vodkaShot, "numLiquids", 1)
-	ds_map_add(vodkaShot, "vodka", 2)
+	ds_map_add(vodkaShot, "vodka", 1.5)
 	ds_map_add(vodkaShot, "ice", false)
 	ds_map_add(vodkaShot, "stirred", 0)
 	ds_map_add(vodkaShot, "shaken", false)
@@ -35,7 +35,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 
 	tequilaShot = ds_map_create()
 	ds_map_add(tequilaShot, "numLiquids", 1)
-	ds_map_add(tequilaShot, "tequila", 2)
+	ds_map_add(tequilaShot, "tequila", 1.5)
 	ds_map_add(tequilaShot, "ice", false)
 	ds_map_add(tequilaShot, "stirred",0)
 	ds_map_add(tequilaShot, "shaken", false)
@@ -45,7 +45,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 
 	beer1 = ds_map_create()
 	ds_map_add(beer1, "numLiquids", 1)
-	ds_map_add(beer1, "beer1", 10)
+	ds_map_add(beer1, "lightBeer", 10)
 	ds_map_add(beer1, "ice", false)
 	ds_map_add(beer1, "stirred",0)
 	ds_map_add(beer1, "shaken", false)
@@ -55,7 +55,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 
 	beer2 = ds_map_create()
 	ds_map_add(beer2, "numLiquids", 1)
-	ds_map_add(beer2, "beer2", 10)
+	ds_map_add(beer2, "darkBeer", 10)
 	ds_map_add(beer2, "ice", false)
 	ds_map_add(beer2, "stirred",0)
 	ds_map_add(beer2, "shaken", false)
