@@ -5,7 +5,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 {
 	whiskeyRocks = ds_map_create()
 	ds_map_add(whiskeyRocks, "numLiquids", 1)
-	ds_map_add(whiskeyRocks, "jack", 3)
+	ds_map_add(whiskeyRocks, "jack", 2)
 	ds_map_add(whiskeyRocks, "ice", true)
 	ds_map_add(whiskeyRocks, "stirred", 5)
 	ds_map_add(whiskeyRocks, "shaken", false)
@@ -15,7 +15,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 
 	whiskeyNeat = ds_map_create()
 	ds_map_add(whiskeyNeat, "numLiquids", 1)
-	ds_map_add(whiskeyNeat, "jack", 3)
+	ds_map_add(whiskeyNeat, "jack", 2)
 	ds_map_add(whiskeyNeat, "ice", false)
 	ds_map_add(whiskeyNeat, "stirred", 0)
 	ds_map_add(whiskeyNeat, "shaken", false)
@@ -75,12 +75,11 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 */
 	redWine = ds_map_create()
 	ds_map_add(redWine, "numLiquids", 1)
-	ds_map_add(redWine, "redWine", 10)
+	ds_map_add(redWine, "redWine", 5)
 	ds_map_add(redWine, "ice", false)
 	ds_map_add(redWine, "stirred", 0)
 	ds_map_add(redWine, "shaken", false)
 	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
-	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "redWine", redWine)
 }
 
