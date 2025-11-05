@@ -51,7 +51,12 @@ makePageContents = function() {
 				break;
 				
 				default:
-					drinkVal = string(drinkVal) + " oz"
+					if (drinkProp == "stirred"){
+						drinkVal = string(drinkVal) + " seconds"
+					}
+					else {
+						drinkVal = string(drinkVal) + " oz"
+					}
 				break;
 			}
 			pageContents += drinkProp + " " + string(drinkVal) + "\n"

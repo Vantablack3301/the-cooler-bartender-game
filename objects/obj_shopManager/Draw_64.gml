@@ -7,7 +7,7 @@ draw_rectangle(50, 50, sw-50, sh-50, false);
 
 // Shop title
 draw_set_color(c_white);
-draw_text(sw/2 - 80, 60, "SHOP - COSMETICS");
+draw_text(sw/2 - 80, 60, "SHOP - DECORATIONS");
 
 // Draw shop items
 for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
@@ -29,7 +29,6 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
     // Buy button
     if (item.bought) {
         draw_set_color(c_gray);
-		//take coins away here
     } else {
         draw_set_color(c_lime);
     }

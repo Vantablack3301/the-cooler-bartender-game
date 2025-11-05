@@ -1,6 +1,8 @@
 var mx = device_mouse_x_to_gui(0);
 var my = device_mouse_y_to_gui(0);
 
+var m = instance_find(global.obj_manager, 0);
+
 if (!variable_global_exists("shop_cosmetics")) exit;
 
 for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
@@ -13,12 +15,13 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
     var by2 = z + 60;
 
     if (mx > bx1 && mx < bx2 && my > by1 && my < by2) {
-     
-        if (!variable_instance_exists(item, "bought") || !item.bought) {
+        // Only buy if not already bought AND player has enough money
+        if ((!variable_instance_exists(item, "bought") || !item.bought) && m.money >= item.cost) {
             global.last_bought_item = item.name;
-			audio_play_sound(CoinSingle, 1, false);
+            audio_play_sound(CoinSingle, 1, false);
             global.shop_cosmetics[i].bought = true;
-        } 
+            m.money -= item.cost;
+        }
         break; //bought
     }
 }

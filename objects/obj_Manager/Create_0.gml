@@ -1,6 +1,7 @@
 drink = instance_create_layer(960, 448, "Instances", obj_Drink);
 
-
+money = 0
+global.obj_manager = id;
 
 //window_set_size(1920, 1200)
 
@@ -33,7 +34,7 @@ changeSprite = function() {
 /// @param {Id.DsMap} drinkGoal
 // Grading System
 gradeDrink = function(drinkMade, drinkGoal) {
-	var ticketString = ""
+	var ticketString = string(obj_Customer.wantedDrink) + "\n"
 	
 	var totalScore = 0
 	// Ice
@@ -105,10 +106,15 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	
 	//Stirring
 	var stirScore = 0
-	if drinkMade.stirAmount > 0 {
+	if ds_map_find_value(drinkGoal,"stirred") > 0 {
 		stirScore = drinkMade.stirAmount / ds_map_find_value(drinkGoal,"stirred")
 		if stirScore > 1 {
 			stirScore = 1 / stirScore
+		}
+	}
+	else {
+		if drinkMade.stirAmount == 0{
+			stirScore = 1
 		}
 	}
 	
@@ -120,15 +126,38 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	
 	
 	// update denominator as more scores are added
-	totalScore = floor(drinkScore + iceScore + stirScore)/3
-	ticketString += "Drink Grade: " + string(totalScore)
+	show_debug_message(drinkScore)
+	show_debug_message(iceScore)
+	show_debug_message(stirScore)
 	
+	totalScore = floor((drinkScore * 0.6) + (iceScore * 0.2) + (stirScore * 0.2)) // weighting
+	ticketString += "Drink Grade: " + string(totalScore)
+	show_debug_message(drinkScore * 0.6)
+	show_debug_message(iceScore * 0.2)
+	show_debug_message(stirScore * 0.2)
 	
 	instance_destroy(obj_ticket)
 	var inst = instance_create_layer(100, 100, "Instances", obj_ticket);
 	with (inst) {
 		ticketScore = ticketString
     }
+	
+	
+	var tipStartValue = 8.00
+	var tipReturnValue = tipStartValue * (totalScore/100)
+	if totalScore < 50 {
+		tipReturnValue = 0
+		audio_play_sound(DrinkWrong, 1, false);
+	}
+	else if totalScore >= 50 && totalScore < 90{
+		audio_play_sound(DrinkCorrect, 1, false);
+	}
+	else {
+		audio_play_sound(DrinkPerfect, 1, false);
+	}
+	obj_Manager.money += tipReturnValue
+	
+	
 	
 	//show_debug_message(totalScore)
 	return (totalScore)

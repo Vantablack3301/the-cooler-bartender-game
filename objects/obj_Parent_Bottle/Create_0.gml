@@ -19,6 +19,7 @@ onClick = function()
 		
 		if obj_Manager.selectedSprite == spr_Stirrer
 			obj_Manager.selectedSpriteScale_y *= -0.8
+		audio_play_sound(DrinkPickUp, 1, false);
 			
 	}
 	else 
@@ -26,11 +27,15 @@ onClick = function()
 		visible = true
 		obj_Manager.selected = ""
 		obj_Manager.selectedSprite = noone
+		audio_play_sound(DrinkPutDown, 1, false);
 	}
 }
 
 drawOutline = function() {
 	var _w = 1;
 	draw_sprite_ext(sprite_index, image_index, x + _w, y + _w, image_xscale, image_yscale, image_angle, c_yellow, 0.5)
+	if global.gameDifficulty == "new" {
+		draw_text(x, y, object_get_name(object_index))
+	}
 	//draw_sprite(sprite_index, image_index, x, y);
 }

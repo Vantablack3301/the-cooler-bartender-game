@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":2.4032652,
+  "duration":1.0971428,
   "exportDir":"",
   "name":"DrinkCorrect",
   "parent":{
