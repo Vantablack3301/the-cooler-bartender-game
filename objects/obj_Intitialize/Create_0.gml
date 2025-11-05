@@ -144,7 +144,7 @@ if(global.gameDifficulty == "expert")
 {
 	mojito = ds_map_create()
 	ds_map_add(mojito, "numLiquids", 4)
-	ds_map_add(mojito, "white rum", 2)
+	ds_map_add(mojito, "whiteRum", 2)
 	ds_map_add(mojito, "soda", 3)
 	ds_map_add(mojito, "syrup", 1)
 	ds_map_add(mojito, "limeJuice", 1)

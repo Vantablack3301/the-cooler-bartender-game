@@ -59,6 +59,7 @@
     {"id":{"name":"obj_bottle_Tequila","path":"objects/obj_bottle_Tequila/obj_bottle_Tequila.yy",},},
     {"id":{"name":"obj_bottle_tonic","path":"objects/obj_bottle_tonic/obj_bottle_tonic.yy",},},
     {"id":{"name":"obj_bottle_vodka","path":"objects/obj_bottle_vodka/obj_bottle_vodka.yy",},},
+    {"id":{"name":"obj_bottle_whiteRum","path":"objects/obj_bottle_whiteRum/obj_bottle_whiteRum.yy",},},
     {"id":{"name":"obj_button_expert","path":"objects/obj_button_expert/obj_button_expert.yy",},},
     {"id":{"name":"obj_button_new","path":"objects/obj_button_new/obj_button_new.yy",},},
     {"id":{"name":"obj_button_novice","path":"objects/obj_button_novice/obj_button_novice.yy",},},
