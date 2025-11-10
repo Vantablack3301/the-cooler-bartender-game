@@ -54,6 +54,7 @@
     {"id":{"name":"obj_Bottle_Coke","path":"objects/obj_Bottle_Coke/obj_Bottle_Coke.yy",},},
     {"id":{"name":"obj_Bottle_Gin","path":"objects/obj_Bottle_Gin/obj_Bottle_Gin.yy",},},
     {"id":{"name":"obj_Bottle_Jack","path":"objects/obj_Bottle_Jack/obj_Bottle_Jack.yy",},},
+    {"id":{"name":"obj_Bottle_jagermeister","path":"objects/obj_Bottle_jagermeister/obj_Bottle_jagermeister.yy",},},
     {"id":{"name":"obj_Bottle_Red_Wine","path":"objects/obj_Bottle_Red_Wine/obj_Bottle_Red_Wine.yy",},},
     {"id":{"name":"obj_bottle_redbull","path":"objects/obj_bottle_redbull/obj_bottle_redbull.yy",},},
     {"id":{"name":"obj_bottle_Tequila","path":"objects/obj_bottle_Tequila/obj_bottle_Tequila.yy",},},
