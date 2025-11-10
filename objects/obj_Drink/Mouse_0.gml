@@ -20,7 +20,11 @@ var selected = obj_Manager.selected
 			
 			// updating the cup sprite
 			var spriteName = sprite_get_name(sprite_index)
-			spriteName += "_Ice"
+			
+			// making sure we can't double add ice
+			var substring = string_copy(spriteName,string_length(spriteName)-3 , 4)
+			if (substring != "_Ice")
+				spriteName += "_Ice"
 			// at this point, spriteName contains the name for the cup with ice
 			sprite_index = asset_get_index(spriteName)
 
