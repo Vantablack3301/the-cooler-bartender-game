@@ -6,9 +6,7 @@
   ],
   "managed":true,
   "name":"obj_button_expert",
-  "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_button_parent/obj_button_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Expert",},
-  ],
+  "overriddenProperties":[],
   "parent":{
     "name":"Buttons",
     "path":"folders/Objects/Buttons.yy",
@@ -35,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"GREYBOX",
-    "path":"sprites/GREYBOX/GREYBOX.yy",
+    "name":"spr_Expert_Button",
+    "path":"sprites/spr_Expert_Button/spr_Expert_Button.yy",
   },
   "spriteMaskId":null,
   "visible":true,
