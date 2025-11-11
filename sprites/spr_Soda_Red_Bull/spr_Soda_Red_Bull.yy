@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Soda",
-    "path":"folders/Sprites/Soda.yy",
+    "name":"Soda_Juice",
+    "path":"folders/Sprites/Soda_Juice.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
