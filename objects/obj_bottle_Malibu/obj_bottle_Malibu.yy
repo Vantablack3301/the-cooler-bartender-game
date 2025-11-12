@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bottle_whiteRum",
+  "%Name":"obj_bottle_Malibu",
   "eventList":[],
   "managed":true,
-  "name":"obj_bottle_whiteRum",
+  "name":"obj_bottle_Malibu",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"bottleName","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"whiteRum",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"bottleName","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"malibu",},
   ],
   "parent":{
     "name":"BottleButtons",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Bacardi_Light_Rum",
-    "path":"sprites/spr_Bacardi_Light_Rum/spr_Bacardi_Light_Rum.yy",
+    "name":"spr_Bottle_Malibu",
+    "path":"sprites/spr_Bottle_Malibu/spr_Bottle_Malibu.yy",
   },
   "spriteMaskId":null,
   "visible":true,

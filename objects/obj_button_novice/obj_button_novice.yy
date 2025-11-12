@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Beginner_Button",
-    "path":"sprites/spr_Beginner_Button/spr_Beginner_Button.yy",
+    "name":"spr_Novice_Button",
+    "path":"sprites/spr_Novice_Button/spr_Novice_Button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

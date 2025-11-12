@@ -42,6 +42,26 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
 	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "tequilaShot", tequilaShot)
+	
+	whiteRumShot = ds_map_create()
+	ds_map_add(whiteRumShot, "numLiquids", 1)
+	ds_map_add(whiteRumShot, "whiteRum", 1.5)
+	ds_map_add(whiteRumShot, "ice", false)
+	ds_map_add(whiteRumShot, "stirred",0)
+	ds_map_add(whiteRumShot, "shaken", false)
+	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
+	//ds_map_add(jackAndCoke, "garnish", ["lime"])
+	ds_map_add(drinks, "rumShot", whiteRumShot)
+	
+	bourbonShot = ds_map_create()
+	ds_map_add(bourbonShot, "numLiquids", 1)
+	ds_map_add(bourbonShot, "bourbon", 1.5)
+	ds_map_add(bourbonShot, "ice", false)
+	ds_map_add(bourbonShot, "stirred",0)
+	ds_map_add(bourbonShot, "shaken", false)
+	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
+	//ds_map_add(jackAndCoke, "garnish", ["lime"])
+	ds_map_add(drinks, "bourbonShot", bourbonShot)
 /*
 	beer1 = ds_map_create()
 	ds_map_add(beer1, "numLiquids", 1)
@@ -62,17 +82,17 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
 	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "beer2", beer2)
-
+*/
 	whiteWine = ds_map_create()
 	ds_map_add(whiteWine, "numLiquids", 1)
-	ds_map_add(whiteWine, "whiteWine", 10)
+	ds_map_add(whiteWine, "whiteWine", 5)
 	ds_map_add(whiteWine, "ice", false)
 	ds_map_add(whiteWine, "stirred", 0)
 	ds_map_add(whiteWine, "shaken", false)
 	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
 	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "whiteWine", whiteWine)
-*/
+
 	redWine = ds_map_create()
 	ds_map_add(redWine, "numLiquids", 1)
 	ds_map_add(redWine, "redWine", 5)

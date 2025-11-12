@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Choose_Your_Difficulty_Text",
+    "path":"sprites/spr_Choose_Your_Difficulty_Text/spr_Choose_Your_Difficulty_Text.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
