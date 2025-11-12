@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"a3835d33-bf7e-4e51-adad-145bfe22628b","name":"a3835d33-bf7e-4e51-adad-145bfe22628b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"891155a1-8bd0-418d-93b9-0cc52e45c061","name":"891155a1-8bd0-418d-93b9-0cc52e45c061","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":209,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"026bd82e-edf9-4d92-9ece-8611a66ca656","blendMode":0,"displayName":"default","isLocked":false,"name":"026bd82e-edf9-4d92-9ece-8611a66ca656","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"e8b93cf8-4bf1-4b94-acd9-5934a9ad5707","blendMode":0,"displayName":"default","isLocked":false,"name":"e8b93cf8-4bf1-4b94-acd9-5934a9ad5707","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Recipe_Book_Closed",
   "nineSlice":null,
@@ -70,7 +70,9 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"a3835d33-bf7e-4e51-adad-145bfe22628b","path":"sprites/spr_Recipe_Book_Closed/spr_Recipe_Book_Closed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e626c904-cd1f-48af-96e9-007682ebf9b0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"891155a1-8bd0-418d-93b9-0cc52e45c061","path":"sprites/spr_Recipe_Book_Closed/spr_Recipe_Book_Closed.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8162c2fe-8363-41e9-ac3a-0e7bbcfe315f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
