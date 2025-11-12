@@ -32,3 +32,4 @@ for (var i = 1; i < ds_list_size(instances_hovered); i++)
 }
 var str_obj_name = object_get_name(currItem.object_index);
 currItem.drawOutline()
+
