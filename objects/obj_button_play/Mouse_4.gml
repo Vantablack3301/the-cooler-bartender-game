@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-room_goto(BarFront);
+room_goto(DifficultyScreen);
