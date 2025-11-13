@@ -1,5 +1,21 @@
 drink = instance_create_layer(960, 448, "Instances", obj_Drink);
 
+lifeList = ds_list_create()
+var numLives = 0
+// adding the first two lives for all difficulties
+if global.gameDifficulty == "new"
+	numLives = 5
+else if global.gameDifficulty = "novice"
+	numLives = 3
+else 
+	numLives = 2
+	
+for (i = 0; i < numLives; i++)
+{
+	ds_list_insert(lifeList, 0, instance_create_layer(64*i, 48, "Instances", obj_Life))	
+}
+	
+
 money = 0
 global.obj_manager = id;
 
@@ -148,6 +164,14 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	if totalScore < 50 {
 		tipReturnValue = 0
 		audio_play_sound(DrinkWrong, 1, false);
+		
+		// killing a life
+		var lifeToKill = ds_list_find_value(lifeList,0);
+		ds_list_delete(lifeList, 0);
+		instance_destroy(lifeToKill)
+		
+		//if (ds_list_empty(lifeList))
+			// game over
 	}
 	else if totalScore >= 50 && totalScore < 90{
 		audio_play_sound(DrinkCorrect, 1, false);
@@ -157,7 +181,7 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	}
 	obj_Manager.money += tipReturnValue
 	
-	
+
 	
 	//show_debug_message(totalScore)
 	return (totalScore)
@@ -166,7 +190,7 @@ gradeDrink = function(drinkMade, drinkGoal) {
 
 
 part_sys = part_system_create();
-part_emitter = //part_emitter_create(part_sys);
+part_emitter = part_emitter_create(part_sys);
 part_emitter_region(part_sys, part_emitter, 0, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
 part_type = part_type_create();
 part_type_shape(part_type, pt_shape_line);

@@ -92,6 +92,7 @@
     {"id":{"name":"obj_Ice_Button","path":"objects/obj_Ice_Button/obj_Ice_Button.yy",},},
     {"id":{"name":"obj_Intitialize","path":"objects/obj_Intitialize/obj_Intitialize.yy",},},
     {"id":{"name":"obj_letterDisplay","path":"objects/obj_letterDisplay/obj_letterDisplay.yy",},},
+    {"id":{"name":"obj_Life","path":"objects/obj_Life/obj_Life.yy",},},
     {"id":{"name":"obj_Light","path":"objects/obj_Light/obj_Light.yy",},},
     {"id":{"name":"obj_mainText","path":"objects/obj_mainText/obj_mainText.yy",},},
     {"id":{"name":"obj_Manager","path":"objects/obj_Manager/obj_Manager.yy",},},
