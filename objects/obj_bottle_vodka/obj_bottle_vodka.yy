@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bottle_vodka",
+  "%Name":"obj_Bottle_vodka",
   "eventList":[],
   "managed":true,
-  "name":"obj_bottle_vodka",
+  "name":"obj_Bottle_vodka",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"bottleName","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"vodka",},
   ],

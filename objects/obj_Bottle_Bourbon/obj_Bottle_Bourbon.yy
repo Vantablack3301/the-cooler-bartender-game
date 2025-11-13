@@ -1,11 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Bottle_Bourbon",
+  "%Name":"obj_Bottle_bourbon",
   "eventList":[],
   "managed":true,
-  "name":"obj_Bottle_Bourbon",
+  "name":"obj_Bottle_bourbon",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"bottleName","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"bourbon",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"color1","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF1E6FBA",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"color2","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF0E5699",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"color3","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF00427F",},
   ],
   "parent":{
     "name":"BottleButtons",

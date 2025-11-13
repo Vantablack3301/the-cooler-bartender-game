@@ -26,6 +26,7 @@ currRoom = BarFront
 // stores which bottle/liquid item you have 'picked up'; serves as argument 
 // to pass into add_liquid 
 selected = ""
+selectedBottle = noone
 selectedSprite = noone
 
 selectedSpriteScale_x = 1
@@ -191,14 +192,24 @@ gradeDrink = function(drinkMade, drinkGoal) {
 
 part_sys = part_system_create();
 part_emitter = part_emitter_create(part_sys);
-part_emitter_region(part_sys, part_emitter, 0, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
+
 part_type = part_type_create();
-part_type_shape(part_type, pt_shape_line);
-part_type_colour3(part_type, c_aqua, c_lime, c_black)
+part_type_shape(part_type, pt_shape_flare);
+part_type_life(part_type, 10,20)
+part_type_scale(part_type, 0.5, 0.5)
+part_type_size(part_type, 0.5, 1.5, -0.1, 0.5)
+part_type_speed(part_type, 5, 5, 0, 0)
+part_type_gravity(part_type, 1, 267)
+part_type_direction(part_type, 283, 100, 0,0)
+
+
+
 
 
 function CleanupParticleSystem ()
 {
-	part_system_destroy(part_sys); //shoutout gamemaker documentation
+	part_emitter_destroy(part_sys, part_emitter)
+	part_system_destroy(part_sys);//shoutout gamemaker documentation
 	part_type_destroy(part_type);
+	
 }

@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bottle_redbull",
+  "%Name":"obj_Bottle_redbull",
   "eventList":[],
   "managed":true,
-  "name":"obj_bottle_redbull",
+  "name":"obj_Bottle_redbull",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"bottleName","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"redbull",},
   ],

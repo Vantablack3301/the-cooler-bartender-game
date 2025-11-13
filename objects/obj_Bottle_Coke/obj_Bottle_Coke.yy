@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Bottle_Coke",
+  "%Name":"obj_Bottle_coke",
   "eventList":[],
   "managed":true,
-  "name":"obj_Bottle_Coke",
+  "name":"obj_Bottle_coke",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Parent_Bottle","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"propertyId":{"name":"bottleName","path":"objects/obj_Parent_Bottle/obj_Parent_Bottle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"coke",},
   ],
