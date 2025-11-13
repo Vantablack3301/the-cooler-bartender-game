@@ -166,10 +166,11 @@ gradeDrink = function(drinkMade, drinkGoal) {
 
 
 part_sys = part_system_create();
-part_emitter = part_emitter_create(part_sys);
+part_emitter = //part_emitter_create(part_sys);
 part_emitter_region(part_sys, part_emitter, 0, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
 part_type = part_type_create();
-part_type_shape(part_type, pt_shape_disk);
+part_type_shape(part_type, pt_shape_line);
+part_type_colour3(part_type, c_aqua, c_lime, c_black)
 
 
 function CleanupParticleSystem ()

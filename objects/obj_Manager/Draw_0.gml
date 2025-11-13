@@ -12,5 +12,7 @@ if (obj_Manager.selectedSprite != noone)
 	
 if (isPouring && selected != "")
 {
-	part_particles_burst(part_sys, mouse_x, mouse_y, PouringEffect)
+
+	//part_particles_burst(part_sys, mouse_x, mouse_y, PouringEffect)
+	part_particles_create(part_sys, mouse_x, mouse_y, part_type, 5)
 }
