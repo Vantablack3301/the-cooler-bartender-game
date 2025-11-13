@@ -24,6 +24,19 @@ wantedDrink = generateRecipe()
 
 onClick = function() 
 {
-	obj_Submit_Drink.recipeReq = wantedDrink
-	ordered = true
+	
+	// potentially return early here if customer is 'walking in'
+	
+	
+	obj_Manager.gradeDrink(obj_Manager.drink, ds_map_find_value(obj_Intitialize.drinks, wantedDrink))
+	
+	// emptying the drink since it was given to this customer
+	obj_Manager.drink.reset()
+	
+	// REPLACE WITH CUSTOMER_LEAVE ONCE THAT EXISTS
+	instance_destroy(obj_Customer)
+
+	// for now we just make a new customer immediately
+	instance_create_layer(512, 224, "Instances", obj_Customer);
+	
 }
