@@ -39,3 +39,17 @@ drawOutline = function() {
 	}
 	//draw_sprite(sprite_index, image_index, x, y);
 }
+
+
+part_sys = part_system_create();
+part_emitter = part_emitter_create(part_sys);
+part_emitter_region(part_sys, part_emitter, 0, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
+part_type = part_type_create();
+part_type_shape(part_type, pt_shape_disk);
+
+
+function CleanupParticleSystem ()
+{
+	part_system_destroy(part_sys); //shoutout gamemaker documentation
+	part_type_destroy(part_type);
+}
