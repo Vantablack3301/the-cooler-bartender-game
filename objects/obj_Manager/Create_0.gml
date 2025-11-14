@@ -195,13 +195,14 @@ part_sys = part_system_create();
 part_emitter = part_emitter_create(part_sys);
 
 part_type = part_type_create();
-part_type_shape(part_type, pt_shape_flare);
+part_type_shape(part_type, pt_shape_ring);
 part_type_life(part_type, 10,20)
 part_type_scale(part_type, 0.5, 0.5)
 part_type_size(part_type, 0.5, 1.5, -0.1, 0.5)
 part_type_speed(part_type, 5, 5, 0, 0)
 part_type_gravity(part_type, 1, 267)
 part_type_direction(part_type, 283, 100, 0,0)
+part_type_alpha1(part_type, 0.1)
 
 
 
