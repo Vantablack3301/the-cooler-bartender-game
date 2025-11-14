@@ -1,8 +1,12 @@
 image_xscale = 1.383234
 image_yscale = 1.357542
+image_alpha = 0
 
 boxSprite = spr_Order_Box_Green
 ordered = false
+
+timer = 0
+fadeIn = 80
 
 
 generateRecipe = function()
@@ -24,19 +28,19 @@ wantedDrink = generateRecipe()
 
 onClick = function() 
 {
+	if image_alpha >= 1 {
+		// potentially return early here if customer is 'walking in'
 	
-	// potentially return early here if customer is 'walking in'
 	
+		obj_Manager.gradeDrink(obj_Manager.drink, ds_map_find_value(obj_Intitialize.drinks, wantedDrink))
 	
-	obj_Manager.gradeDrink(obj_Manager.drink, ds_map_find_value(obj_Intitialize.drinks, wantedDrink))
+		// emptying the drink since it was given to this customer
+		obj_Manager.drink.reset()
 	
-	// emptying the drink since it was given to this customer
-	obj_Manager.drink.reset()
-	
-	// REPLACE WITH CUSTOMER_LEAVE ONCE THAT EXISTS
-	instance_destroy(obj_Customer)
+		// REPLACE WITH CUSTOMER_LEAVE ONCE THAT EXISTS
+		instance_destroy(obj_Customer)
 
-	// for now we just make a new customer immediately
-	instance_create_layer(512, 224, "Instances", obj_Customer);
-	
+		// for now we just make a new customer immediately
+		instance_create_layer(512, 224, "Instances", obj_Customer);
+	}
 }

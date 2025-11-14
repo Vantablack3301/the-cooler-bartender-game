@@ -90,6 +90,3 @@ array_sort(bookPages, function(left, right){
 	else
 		return 0;
 })
-for (i = 0; i < array_length(bookPages); i ++){
-	show_debug_message(bookPages[i])
-}
