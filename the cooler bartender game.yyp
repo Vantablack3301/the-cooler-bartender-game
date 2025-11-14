@@ -48,6 +48,7 @@
   "name":"the cooler bartender game",
   "resources":[
     {"id":{"name":"defaultFont","path":"fonts/defaultFont/defaultFont.yy",},},
+    {"id":{"name":"fnt_bookFont","path":"fonts/fnt_bookFont/fnt_bookFont.yy",},},
     {"id":{"name":"letterFont","path":"fonts/letterFont/letterFont.yy",},},
     {"id":{"name":"titleFont","path":"fonts/titleFont/titleFont.yy",},},
     {"id":{"name":"chooseDifText","path":"objects/chooseDifText/chooseDifText.yy",},},

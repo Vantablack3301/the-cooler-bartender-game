@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"defaultFont",
+  "%Name":"fnt_bookFont",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":14,
@@ -189,7 +189,7 @@
   "last":0,
   "lineHeight":18,
   "maintainGms1Font":false,
-  "name":"defaultFont",
+  "name":"fnt_bookFont",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

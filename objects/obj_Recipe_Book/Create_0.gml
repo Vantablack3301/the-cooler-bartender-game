@@ -3,6 +3,8 @@
 depth = -256
 
 onClick = function(){}
+bookPages = []
+currentPage = 0
 
 toggleVisibility = function() {
 
@@ -19,6 +21,13 @@ toggleVisibility = function() {
 		makePageContents()
 	}
 }
+drinkList = obj_Intitialize.drinks
+
+currentDrinkKey = ds_map_find_first(drinkList);
+currentDrinkValue = ds_map_find_value(drinkList, currentDrinkKey)
+pageTitle = currentDrinkKey
+
+
 
 
 nextPage = function() {
@@ -27,7 +36,7 @@ nextPage = function() {
 		currentDrinkKey = ds_map_find_next(drinkList, currentDrinkKey)
 	}
 	else {
-		currentDrinkKey = ds_map_find_first(drinkList);
+		// go to beginning
 	}
 	pageTitle = currentDrinkKey // Set Page Title
 	currentDrinkValue = ds_map_find_value(drinkList, currentDrinkKey)
@@ -62,5 +71,25 @@ makePageContents = function() {
 			pageContents += drinkProp + " " + string(drinkVal) + "\n"
 		}
 		drinkProp = ds_map_find_next(currentDrinkValue, drinkProp)
+		
 	}
+	pageContents = pageTitle + "\n" + pageContents
+	array_push(bookPages, pageContents)
+}
+makePageContents()
+
+for (i = 0; i < ds_map_size(obj_Intitialize.drinks) - 1; i++) {
+	nextPage()
+}
+
+array_sort(bookPages, function(left, right){
+	if (left < right)
+		return - 1;
+	else  if (left > right)
+		return 1;
+	else
+		return 0;
+})
+for (i = 0; i < array_length(bookPages); i ++){
+	show_debug_message(bookPages[i])
 }
