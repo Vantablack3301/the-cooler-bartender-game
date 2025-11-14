@@ -6,11 +6,11 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
+    {"name":"inst_54173377","path":"rooms/BarFront/BarFront.yy",},
     {"name":"inst_45033A5C","path":"rooms/BarFront/BarFront.yy",},
     {"name":"inst_6C653D7E","path":"rooms/BarFront/BarFront.yy",},
     {"name":"inst_4F322C7B","path":"rooms/BarFront/BarFront.yy",},
     {"name":"inst_D3716CB","path":"rooms/BarFront/BarFront.yy",},
-    {"name":"inst_54173377","path":"rooms/BarFront/BarFront.yy",},
     {"name":"inst_4119B37A","path":"rooms/BarFront/BarFront.yy",},
     {"name":"inst_55924926","path":"rooms/BarFront/BarFront.yy",},
     {"name":"inst_7A1F8453","path":"rooms/BarFront/BarFront.yy",},

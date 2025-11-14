@@ -1,5 +1,5 @@
 drink = instance_create_layer(960, 448, "Instances", obj_Drink);
-
+instance_create_layer(512, 224, "Instances", obj_Customer);
 lifeList = ds_list_create()
 var numLives = 0
 // adding the first two lives for all difficulties
@@ -171,8 +171,10 @@ gradeDrink = function(drinkMade, drinkGoal) {
 		ds_list_delete(lifeList, 0);
 		instance_destroy(lifeToKill)
 		
-		//if (ds_list_empty(lifeList))
-			// game over
+		if (ds_list_empty(lifeList)) {
+			
+			room_goto(HomeScreen)
+		}
 	}
 	else if totalScore >= 50 && totalScore < 90{
 		audio_play_sound(DrinkCorrect, 1, false);
