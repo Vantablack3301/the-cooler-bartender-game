@@ -5,9 +5,12 @@ image_alpha = 0
 boxSprite = spr_Order_Box_Green
 ordered = false
 
-timer = 0
+fadeTimer = 0
 fadeIn = 80
 
+delta_alarm = 60;
+tipStart = random_range(3,10)
+tipReturn = tipStart
 
 generateRecipe = function()
 {
@@ -31,8 +34,8 @@ onClick = function()
 	if image_alpha >= 1 {
 		// potentially return early here if customer is 'walking in'
 	
-	
-		obj_Manager.gradeDrink(obj_Manager.drink, ds_map_find_value(obj_Intitialize.drinks, wantedDrink))
+		show_debug_message(tipReturn)
+		obj_Manager.gradeDrink(obj_Manager.drink, ds_map_find_value(obj_Intitialize.drinks, wantedDrink), tipReturn)
 	
 		// emptying the drink since it was given to this customer
 		obj_Manager.drink.reset()
