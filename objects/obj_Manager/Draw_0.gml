@@ -17,7 +17,7 @@ if (isPouring && selected != "")
 	//part_particles_burst(part_sys, mouse_x, mouse_y, PouringEffect)
 	//part_particles_create(part_sys, mouse_x, mouse_y, part_type, 1)
 	part_emitter_region(part_sys, part_emitter, mouse_x - 41, mouse_x - 20, mouse_y + 34,  mouse_y + 54, ps_shape_rectangle, ps_distr_linear);
-	part_emitter_stream(part_sys, part_emitter, part_type, 1012)
+	part_emitter_stream(part_sys, part_emitter, part_type, 512)
 	
 }
 else {
