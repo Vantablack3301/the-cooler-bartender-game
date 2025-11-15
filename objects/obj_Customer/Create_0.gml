@@ -1,5 +1,5 @@
-image_xscale = 1.383234
-image_yscale = 1.357542
+image_xscale = .6
+image_yscale = .6
 image_alpha = 0
 
 boxSprite = spr_Order_Box_Green
