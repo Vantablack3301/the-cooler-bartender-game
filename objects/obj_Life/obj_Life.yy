@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Glass_Margarita",
-    "path":"sprites/spr_Glass_Margarita/spr_Glass_Margarita.yy",
+    "name":"spr_Heart",
+    "path":"sprites/spr_Heart/spr_Heart.yy",
   },
   "spriteMaskId":null,
   "visible":true,

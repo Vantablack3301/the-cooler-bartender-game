@@ -12,7 +12,10 @@ else
 	
 for (i = 0; i < numLives; i++)
 {
-	ds_list_insert(lifeList, 0, instance_create_layer(64*i, 48, "Instances", obj_Life))	
+	var life = instance_create_layer(64*i, 80, "Instances", obj_Life)
+	ds_list_insert(lifeList, 0, life)
+	life.image_xscale = 0.5
+	life.image_yscale = 0.5
 }
 	
 
@@ -154,7 +157,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	//show_debug_message(stirScore * 0.2)
 	
 	instance_destroy(obj_ticket)
-	var inst = instance_create_layer(100, 100, "Instances", obj_ticket);
+	var inst = instance_create_layer(16, 144, "Instances", obj_ticket);
 	with (inst) {
 		ticketScore = ticketString
     }
