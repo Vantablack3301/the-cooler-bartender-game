@@ -38,7 +38,7 @@ nextPage = function() {
 	else {
 		// go to beginning
 	}
-	pageTitle = currentDrinkKey // Set Page Title
+	pageTitle = string_upper(string_char_at(currentDrinkKey, 1)) + string_copy(currentDrinkKey, 2, string_length(currentDrinkKey) - 1) // Set Page Title
 	currentDrinkValue = ds_map_find_value(drinkList, currentDrinkKey)
 	makePageContents()
 }
@@ -68,7 +68,7 @@ makePageContents = function() {
 					}
 				break;
 			}
-			pageContents += drinkProp + " " + string(drinkVal) + "\n"
+			pageContents += string_upper(string_char_at(drinkProp, 1)) + string_copy(drinkProp, 2, string_length(drinkProp) - 1) + ": " + string(drinkVal) + "\n"
 		}
 		drinkProp = ds_map_find_next(currentDrinkValue, drinkProp)
 		
