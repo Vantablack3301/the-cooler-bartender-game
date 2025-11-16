@@ -212,13 +212,12 @@ if(global.gameDifficulty == "expert" || global.gameDifficulty == "novice")
 	ds_map_add(drinks, "vodkaCran", vodkaCran)
 	ds_map_add(drinks, "vodkaSoda", vodkaSoda)
 	ds_map_add(drinks, "jagerBomb", jagerBomb)
-	ds_map_add(drinks, "jagerBomb", pinaColada)
-
 }
 
 if(global.gameDifficulty == "expert")
 {
 	ds_map_add(drinks, "painkiller", painkiller)
+	ds_map_add(drinks, "pinaColada", pinaColada)
 	/*
 	mojito = ds_map_create()
 	ds_map_add(mojito, "numLiquids", 4)
