@@ -1,6 +1,11 @@
 image_xscale = .6
 image_yscale = .6
 image_alpha = 0
+var _forceload = spr_Customer_1 // Holy ass
+_forceload =(spr_Customer_2)
+_forceload =(spr_Customer_3)
+_forceload =(spr_Customer_4)
+sprite_index = asset_get_index("spr_Customer_"+ string(round(random_range(1,4.4))))
 
 boxSprite = spr_Order_Box_Green
 ordered = false
