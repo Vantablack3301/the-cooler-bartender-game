@@ -19,11 +19,11 @@
   "height":131,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b99c29b7-9645-4008-a583-283805932e9b","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"b99c29b7-9645-4008-a583-283805932e9b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"42a8a7bd-fe7b-4e12-b950-0f563e94544b","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"42a8a7bd-fe7b-4e12-b950-0f563e94544b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Glass_Rocks_Fill",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Glasses Empty",
     "path":"folders/Sprites/Glasses Empty.yy",
@@ -78,7 +78,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":63,
-    "yorigin":131,
+    "yorigin":113,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

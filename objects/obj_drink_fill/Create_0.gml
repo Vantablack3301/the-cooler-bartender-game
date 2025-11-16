@@ -18,3 +18,4 @@ add_stuff = function(amount) {
 	}
 
 }
+image_xscale = 0.9

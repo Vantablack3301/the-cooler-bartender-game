@@ -5,7 +5,7 @@ isShaken = false
 isStirred = false
 stirAmount = 0.0
 
-fill = instance_create_layer(x + sprite_width/2, y + sprite_height - 5, "Instances", obj_drink_fill);
+fill = instance_create_layer(x + sprite_width/2, y + sprite_height - 19, "Instances", obj_drink_fill);
 
 liqText = ""
 
@@ -25,7 +25,7 @@ reset = function()
 	stirAmount = 0.0
 	liqText = ""
 	instance_destroy(fill)
-	fill = instance_create_layer(x + sprite_width/2, y + sprite_height - 5, "Instances", obj_drink_fill);
+	fill = instance_create_layer(x + sprite_width/2, y + sprite_height - 19, "Instances", obj_drink_fill);
 }
 
 // adding soemthing to the cup
