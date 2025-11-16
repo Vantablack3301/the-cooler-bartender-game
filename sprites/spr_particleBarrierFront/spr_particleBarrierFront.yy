@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_Bar_Background_Bartender_POV_Empty",
+  "%Name":"spr_particleBarrierFront",
   "bboxMode":0,
   "bbox_bottom":1199,
-  "bbox_left":0,
+  "bbox_left":1461,
   "bbox_right":1919,
-  "bbox_top":0,
+  "bbox_top":530,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -21,7 +21,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"7009193f-f874-406f-8b8d-a61f334365ea","blendMode":0,"displayName":"default","isLocked":false,"name":"7009193f-f874-406f-8b8d-a61f334365ea","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_Bar_Background_Bartender_POV_Empty",
+  "name":"spr_particleBarrierFront",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_Bar_Background_Bartender_POV_Empty",
+    "%Name":"spr_particleBarrierFront",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_Bar_Background_Bartender_POV_Empty",
+    "name":"spr_particleBarrierFront",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -71,7 +71,7 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"db342b5c-b914-4e8e-bdb1-e35af6dda0cc","path":"sprites/spr_Bar_Background_Bartender_POV_Empty/spr_Bar_Background_Bartender_POV_Empty.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"db342b5c-b914-4e8e-bdb1-e35af6dda0cc","path":"sprites/spr_particleBarrierFront/spr_particleBarrierFront.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a81db641-ae10-445d-bd80-5bcd1d6979c8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],

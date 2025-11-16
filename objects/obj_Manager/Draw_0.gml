@@ -13,7 +13,7 @@ if (obj_Manager.selectedSprite != noone)
 if (isPouring && selected != "")
 {
 	//show_debug_message(selectedBottle)
-	part_system_depth(part_sys, obj_Drink.depth + 1)
+	part_system_depth(part_sys, obj_Drink.depth + 2)
 	part_type_colour3(part_type, selectedBottle.color1, selectedBottle.color2, selectedBottle.color3)
 	//part_particles_burst(part_sys, mouse_x, mouse_y, PouringEffect)
 	//part_particles_create(part_sys, mouse_x, mouse_y, part_type, 1)
