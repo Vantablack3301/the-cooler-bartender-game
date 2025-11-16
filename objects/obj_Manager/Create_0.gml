@@ -200,7 +200,7 @@ part_emitter = part_emitter_create(part_sys);
 
 part_type = part_type_create();
 part_type_shape(part_type, pt_shape_ring);
-part_type_life(part_type, 10,20)
+part_type_life(part_type, 15,30)
 part_type_scale(part_type, 0.5, 0.5)
 part_type_size(part_type, 0.5, 1.5, -0.1, 0.5)
 part_type_speed(part_type, 5, 5, 0, 0)

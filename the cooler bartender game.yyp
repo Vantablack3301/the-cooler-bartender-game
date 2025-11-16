@@ -195,6 +195,7 @@
     {"id":{"name":"spr_Glass_Red_Wine","path":"sprites/spr_Glass_Red_Wine/spr_Glass_Red_Wine.yy",},},
     {"id":{"name":"spr_Glass_Rocks_Fill","path":"sprites/spr_Glass_Rocks_Fill/spr_Glass_Rocks_Fill.yy",},},
     {"id":{"name":"spr_Glass_Rocks_Ice","path":"sprites/spr_Glass_Rocks_Ice/spr_Glass_Rocks_Ice.yy",},},
+    {"id":{"name":"spr_Glass_Rocks_Ticks","path":"sprites/spr_Glass_Rocks_Ticks/spr_Glass_Rocks_Ticks.yy",},},
     {"id":{"name":"spr_Glass_Rocks","path":"sprites/spr_Glass_Rocks/spr_Glass_Rocks.yy",},},
     {"id":{"name":"spr_Glass_White_Wine_Ice","path":"sprites/spr_Glass_White_Wine_Ice/spr_Glass_White_Wine_Ice.yy",},},
     {"id":{"name":"spr_Glass_White_Wine","path":"sprites/spr_Glass_White_Wine/spr_Glass_White_Wine.yy",},},
