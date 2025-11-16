@@ -33,10 +33,12 @@ onClick = function()
 }
 
 drawOutline = function() {
-	var _w = 1;
-	draw_sprite_ext(sprite_index, image_index, x + _w, y + _w, image_xscale, image_yscale, image_angle, c_yellow, 0.5)
-	if global.gameDifficulty == "new" {
-		draw_text(x, y, object_index.bottleName)
+	if obj_Manager.isPouring == false {
+		var _w = 1;
+		draw_sprite_ext(sprite_index, image_index, x + _w, y + _w, image_xscale, image_yscale, image_angle, c_yellow, 0.5)
+		if global.gameDifficulty == "new" {
+			draw_text(x, y, string_upper(string_char_at(object_index.bottleName, 1)) + string_copy(object_index.bottleName, 2, string_length(object_index.bottleName) - 1))
+		}
 	}
 	//draw_sprite(sprite_index, image_index, x, y);
 }

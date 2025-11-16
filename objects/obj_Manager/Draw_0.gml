@@ -4,8 +4,10 @@ if (obj_Manager.selectedSprite != noone)
 {
 	var rotation = 0
 	
-	if (isPouring)
+	if (isPouring && selected != "coconutCream")
 		rotation = 225
+	//else if (isPouring)
+	//	rotation = -325
 	
 	draw_sprite_ext(obj_Manager.selectedSprite, 0, mouse_x, mouse_y, selectedSpriteScale_x, selectedSpriteScale_y, rotation, c_white, 1)
 }
