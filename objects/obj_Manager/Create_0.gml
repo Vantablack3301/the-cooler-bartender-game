@@ -150,7 +150,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	//show_debug_message(iceScore)
 	//show_debug_message(stirScore)
 	
-	totalScore = floor((drinkScore * 0.6) + (iceScore * 0.2) + (stirScore * 0.2)) // weighting
+	totalScore = floor((drinkScore * 0.7) + (iceScore * 0.2) + (stirScore * 0.1)) // weighting
 	ticketString += "Drink Grade: " + string(totalScore)
 	//show_debug_message(drinkScore * 0.6)
 	//show_debug_message(iceScore * 0.2)
