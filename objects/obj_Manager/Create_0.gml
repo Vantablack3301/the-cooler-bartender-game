@@ -54,6 +54,7 @@ changeSprite = function() {
 /// @param {Id.DsMap} drinkGoal
 // Grading System
 gradeDrink = function(drinkMade, drinkGoal, tipStart) {
+	
 	var ticketString = string(obj_Customer.wantedDrink) + "\n"
 	
 	var totalScore = 0

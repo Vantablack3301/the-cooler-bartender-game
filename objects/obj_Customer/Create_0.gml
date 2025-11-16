@@ -13,7 +13,15 @@ ordered = false
 fadeTimer = 0
 fadeIn = 80
 
-delta_alarm = 60;
+startAlarm = 60;
+
+if global.gameDifficulty = "novice"
+	startAlarm = 40
+if global.gameDifficulty = "expert"
+	startAlarm = 20
+
+delta_alarm = startAlarm
+
 tipStart = random_range(3,10)
 tipReturn = tipStart
 

@@ -24,6 +24,11 @@ else //4:3
 }
 
 
+global.newBeaten = false
+global.noviceBeaten = false
+global.expertBeaten = false
+
+
 toggleVisibility = function() {
 	if visible {
 		visible = false
