@@ -12,14 +12,16 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
             case "Paintings":
                 if (instance_exists(obj_PaintingsSpot)) {
                     var spot = instance_find(obj_PaintingsSpot, 0);
-                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Paintings;
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Painting_Old_Fashioned;
+					spot = instance_find(obj_PaintingsSpot1, 0);
+					instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Painting_Martini;
                 }
                 break;
 
             case "Fairy Lights":
                 if (instance_exists(obj_FairyLightsSpot)) {
                     var spot = instance_find(obj_FairyLightsSpot, 0);
-                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_FairyLights;
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Fairy_Lights;
                 }
                 break;
         }

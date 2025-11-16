@@ -165,6 +165,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	
 	
 	var tipReturnValue = tipStart * (totalScore/100)
+	
 	if totalScore < 50 {
 		tipReturnValue = 0
 		audio_play_sound(DrinkWrong, 1, false);
