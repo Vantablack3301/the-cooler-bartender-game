@@ -24,6 +24,8 @@ reset = function()
 	isStirred = false	
 	stirAmount = 0.0
 	liqText = ""
+	instance_destroy(fill)
+	fill = instance_create_layer(x + sprite_width/2, y + sprite_height - 5, "Instances", obj_drink_fill);
 }
 
 // adding soemthing to the cup
