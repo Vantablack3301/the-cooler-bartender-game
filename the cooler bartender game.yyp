@@ -55,6 +55,7 @@
     {"id":{"name":"LiquidFillObj","path":"objects/LiquidFillObj/LiquidFillObj.yy",},},
     {"id":{"name":"obj_Apply_Settings","path":"objects/obj_Apply_Settings/obj_Apply_Settings.yy",},},
     {"id":{"name":"obj_Bottle_bourbon","path":"objects/obj_Bottle_bourbon/obj_Bottle_bourbon.yy",},},
+    {"id":{"name":"obj_Bottle_coconut","path":"objects/obj_Bottle_coconut/obj_Bottle_coconut.yy",},},
     {"id":{"name":"obj_Bottle_coke","path":"objects/obj_Bottle_coke/obj_Bottle_coke.yy",},},
     {"id":{"name":"obj_Bottle_cranberryJuice","path":"objects/obj_Bottle_cranberryJuice/obj_Bottle_cranberryJuice.yy",},},
     {"id":{"name":"obj_Bottle_drPepper","path":"objects/obj_Bottle_drPepper/obj_Bottle_drPepper.yy",},},
