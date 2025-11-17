@@ -5,7 +5,11 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
             case "Table Decor":
                 if (instance_exists(obj_TableDecorSpot)) {
                     var spot = instance_find(obj_TableDecorSpot, 0);
-                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_TableDecor;
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Flowers_Pink;
+					 spot = instance_find(obj_TableDecorSpot1, 0);
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Flowers_Blue;
+					 spot = instance_find(obj_TableDecorSpot2, 0);
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Flowers_Orange;
                 }
                 break;
 
@@ -22,6 +26,20 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
                 if (instance_exists(obj_FairyLightsSpot)) {
                     var spot = instance_find(obj_FairyLightsSpot, 0);
                     instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Fairy_Lights;
+                }
+                break;
+				
+			case "Open Sign":
+                if (instance_exists(obj_OpenSignSpot)) {
+                    var spot = instance_find(obj_OpenSignSpot, 0);
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Open_Sign;
+                }
+                break;
+			
+			case "Bar Cat":
+                if (instance_exists(obj_BarCatSpot)) {
+                    var spot = instance_find(obj_BarCatSpot, 0);
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Bar_Cat;
                 }
                 break;
         }
