@@ -124,6 +124,7 @@
     {"id":{"name":"obj_tip_text","path":"objects/obj_tip_text/obj_tip_text.yy",},},
     {"id":{"name":"obj_Trashcan","path":"objects/obj_Trashcan/obj_Trashcan.yy",},},
     {"id":{"name":"CoinParticle","path":"particles/CoinParticle/CoinParticle.yy",},},
+    {"id":{"name":"FuckingVaporizeCustomer","path":"particles/FuckingVaporizeCustomer/FuckingVaporizeCustomer.yy",},},
     {"id":{"name":"LoseEffect","path":"particles/LoseEffect/LoseEffect.yy",},},
     {"id":{"name":"PouringEffect","path":"particles/PouringEffect/PouringEffect.yy",},},
     {"id":{"name":"WinEffect","path":"particles/WinEffect/WinEffect.yy",},},

@@ -192,6 +192,10 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	obj_Manager.money += tipReturnValue
 	
 	part_particles_burst(part_sys, inst.midX, inst.midY, ticketEffect)
+	if (floor(random_range(1, 100)) == 67) //brainrot, i know
+	{
+		part_particles_burst(part_sys, mouse_x, mouse_y, FuckingVaporizeCustomer)
+	}
 
 	
 	//show_debug_message(totalScore)
@@ -202,6 +206,16 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 
 part_sys = part_system_create();
 part_emitter = part_emitter_create(part_sys);
+
+part_type = part_type_create();
+part_type_shape(part_type, pt_shape_cloud);
+part_type_life(part_type, 15,30)
+part_type_scale(part_type, 0.5, 0.5)
+part_type_size(part_type, 0.5, 1.5, -0.1, 0.5)
+part_type_speed(part_type, 5, 5, 0, 0)
+part_type_gravity(part_type, 1, 267)
+part_type_direction(part_type, 283, 100, 0,0)
+part_type_alpha1(part_type, 0.1)
 
 part_system_depth(part_sys, -1000)
 
