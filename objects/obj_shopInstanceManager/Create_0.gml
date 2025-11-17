@@ -9,7 +9,7 @@ if (!variable_global_exists("shop_cosmetics")) {
         { name: "Tip Jar", cost: 5, bought: false, desc: "Earn more tips from customers." },
         { name: "Better Shaker", cost: 10, bought: false, desc: "Improves drink shaking efficiency." },
         { name: "Better Stirir", cost: 10, bought: false, desc: "Smooth stirring for cleaner mixes." },
-		{ name: "Unlock Difficulties", cost: 0, bought: false, desc: "Unlocks More Drinks!." },
+		{ name: "Unlock Difficulties", cost: 30, bought: false, desc: "Unlocks More Drinks!." },
 		{ name: "Expert Upgrade", cost: 40, bought: false, desc: "Unlocks Harder Drinks!." },
     ];
     
