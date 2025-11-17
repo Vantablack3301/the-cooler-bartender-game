@@ -15,10 +15,10 @@ toggleVisibility = function() {
 		visible = true
 		drinkList = obj_Intitialize.drinks
 
-		currentDrinkKey = ds_map_find_first(drinkList);
-		currentDrinkValue = ds_map_find_value(drinkList, currentDrinkKey)
-		pageTitle = currentDrinkKey
-		makePageContents()
+		//currentDrinkKey = ds_map_find_first(drinkList);
+		//currentDrinkValue = ds_map_find_value(drinkList, currentDrinkKey)
+		//pageTitle = currentDrinkKey
+		//makePageContents()
 	}
 }
 drinkList = obj_Intitialize.drinks
@@ -74,11 +74,12 @@ makePageContents = function() {
 		
 	}
 	pageContents = pageTitle + "\n" + pageContents
+	//show_debug_message(pageContents)
 	array_push(bookPages, pageContents)
 }
 makePageContents()
 
-for (i = 0; i < ds_map_size(obj_Intitialize.drinks) - 1; i++) {
+for (i = 1; i < ds_map_size(obj_Intitialize.drinks); i++) {
 	nextPage()
 }
 
