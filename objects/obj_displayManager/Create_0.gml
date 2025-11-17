@@ -44,11 +44,17 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
                 break;
 				
 			case "Premium Ice":
-                
+                 if (instance_exists(obj_PremiumIcespot)) {
+                    var spot = instance_find(obj_PremiumIcespot, 0);
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Premium_Ice;
+				 }
                 break;
 				
 			case "Tip Jar":
-               
+               if (instance_exists(obj_TipJarSpot)) {
+                    var spot = instance_find(obj_TipJarSpot, 0);
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Tip_Jar;
+                }
                 break;
 				
 			case "Better Shaker":
