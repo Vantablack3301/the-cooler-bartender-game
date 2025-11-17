@@ -27,8 +27,6 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
     "name":"ShopDecor",
     "path":"folders/Sprites/ShopDecor.yy",
   },

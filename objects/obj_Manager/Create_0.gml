@@ -169,6 +169,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	if totalScore < 50 {
 		tipReturnValue = 0
 		audio_play_sound(DrinkWrong, 1, false);
+		ticketEffect = LoseEffect
 		
 		// killing a life
 		var lifeToKill = ds_list_find_value(lifeList,0);
@@ -182,12 +183,15 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	}
 	else if totalScore >= 50 && totalScore < 90{
 		audio_play_sound(DrinkCorrect, 1, false);
+		ticketEffect = WinEffect
 	}
 	else {
 		audio_play_sound(DrinkPerfect, 1, false);
+		ticketEffect = WinEffect
 	}
 	obj_Manager.money += tipReturnValue
 	
+	part_particles_burst(part_sys, inst.midX, inst.midY, ticketEffect)
 
 	
 	//show_debug_message(totalScore)
@@ -199,15 +203,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 part_sys = part_system_create();
 part_emitter = part_emitter_create(part_sys);
 
-part_type = part_type_create();
-part_type_shape(part_type, pt_shape_ring);
-part_type_life(part_type, 15,30)
-part_type_scale(part_type, 0.5, 0.5)
-part_type_size(part_type, 0.5, 1.5, -0.1, 0.5)
-part_type_speed(part_type, 5, 5, 0, 0)
-part_type_gravity(part_type, 1, 267)
-part_type_direction(part_type, 283, 100, 0,0)
-part_type_alpha1(part_type, 0.1)
+part_system_depth(part_sys, -1000)
 
 
 
