@@ -4,29 +4,28 @@ var sh = display_get_gui_height();
 var mx = device_mouse_x_to_gui(0);
 var my = device_mouse_y_to_gui(0);
 
-var hovered_item = -1; // store which item is hovered
+var hovered_item = -1;
 
-
-//Browser
-draw_set_color(make_color_rgb(230,230,230));
+//browser
+draw_set_color(make_color_rgb(235,235,240));
 draw_rectangle(0, 0, sw, 50, false);
 
-draw_set_color(make_color_rgb(255,95,86)); draw_circle(25, 25, 8, false);
-draw_set_color(make_color_rgb(255,189,46)); draw_circle(55, 25, 8, false);
-draw_set_color(make_color_rgb(39,201,63)); draw_circle(85, 25, 8, false);
+// Window buttons (macOS style)
+draw_set_color(make_color_rgb(255,92,92));   draw_circle(25, 25, 8, false);
+draw_set_color(make_color_rgb(255,188,60));  draw_circle(55, 25, 8, false);
+draw_set_color(make_color_rgb(46,204,87));   draw_circle(85, 25, 8, false);
 
-
-//Url
-draw_set_color(make_color_rgb(245,245,245));
+//url
+draw_set_color(make_color_rgb(250,250,255)); // slightly bluish white
 draw_roundrect(130, 10, sw - 50, 40, false);
 
-draw_set_color(make_color_rgb(120,120,120));
+draw_set_color(make_color_rgb(100,100,130)); // softer gray-blue text
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_text(150, 25, "https://bartender-decor-shop.com");
 
-//Nav Bar
-draw_set_color(make_color_rgb(30,30,30));
+//nav bar
+draw_set_color(make_color_rgb(28,35,63)); // deep navy
 draw_rectangle(0, 50, sw, 90, false);
 
 draw_set_color(c_white);
@@ -34,20 +33,23 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(sw/2, 70, "Home   |   Shop   |   About   |   Contact");
 
-//Page bg
-draw_set_color(make_color_rgb(245,245,245));
+//page bg
+draw_set_color(make_color_rgb(240,240,245));
 draw_rectangle(0, 90, sw, sh, false);
 
-draw_set_color(make_color_rgb(30,30,30));
+
+//screen
+draw_set_color(make_color_rgb(210,215,225)); // cooler gray slate
 draw_rectangle(50, 120, sw - 50, sh - 50, false);
 
-//Title
-draw_set_color(c_white);
+//title
+draw_set_color(make_color_rgb(20,20,30));
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-draw_text(sw/2-150, 140, "BAR DECOR & UPGRADES SHOP");
+draw_text(sw/2 - 150, 140, "BAR DECOR & UPGRADES SHOP");
 
-//Shop layout
+
+//shop layout
 var y_shift = 120;
 var items_per_column = 5;
 var total_columns = 2;
@@ -59,14 +61,13 @@ var start_x = (sw - total_width) / 2;
 
 var column_titles = ["Decorations", "Upgrades"];
 
-draw_set_color(c_white);
+draw_set_color(make_color_rgb(20,20,30));
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 for (var c = 0; c < total_columns; c++) {
     var title_center_x = start_x + c * column_width + column_width / 2;
     var title_y = (global.start_y - 25) + y_shift;
-
     draw_text(title_center_x, title_y, column_titles[c]);
 }
 
@@ -74,7 +75,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 
-//draw shop items
+//draw items
 for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
 
     var item = global.shop_cosmetics[i];
@@ -87,22 +88,22 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
     var y_offset = global.start_y + row * row_height + y_shift;
 
     // Item card
-    draw_set_color(make_color_rgb(250,250,250));
+    draw_set_color(make_color_rgb(255,255,255)); // white card
     draw_roundrect(x_offset, y_offset, x_offset + 400, y_offset + 60, false);
 
-    draw_set_color(make_color_rgb(220,220,220));
+    draw_set_color(make_color_rgb(225,225,230)); // inner shading
     draw_roundrect(x_offset, y_offset, x_offset + 400, y_offset + 60, true);
 
     // Name
-    draw_set_color(c_black);
+    draw_set_color(make_color_rgb(25,25,40));
     draw_text(x_offset + 20, y_offset + 20, item.name);
 
     // Cost
-    draw_set_color(make_color_rgb(0,130,0));
-    draw_text(x_offset + 200, y_offset + 20, string(item.cost) + " cash");
+    draw_set_color(make_color_rgb(0,150,0));
+    draw_text(x_offset + 200, y_offset + 20, string(item.cost) + " coins");
 
     // Buy button
-    draw_set_color(item.bought ? c_gray : make_color_rgb(0,200,0));
+    draw_set_color(item.bought ? make_color_rgb(180,180,180) : make_color_rgb(0,210,70));
     draw_roundrect(x_offset + 320, y_offset + 10, x_offset + 390, y_offset + 50, false);
 
     draw_set_halign(fa_center);
@@ -122,7 +123,7 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
 }
 
 
-//Tooltip
+//tool tip
 if (hovered_item != -1)
 {
     var item = global.shop_cosmetics[hovered_item];
@@ -138,7 +139,7 @@ if (hovered_item != -1)
     var box_x2 = box_x1 + tw + padding*2;
     var box_y2 = box_y1 + th + padding*2;
 
-    draw_set_color(c_black);
+    draw_set_color(make_color_rgb(40,40,50));
     draw_roundrect(box_x1, box_y1, box_x2, box_y2, false);
 
     draw_set_color(c_white);
@@ -146,8 +147,22 @@ if (hovered_item != -1)
 }
 
 
-// Last Purchase Message
-if (variable_global_exists("last_bought_item")) {
-    draw_set_color(c_white);
-    draw_text(120, sh - 50, "Bought " + global.last_bought_item + "!");
+//coins + last purchase message
+var m = instance_find(global.obj_manager, 0);
+
+var footer_y = 150; // visible for sure
+
+// Coins
+draw_set_color(c_black); // gold
+draw_set_halign(fa_right);
+draw_set_valign(fa_middle);
+draw_text(sw - 100, footer_y, "Coins: " + string(m.money));
+
+// Last bought
+if (variable_global_exists("last_bought_item"))
+{
+    draw_set_color(c_black);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_middle);
+    draw_text(80, footer_y, "Shipped " + string(global.last_bought_item) + " To Your Bar!!!");
 }
