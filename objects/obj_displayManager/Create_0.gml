@@ -67,7 +67,7 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
 				
 			case "Unlock Difficulties":
                global.newBeaten = true
-			   global.noviceBeaten = true;
+			   global.noviceBeaten = true
                 break;
         }
     }
