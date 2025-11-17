@@ -42,6 +42,26 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
                     instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Bar_Cat;
                 }
                 break;
+				
+			case "Premium Ice":
+                
+                break;
+				
+			case "Tip Jar":
+               
+                break;
+				
+			case "Better Shaker":
+               
+                break;
+				
+			case "Better Stirir":
+               
+                break;
+				
+			case "Win Con":
+               global.newBeaten = true
+                break;
         }
     }
 }
