@@ -44,6 +44,7 @@
     {"name":"inst_5E680070","path":"rooms/BarFront/BarFront.yy",},
     {"name":"inst_286EC7CD","path":"rooms/BarFront/BarFront.yy",},
     {"name":"inst_6230C176","path":"rooms/BarFront/BarFront.yy",},
+    {"name":"inst_367C661","path":"rooms/BarFront/BarFront.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -74,6 +75,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":32.0,},
         {"$GMRInstance":"v4","%Name":"inst_286EC7CD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_286EC7CD","objectId":{"name":"obj_TipJarSpot","path":"objects/obj_TipJarSpot/obj_TipJarSpot.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1181.0,"y":472.0,},
         {"$GMRInstance":"v4","%Name":"inst_6230C176","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6230C176","objectId":{"name":"obj_PremiumIcespot","path":"objects/obj_PremiumIcespot/obj_PremiumIcespot.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":670.375,},
+        {"$GMRInstance":"v4","%Name":"inst_367C661","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_367C661","objectId":{"name":"obj_button_home","path":"objects/obj_button_home/obj_button_home.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1110.0,"y":14.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Decor","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Decor","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"ForeGround","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
