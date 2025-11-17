@@ -136,6 +136,7 @@
     {"id":{"name":"BookOpen","path":"sounds/BookOpen/BookOpen.yy",},},
     {"id":{"name":"CoinSingle","path":"sounds/CoinSingle/CoinSingle.yy",},},
     {"id":{"name":"CoinStack","path":"sounds/CoinStack/CoinStack.yy",},},
+    {"id":{"name":"ComputerOpen","path":"sounds/ComputerOpen/ComputerOpen.yy",},},
     {"id":{"name":"DrinkCorrect","path":"sounds/DrinkCorrect/DrinkCorrect.yy",},},
     {"id":{"name":"DrinkPerfect","path":"sounds/DrinkPerfect/DrinkPerfect.yy",},},
     {"id":{"name":"DrinkPickUp","path":"sounds/DrinkPickUp/DrinkPickUp.yy",},},

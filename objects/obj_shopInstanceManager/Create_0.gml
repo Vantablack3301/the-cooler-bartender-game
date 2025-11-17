@@ -5,7 +5,7 @@ if (!variable_global_exists("shop_cosmetics")) {
         { name: "Fairy Lights", cost: 0, bought: false, desc: "Warm glowing lights around the bar." },
         { name: "Open Sign", cost: 0, bought: false, desc: "Displays a bright OPEN sign." },
         { name: "Bar Cat", cost: 0, bought: false, desc: "A friendly cat thats chill." },
-        { name: "Premium Ice", cost: 0, bought: false, desc: "Crystal-clear ice- increases drink price." },
+        { name: "Premium Ice", cost: 0, bought: false, desc: "Increases drink price." },
         { name: "Tip Jar", cost: 0, bought: false, desc: "Earn more tips from customers." },
         { name: "Better Shaker", cost: 0, bought: false, desc: "Improves drink shaking efficiency." },
         { name: "Better Stirir", cost: 0, bought: false, desc: "Smooth stirring for cleaner mixes." },

@@ -7,9 +7,7 @@ var my = device_mouse_y_to_gui(0);
 var hovered_item = -1; // store which item is hovered
 
 
-/// ===========================
-//// FAKE BROWSER TOP BAR
-/// ===========================
+//Browser
 draw_set_color(make_color_rgb(230,230,230));
 draw_rectangle(0, 0, sw, 50, false);
 
@@ -18,9 +16,7 @@ draw_set_color(make_color_rgb(255,189,46)); draw_circle(55, 25, 8, false);
 draw_set_color(make_color_rgb(39,201,63)); draw_circle(85, 25, 8, false);
 
 
-/// ===========================
-//// URL BAR
-/// ===========================
+//Url
 draw_set_color(make_color_rgb(245,245,245));
 draw_roundrect(130, 10, sw - 50, 40, false);
 
@@ -29,10 +25,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_text(150, 25, "https://bartender-decor-shop.com");
 
-
-/// ===========================
-//// NAV BAR
-/// ===========================
+//Nav Bar
 draw_set_color(make_color_rgb(30,30,30));
 draw_rectangle(0, 50, sw, 90, false);
 
@@ -41,29 +34,20 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text(sw/2, 70, "Home   |   Shop   |   About   |   Contact");
 
-
-/// ===========================
-//// PAGE BACKGROUND
-/// ===========================
+//Page bg
 draw_set_color(make_color_rgb(245,245,245));
 draw_rectangle(0, 90, sw, sh, false);
 
 draw_set_color(make_color_rgb(30,30,30));
 draw_rectangle(50, 120, sw - 50, sh - 50, false);
 
-
-/// ===========================
-//// SHOP TITLE
-/// ===========================
+//Title
 draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_text(sw/2-150, 140, "BAR DECOR & UPGRADES SHOP");
 
-
-/// ===========================
-//// SHOP LAYOUT SETTINGS
-/// ===========================
+//Shop layout
 var y_shift = 120;
 var items_per_column = 5;
 var total_columns = 2;
@@ -75,10 +59,6 @@ var start_x = (sw - total_width) / 2;
 
 var column_titles = ["Decorations", "Upgrades"];
 
-
-/// ===========================
-//// CENTER COLUMN TITLES
-/// ===========================
 draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
@@ -94,9 +74,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 
-/// ===========================
-//// DRAW SHOP ITEMS
-/// ===========================
+//draw shop items
 for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
 
     var item = global.shop_cosmetics[i];
@@ -144,9 +122,7 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
 }
 
 
-/// ===========================
-//// DRAW TOOLTIP (ON TOP OF EVERYTHING)
-/// ===========================
+//Tooltip
 if (hovered_item != -1)
 {
     var item = global.shop_cosmetics[hovered_item];
@@ -170,9 +146,7 @@ if (hovered_item != -1)
 }
 
 
-/// ===========================
-//// LAST PURCHASE MESSAGE
-/// ===========================
+// Last Purchase Message
 if (variable_global_exists("last_bought_item")) {
     draw_set_color(c_white);
     draw_text(120, sh - 50, "Bought " + global.last_bought_item + "!");
