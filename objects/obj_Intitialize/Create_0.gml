@@ -109,7 +109,7 @@ ds_map_add(ginAndTonic, "ice", true)
 ds_map_add(ginAndTonic, "stirred", 10)
 ds_map_add(ginAndTonic, "shaken", false)
 //ds_map_add(ginAndTonic, "glass", "shortTumbler")
-ds_map_add(drinksMaster, "redWine", redWine)
+ds_map_add(drinksMaster, "ginAndTonic", ginAndTonic)
 
 vodkaRedbull = ds_map_create()
 ds_map_add(vodkaRedbull, "numLiquids", 2)
