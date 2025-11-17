@@ -5,6 +5,8 @@ isShaken = false
 isStirred = false
 stirAmount = 0.0
 
+fill = instance_create_layer(x + sprite_width/2, y + sprite_height - 19, "Instances", obj_drink_fill);
+
 liqText = ""
 
 // storing mouse positions and other metadata for sake of shaking/stirring
@@ -22,6 +24,8 @@ reset = function()
 	isStirred = false	
 	stirAmount = 0.0
 	liqText = ""
+	instance_destroy(fill)
+	fill = instance_create_layer(x + sprite_width/2, y + sprite_height - 19, "Instances", obj_drink_fill);
 }
 
 // adding soemthing to the cup
@@ -40,6 +44,7 @@ add_liquid = function(item, amount)
 	{
 		ds_map_add(liquids, item, amount)
 	}
+	fill.add_stuff(amount)
 	
 	
 	// I Honestly don't know how we should keep track of mixed/stirred status, would it be better to make 

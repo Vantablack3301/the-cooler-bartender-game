@@ -1,4 +1,23 @@
 drink = instance_create_layer(960, 448, "Instances", obj_Drink);
+instance_create_layer(512, 224, "Instances", obj_Customer);
+lifeList = ds_list_create()
+var numLives = 0
+// adding the first two lives for all difficulties
+if global.gameDifficulty == "new"
+	numLives = 5
+else if global.gameDifficulty = "novice"
+	numLives = 3
+else 
+	numLives = 2
+	
+for (i = 0; i < numLives; i++)
+{
+	var life = instance_create_layer(64*i, 80, "Instances", obj_Life)
+	ds_list_insert(lifeList, 0, life)
+	life.image_xscale = 0.5
+	life.image_yscale = 0.5
+}
+	
 
 money = 0
 global.obj_manager = id;
@@ -10,6 +29,7 @@ currRoom = BarFront
 // stores which bottle/liquid item you have 'picked up'; serves as argument 
 // to pass into add_liquid 
 selected = ""
+selectedBottle = noone
 selectedSprite = noone
 
 selectedSpriteScale_x = 1
@@ -33,7 +53,8 @@ changeSprite = function() {
 /// @arg {Id.Instance} drinkMade
 /// @param {Id.DsMap} drinkGoal
 // Grading System
-gradeDrink = function(drinkMade, drinkGoal) {
+gradeDrink = function(drinkMade, drinkGoal, tipStart) {
+	
 	var ticketString = string(obj_Customer.wantedDrink) + "\n"
 	
 	var totalScore = 0
@@ -126,28 +147,38 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	
 	
 	// update denominator as more scores are added
-	show_debug_message(drinkScore)
-	show_debug_message(iceScore)
-	show_debug_message(stirScore)
+	//show_debug_message(drinkScore)
+	//show_debug_message(iceScore)
+	//show_debug_message(stirScore)
 	
-	totalScore = floor((drinkScore * 0.6) + (iceScore * 0.2) + (stirScore * 0.2)) // weighting
+	totalScore = floor((drinkScore * 0.7) + (iceScore * 0.2) + (stirScore * 0.1)) // weighting
 	ticketString += "Drink Grade: " + string(totalScore)
-	show_debug_message(drinkScore * 0.6)
-	show_debug_message(iceScore * 0.2)
-	show_debug_message(stirScore * 0.2)
+	//show_debug_message(drinkScore * 0.6)
+	//show_debug_message(iceScore * 0.2)
+	//show_debug_message(stirScore * 0.2)
 	
 	instance_destroy(obj_ticket)
-	var inst = instance_create_layer(100, 100, "Instances", obj_ticket);
+	var inst = instance_create_layer(16, 144, "Instances", obj_ticket);
 	with (inst) {
 		ticketScore = ticketString
     }
 	
 	
-	var tipStartValue = 8.00
-	var tipReturnValue = tipStartValue * (totalScore/100)
+	var tipReturnValue = tipStart * (totalScore/100)
+	
 	if totalScore < 50 {
 		tipReturnValue = 0
 		audio_play_sound(DrinkWrong, 1, false);
+		
+		// killing a life
+		var lifeToKill = ds_list_find_value(lifeList,0);
+		ds_list_delete(lifeList, 0);
+		instance_destroy(lifeToKill)
+		
+		if (ds_list_empty(lifeList)) {
+			
+			room_goto(HomeScreen)
+		}
 	}
 	else if totalScore >= 50 && totalScore < 90{
 		audio_play_sound(DrinkCorrect, 1, false);
@@ -157,7 +188,7 @@ gradeDrink = function(drinkMade, drinkGoal) {
 	}
 	obj_Manager.money += tipReturnValue
 	
-	
+
 	
 	//show_debug_message(totalScore)
 	return (totalScore)
@@ -167,13 +198,25 @@ gradeDrink = function(drinkMade, drinkGoal) {
 
 part_sys = part_system_create();
 part_emitter = part_emitter_create(part_sys);
-part_emitter_region(part_sys, part_emitter, 0, room_width, 0, room_height, ps_shape_rectangle, ps_distr_linear);
+
 part_type = part_type_create();
-part_type_shape(part_type, pt_shape_disk);
+part_type_shape(part_type, pt_shape_ring);
+part_type_life(part_type, 15,30)
+part_type_scale(part_type, 0.5, 0.5)
+part_type_size(part_type, 0.5, 1.5, -0.1, 0.5)
+part_type_speed(part_type, 5, 5, 0, 0)
+part_type_gravity(part_type, 1, 267)
+part_type_direction(part_type, 283, 100, 0,0)
+part_type_alpha1(part_type, 0.1)
+
+
+
 
 
 function CleanupParticleSystem ()
 {
-	part_system_destroy(part_sys); //shoutout gamemaker documentation
+	part_emitter_destroy(part_sys, part_emitter)
+	part_system_destroy(part_sys);//shoutout gamemaker documentation
 	part_type_destroy(part_type);
+	
 }

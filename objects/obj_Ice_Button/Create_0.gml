@@ -11,5 +11,6 @@ onClick = function()
 		obj_Manager.selectedSprite = spr_Ice_Cubes
 		
 		obj_Stirrer.visible = true
+		audio_play_sound(DrinkPutDown, 1, false);
 	}
 }

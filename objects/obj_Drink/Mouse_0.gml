@@ -33,8 +33,11 @@ var selected = obj_Manager.selected
 		return
 	}
 	
-	else if (selected == "Stirrer")
-		stir()
+	else if (selected == "Stirrer") {
+		if ds_map_size(liquids) > 0 {
+			stir()
+		}
+	}
 	
 	else if (selected == "Shaker")
 		shake()

@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Behind_The_Bar_Text",
+    "path":"sprites/spr_Behind_The_Bar_Text/spr_Behind_The_Bar_Text.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

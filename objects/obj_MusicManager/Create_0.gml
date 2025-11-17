@@ -1,0 +1,1 @@
+audio_play_sound(JazzMusic,0,true)
