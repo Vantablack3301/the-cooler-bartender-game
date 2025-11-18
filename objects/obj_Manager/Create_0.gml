@@ -192,7 +192,9 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	obj_Manager.money += tipReturnValue
 	
 	part_particles_burst(part_sys, inst.midX, inst.midY, ticketEffect)
-	if (floor(random_range(1, 100)) == 67) //brainrot, i know
+	odds = floor(random_range(1, 100))
+	show_debug_message(odds)
+	if (odds == 67 or odds = 69) //brainrot, i know
 	{
 		part_particles_burst(part_sys, mouse_x, mouse_y, FuckingVaporizeCustomer)
 	}
