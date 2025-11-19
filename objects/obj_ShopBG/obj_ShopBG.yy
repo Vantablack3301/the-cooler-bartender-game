@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Trashcan",
+  "%Name":"obj_ShopBG",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Trashcan",
+  "name":"obj_ShopBG",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Trash_Can",
-    "path":"sprites/spr_Trash_Can/spr_Trash_Can.yy",
+    "name":"GREYBOX",
+    "path":"sprites/GREYBOX/GREYBOX.yy",
   },
   "spriteMaskId":null,
   "visible":true,
