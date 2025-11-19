@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"GREYBOX",
-    "path":"sprites/GREYBOX/GREYBOX.yy",
+    "name":"spr_Trash_Can",
+    "path":"sprites/spr_Trash_Can/spr_Trash_Can.yy",
   },
   "spriteMaskId":null,
   "visible":true,
