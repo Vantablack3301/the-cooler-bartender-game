@@ -48,5 +48,9 @@ var selected = obj_Manager.selected
 		obj_Manager.isPouring = true
 		show_debug_message("currently selected: " + selected + "	current amount: " + string(get_liquid(selected)))
 		liqText = (selected +" " + string(get_liquid(selected)))
+		if (fill.full){
+			midpoint = bbox_left + ((bbox_right - bbox_left) / 2)
+			part_particles_burst(part_sys, midpoint, y, OverflowEffect)
+		}
 	}
 		
