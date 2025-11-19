@@ -18,7 +18,7 @@ startAlarm = 60;
 if global.gameDifficulty = "novice"
 	startAlarm = 40
 if global.gameDifficulty = "expert"
-	startAlarm = 20
+	startAlarm = 25
 
 delta_alarm = startAlarm
 

@@ -54,7 +54,7 @@ ds_map_add(drinksMaster, "malibuShot", malibuShot)
 
 jagerShot = ds_map_create()
 ds_map_add(jagerShot, "numLiquids", 1)
-ds_map_add(jagerShot, "jager", 1.5)
+ds_map_add(jagerShot, "jagermeister", 1.5)
 ds_map_add(jagerShot, "ice", false)
 ds_map_add(jagerShot, "stirred",0)
 ds_map_add(jagerShot, "shaken", false)
