@@ -41,6 +41,26 @@ ds_map_add(tequilaShot, "shaken", false)
 //ds_map_add(jackAndCoke, "glass", "shortTumbler")
 //ds_map_add(jackAndCoke, "garnish", ["lime"])
 ds_map_add(drinksMaster, "tequilaShot", tequilaShot)
+
+malibuShot = ds_map_create()
+ds_map_add(malibuShot, "numLiquids", 1)
+ds_map_add(malibuShot, "malibu", 1.5)
+ds_map_add(malibuShot, "ice", false)
+ds_map_add(malibuShot, "stirred",0)
+ds_map_add(malibuShot, "shaken", false)
+//ds_map_add(jackAndCoke, "glass", "shortTumbler")
+//ds_map_add(jackAndCoke, "garnish", ["lime"])
+ds_map_add(drinksMaster, "malibuShot", malibuShot)
+
+jagerShot = ds_map_create()
+ds_map_add(jagerShot, "numLiquids", 1)
+ds_map_add(jagerShot, "jager", 1.5)
+ds_map_add(jagerShot, "ice", false)
+ds_map_add(jagerShot, "stirred",0)
+ds_map_add(jagerShot, "shaken", false)
+//ds_map_add(jackAndCoke, "glass", "shortTumbler")
+//ds_map_add(jackAndCoke, "garnish", ["lime"])
+ds_map_add(drinksMaster, "jagerShot", jagerShot)
 	
 whiteRumShot = ds_map_create()
 ds_map_add(whiteRumShot, "numLiquids", 1)
@@ -200,6 +220,8 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 	ds_map_add(drinks, "bourbonShot", bourbonShot)
 	ds_map_add(drinks, "whiteWine", whiteWine)
 	ds_map_add(drinks, "redWine", redWine)
+	ds_map_add(drinks, "malibuShot", malibuShot)
+	ds_map_add(drinks, "jagerShot", jagerShot)
 	
 }
 
