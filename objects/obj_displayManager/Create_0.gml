@@ -57,18 +57,25 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
                 }
                 break;
 				
-			case "Better Shaker":
+			case "Novice Upgrade":
+				global.newBeaten = true
                
                 break;
 				
-			case "Better Stirir":
+			case "Expert Upgrade":
+				global.noviceBeaten = true
                
                 break;
 				
-			case "Unlock Difficulties":
-               global.newBeaten = true
-			   global.noviceBeaten = true
+			case "Expert Trophy":
+              //trophy
+			  
                 break;
+				
+			case "Endless Mode":
+			//endless
+               
+            break;
         }
     }
 }

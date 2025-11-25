@@ -12,7 +12,7 @@ else
 	
 for (i = 0; i < numLives; i++)
 {
-	var life = instance_create_layer(64*i, 80, "Instances", obj_Life)
+	var life = instance_create_layer(64*i, 60, "Instances", obj_Life)
 	ds_list_insert(lifeList, 0, life)
 	life.image_xscale = 0.5
 	life.image_yscale = 0.5
