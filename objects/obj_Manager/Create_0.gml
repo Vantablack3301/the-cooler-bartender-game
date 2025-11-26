@@ -189,6 +189,21 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		audio_play_sound(DrinkPerfect, 1, false);
 		ticketEffect = WinEffect
 	}
+	
+	var tipCheck = false
+	
+	for (var i = 0; i < array_length(global.shop_cosmetics); i++)
+	{
+		var item = global.shop_cosmetics[i];
+		if (item.name == "Tip Jar") {
+			 tipCheck = item.bought
+		}
+	}
+	if(tipCheck == true)
+	{
+		tipReturnValue = tipReturnValue + 2.0
+		show_debug_message("TIPS")
+	}
 	obj_Manager.money += tipReturnValue
 	
 	part_particles_burst(part_sys, inst.midX, inst.midY, ticketEffect)
