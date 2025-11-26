@@ -53,6 +53,7 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
 			case "Tip Jar":
                if (instance_exists(obj_TipJarSpot)) {
                     var spot = instance_find(obj_TipJarSpot, 0);
+					global.TipSpawnPoint = [spot.x, spot.y]
                     instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Tip_Jar;
                 }
                 break;

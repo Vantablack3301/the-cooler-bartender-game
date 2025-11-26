@@ -55,6 +55,8 @@ changeSprite = function() {
 // Grading System
 gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	
+	var canTip = false
+	
 	var ticketString = string(obj_Customer.wantedDrink) + "\n"
 	
 	var totalScore = 0
@@ -184,10 +186,16 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	else if totalScore >= 50 && totalScore < 90{
 		audio_play_sound(DrinkCorrect, 1, false);
 		ticketEffect = WinEffect
+		if totalScore >= 80
+		{
+			canTip = true
+			show_debug_log("customer decided to tip")
+		}
 	}
 	else {
 		audio_play_sound(DrinkPerfect, 1, false);
 		ticketEffect = WinEffect
+		canTip = true
 	}
 	
 	var tipCheck = false
@@ -199,10 +207,16 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 			 tipCheck = item.bought
 		}
 	}
-	if(tipCheck == true)
+	
+	if(tipCheck == true && canTip == true)
 	{
-		tipReturnValue = tipReturnValue + 2.0
-		show_debug_message("TIPS")
+		odds = floor(random_range(0, 100))
+		if odds <= 67
+		{
+			tipReturnValue = tipReturnValue + 2.0
+			show_debug_message("TIPS")
+			part_particles_burst(part_sys, global.TipSpawnPoint[0], global.TipSpawnPoint[1], CoinParticle)
+		}
 	}
 	obj_Manager.money += tipReturnValue
 	
