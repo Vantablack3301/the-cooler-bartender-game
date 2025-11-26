@@ -186,6 +186,21 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	else {
 		audio_play_sound(DrinkPerfect, 1, false);
 	}
+	
+	var tipCheck = false
+	
+	for (var i = 0; i < array_length(global.shop_cosmetics); i++)
+	{
+		var item = global.shop_cosmetics[i];
+		if (item.name == "Tip Jar") {
+			 tipCheck = item.bought
+		}
+	}
+	if(tipCheck == true)
+	{
+		tipReturnValue = tipReturnValue + 2.0
+		show_debug_message("TIPS")
+	}
 	obj_Manager.money += tipReturnValue
 	
 
