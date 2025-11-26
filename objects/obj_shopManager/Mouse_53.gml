@@ -7,7 +7,7 @@ if (!variable_global_exists("shop_cosmetics")) exit;
 var m = instance_find(global.obj_manager, 0);
 
 // MATCH THE DRAW SETTINGS
-var items_per_column = 5;
+var items_per_column = 6;
 var total_columns = 2;
 var column_width = 450;
 var row_height = 80;
@@ -45,6 +45,10 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++)
             global.last_bought_item = item.name;
             audio_play_sound(CoinSingle, 1, false);
         }
+		else if (item.bought == false) //play sound for can't afford
+		{
+			audio_play_sound(Incorrect, 0, 0)
+		}
 
         break;
     }
