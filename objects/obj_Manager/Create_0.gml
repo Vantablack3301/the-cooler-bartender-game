@@ -227,6 +227,9 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	if (odds == 67 or odds = 69) //brainrot, i know
 	{
 		part_particles_burst(part_sys, mouse_x, mouse_y, FuckingVaporizeCustomer)
+		var snd = audio_play_sound(VaporizeCustomer, 1, false)
+		audio_sound_gain(snd, 100, 1800)
+		
 		if canTip
 		{
 			tipOdds = floor(random_range(1, 3))
