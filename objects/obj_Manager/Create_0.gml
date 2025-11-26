@@ -189,7 +189,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		if totalScore >= 80
 		{
 			canTip = true
-			show_debug_log("customer decided to tip")
+			show_debug_message("customer decided to tip")
 		}
 	}
 	else {
@@ -216,6 +216,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 			tipReturnValue = tipReturnValue + 2.0
 			show_debug_message("TIPS")
 			part_particles_burst(part_sys, global.TipSpawnPoint[0], global.TipSpawnPoint[1], CoinParticle)
+			audio_play_sound(CoinStack, 1, false);
 		}
 	}
 	obj_Manager.money += tipReturnValue
