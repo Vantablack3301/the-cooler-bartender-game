@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.1.210",
+    "IDEVersion":"2024.14.0.207",
   },
   "name":"the cooler bartender game",
   "resources":[
@@ -152,6 +152,7 @@
     {"id":{"name":"DrinkWrong","path":"sounds/DrinkWrong/DrinkWrong.yy",},},
     {"id":{"name":"JazzMusic","path":"sounds/JazzMusic/JazzMusic.yy",},},
     {"id":{"name":"NewDrinkUnlocked","path":"sounds/NewDrinkUnlocked/NewDrinkUnlocked.yy",},},
+    {"id":{"name":"VaporizeCustomer","path":"sounds/VaporizeCustomer/VaporizeCustomer.yy",},},
     {"id":{"name":"Bar_Background_Customer_POV_Empty","path":"sprites/Bar_Background_Customer_POV_Empty/Bar_Background_Customer_POV_Empty.yy",},},
     {"id":{"name":"Bar_Mat","path":"sprites/Bar_Mat/Bar_Mat.yy",},},
     {"id":{"name":"Beer_Tap","path":"sprites/Beer_Tap/Beer_Tap.yy",},},
