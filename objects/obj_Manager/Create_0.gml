@@ -218,7 +218,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 			part_particles_burst(part_sys, global.TipSpawnPoint[0], global.TipSpawnPoint[1], CoinParticle)
 		}
 	}
-	obj_Manager.money += tipReturnValue
+	
 	
 	part_particles_burst(part_sys, inst.midX, inst.midY, ticketEffect)
 	odds = floor(random_range(1, 100))
@@ -226,7 +226,21 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	if (odds == 67 or odds = 69) //brainrot, i know
 	{
 		part_particles_burst(part_sys, mouse_x, mouse_y, FuckingVaporizeCustomer)
+		if canTip
+		{
+			tipOdds = floor(random_range(1, 3))
+			if tipOdds == 3
+			{
+				tipReturnValue = tipReturnValue * 2.0
+			}
+			else if tipOdds == 1
+			{
+				tipReturnValue = tipReturnValue * -1.0
+			}
+		}
 	}
+	
+	obj_Manager.money += tipReturnValue
 
 	
 	//show_debug_message(totalScore)
