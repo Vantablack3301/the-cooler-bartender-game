@@ -131,6 +131,7 @@
     {"id":{"name":"Bottle_Wine","path":"sprites/Bottle_Wine/Bottle_Wine.yy",},},
     {"id":{"name":"Editor_LiquidFillZone","path":"sprites/Editor_LiquidFillZone/Editor_LiquidFillZone.yy",},},
     {"id":{"name":"GREYBOX","path":"sprites/GREYBOX/GREYBOX.yy",},},
+    {"id":{"name":"spr_Bacardi_Dark_Rum","path":"sprites/spr_Bacardi_Dark_Rum/spr_Bacardi_Dark_Rum.yy",},},
     {"id":{"name":"spr_Bacardi_Light_Rum","path":"sprites/spr_Bacardi_Light_Rum/spr_Bacardi_Light_Rum.yy",},},
     {"id":{"name":"spr_Bar_Background_Bartender_POV_Empty","path":"sprites/spr_Bar_Background_Bartender_POV_Empty/spr_Bar_Background_Bartender_POV_Empty.yy",},},
     {"id":{"name":"spr_Bar_Background_Customer_POV_Empty","path":"sprites/spr_Bar_Background_Customer_POV_Empty/spr_Bar_Background_Customer_POV_Empty.yy",},},
