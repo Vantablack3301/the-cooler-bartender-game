@@ -217,6 +217,7 @@
     {"id":{"name":"spr_Soda_Red_Bull","path":"sprites/spr_Soda_Red_Bull/spr_Soda_Red_Bull.yy",},},
     {"id":{"name":"spr_Soda_Sprite","path":"sprites/spr_Soda_Sprite/spr_Soda_Sprite.yy",},},
     {"id":{"name":"spr_Soda_Tonic_Water","path":"sprites/spr_Soda_Tonic_Water/spr_Soda_Tonic_Water.yy",},},
+    {"id":{"name":"spr_Sparkling_Water","path":"sprites/spr_Sparkling_Water/spr_Sparkling_Water.yy",},},
     {"id":{"name":"spr_Stirrer","path":"sprites/spr_Stirrer/spr_Stirrer.yy",},},
     {"id":{"name":"spr_Table","path":"sprites/spr_Table/spr_Table.yy",},},
     {"id":{"name":"spr_TableDecor","path":"sprites/spr_TableDecor/spr_TableDecor.yy",},},
