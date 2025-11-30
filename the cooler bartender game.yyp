@@ -150,6 +150,7 @@
     {"id":{"name":"spr_Bottle_White_Wine","path":"sprites/spr_Bottle_White_Wine/spr_Bottle_White_Wine.yy",},},
     {"id":{"name":"spr_Bottle_Wine","path":"sprites/spr_Bottle_Wine/spr_Bottle_Wine.yy",},},
     {"id":{"name":"spr_Cherry","path":"sprites/spr_Cherry/spr_Cherry.yy",},},
+    {"id":{"name":"spr_Chonk_Cat","path":"sprites/spr_Chonk_Cat/spr_Chonk_Cat.yy",},},
     {"id":{"name":"spr_Choose_Your_Difficulty_Button","path":"sprites/spr_Choose_Your_Difficulty_Button/spr_Choose_Your_Difficulty_Button.yy",},},
     {"id":{"name":"spr_Choose_Your_Difficulty_Text","path":"sprites/spr_Choose_Your_Difficulty_Text/spr_Choose_Your_Difficulty_Text.yy",},},
     {"id":{"name":"spr_Coin","path":"sprites/spr_Coin/spr_Coin.yy",},},
