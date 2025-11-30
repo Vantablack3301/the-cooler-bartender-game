@@ -70,8 +70,18 @@ ds_map_add(whiteRumShot, "stirred",0)
 ds_map_add(whiteRumShot, "shaken", false)
 //ds_map_add(jackAndCoke, "glass", "shortTumbler")
 //ds_map_add(jackAndCoke, "garnish", ["lime"])
-ds_map_add(drinksMaster, "rumShot", whiteRumShot)
-	
+ds_map_add(drinksMaster, "whiteRumShot", whiteRumShot)
+
+darkRumShot = ds_map_create()
+ds_map_add(darkRumShot, "numLiquids", 1)
+ds_map_add(darkRumShot, "darkRum", 1.5)
+ds_map_add(darkRumShot, "ice", false)
+ds_map_add(darkRumShot, "stirred",0)
+ds_map_add(darkRumShot, "shaken", false)
+//ds_map_add(jackAndCoke, "glass", "shortTumbler")
+//ds_map_add(jackAndCoke, "garnish", ["lime"])
+ds_map_add(drinksMaster, "darkRumShot", darkRumShot)
+
 bourbonShot = ds_map_create()
 ds_map_add(bourbonShot, "numLiquids", 1)
 ds_map_add(bourbonShot, "bourbon", 1.5)
@@ -189,7 +199,7 @@ ds_map_add(drinksMaster, "jagerBomb", jagerBomb)
 painkiller = ds_map_create()
 ds_map_add(painkiller, "numLiquids", 4)
 ds_map_add(painkiller, "whiteRum", 2)
-ds_map_add(painkiller, "orangeJuice", 1)
+ds_map_add(painkiller, "orangeJuice", 2)
 ds_map_add(painkiller, "coconutCream", 1)
 ds_map_add(painkiller, "pineappleJuice", 4)
 ds_map_add(painkiller, "ice", true)
@@ -209,6 +219,19 @@ ds_map_add(pinaColada, "shaken", false)
 //ds_map_add(jackAndCoke, "glass", "shortTumbler")
 ds_map_add(drinksMaster, "pinaColada", pinaColada)
 
+mojito = ds_map_create()
+ds_map_add(mojito, "numLiquids", 4)
+ds_map_add(mojito, "whiteRum", 2)
+ds_map_add(mojito, "soda", 3)
+ds_map_add(mojito, "syrup", 1)
+ds_map_add(mojito, "limeJuice", 1)
+ds_map_add(mojito, "ice", true)
+ds_map_add(mojito, "stirred", 5)
+ds_map_add(mojito, "shaken", false)
+//ds_map_add(jackAndCoke, "glass", "shortTumbler")
+//ds_map_add(jackAndCoke, "garnish", ["lime"])
+ds_map_add(drinksMaster, "mojito", mojito)
+
 if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global.gameDifficulty == "expert")
 {
 	
@@ -222,6 +245,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 	ds_map_add(drinks, "redWine", redWine)
 	ds_map_add(drinks, "malibuShot", malibuShot)
 	ds_map_add(drinks, "jagerShot", jagerShot)
+	ds_map_add(drinks, "darkRumShot", darkRumShot)
 	
 }
 
@@ -240,18 +264,5 @@ if(global.gameDifficulty == "expert")
 {
 	ds_map_add(drinks, "painkiller", painkiller)
 	ds_map_add(drinks, "pinaColada", pinaColada)
-	/*
-	mojito = ds_map_create()
-	ds_map_add(mojito, "numLiquids", 4)
-	ds_map_add(mojito, "whiteRum", 2)
-	ds_map_add(mojito, "soda", 3)
-	ds_map_add(mojito, "syrup", 1)
-	ds_map_add(mojito, "limeJuice", 1)
-	ds_map_add(mojito, "ice", true)
-	ds_map_add(mojito, "stirred", 5)
-	ds_map_add(mojito, "shaken", false)
-	//ds_map_add(jackAndCoke, "glass", "shortTumbler")
-	//ds_map_add(jackAndCoke, "garnish", ["lime"])
 	ds_map_add(drinks, "mojito", mojito)
-	*/
 }

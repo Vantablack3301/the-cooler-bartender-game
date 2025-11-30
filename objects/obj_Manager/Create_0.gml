@@ -176,7 +176,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		instance_destroy(lifeToKill)
 		
 		if (ds_list_empty(lifeList)) {
-			
+			audio_stop_sound(JazzMusic)
 			room_goto(HomeScreen)
 		}
 	}
@@ -208,10 +208,6 @@ part_type_speed(part_type, 5, 5, 0, 0)
 part_type_gravity(part_type, 1, 267)
 part_type_direction(part_type, 283, 100, 0,0)
 part_type_alpha1(part_type, 0.1)
-
-
-
-
 
 function CleanupParticleSystem ()
 {

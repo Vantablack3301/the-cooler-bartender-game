@@ -55,8 +55,15 @@ makePageContents = function() {
 					drinkVal = "No"
 				break;
 				
-				case 1: 
-					drinkVal = "Yes"
+				case 1:
+					if(drinkProp == "ice")
+					{
+						drinkVal = "Yes"
+					}
+					else
+					{
+						drinkVal = string(drinkVal) + " oz"
+					}
 				break;
 				
 				default:
