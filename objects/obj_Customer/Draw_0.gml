@@ -8,6 +8,8 @@ if image_alpha >= 1{
 draw_set_font(defaultFont);
 
 
-
+if instance_position(mouse_x, mouse_y, self) && image_alpha >= 1{
+	draw_sprite_ext(sprite_index, image_index, x + 1, y + 1, image_xscale, image_yscale, image_angle, c_yellow, 0.5)
+}
 
 
