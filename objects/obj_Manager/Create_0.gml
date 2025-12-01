@@ -179,7 +179,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		instance_destroy(lifeToKill)
 		
 		if (ds_list_empty(lifeList)) {
-			
+			audio_stop_sound(JazzMusic)
 			room_goto(HomeScreen)
 		}
 	}

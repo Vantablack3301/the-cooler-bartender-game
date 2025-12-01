@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"BookNextPage.mp3",
-  "volume":0.75,
+  "volume":0.6,
 }
