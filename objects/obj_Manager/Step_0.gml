@@ -1,5 +1,5 @@
 // toggling between the front and the back of the bar when an arrow key is hit
-if room != Shop {
+if room != Shop  && obj_Recipe_Book.visible == false {
 	if (keyboard_check_pressed(ord("A")) || keyboard_check_pressed(ord("D")) ||
 		keyboard_check_pressed(vk_left) || keyboard_check_pressed(vk_right))
 	{

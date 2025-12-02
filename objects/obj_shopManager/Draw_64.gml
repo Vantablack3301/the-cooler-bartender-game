@@ -51,7 +51,7 @@ draw_text(sw/2 - 150, 140, "BAR DECOR & UPGRADES SHOP");
 
 //shop layout
 var y_shift = 120;
-var items_per_column = 5;
+var items_per_column = 6;
 var total_columns = 2;
 var column_width = 450;
 var row_height = 80;

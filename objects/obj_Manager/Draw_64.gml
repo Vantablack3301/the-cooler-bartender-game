@@ -1,1 +1,1 @@
-draw_text(10, 10, "Coins: " + string(money))
+draw_text(70, 10, "Coins: " + string(money))

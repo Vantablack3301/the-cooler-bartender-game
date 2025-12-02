@@ -25,7 +25,7 @@ drinkList = obj_Intitialize.drinks
 
 currentDrinkKey = ds_map_find_first(drinkList);
 currentDrinkValue = ds_map_find_value(drinkList, currentDrinkKey)
-pageTitle = currentDrinkKey
+pageTitle = string_upper(string_char_at(currentDrinkKey, 1)) + string_copy(currentDrinkKey, 2, string_length(currentDrinkKey) - 1) // Set Page Title
 
 
 
@@ -55,8 +55,15 @@ makePageContents = function() {
 					drinkVal = "No"
 				break;
 				
-				case 1: 
-					drinkVal = "Yes"
+				case 1:
+					if(drinkProp == "ice")
+					{
+						drinkVal = "Yes"
+					}
+					else
+					{
+						drinkVal = string(drinkVal) + " oz"
+					}
 				break;
 				
 				default:
