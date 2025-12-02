@@ -68,7 +68,7 @@ makePageContents = function() {
 				
 				default:
 					if (drinkProp == "stirred"){
-						drinkVal = string(drinkVal) + " seconds"
+						drinkVal = "Yes"
 					}
 					else {
 						drinkVal = string(drinkVal) + " oz"
