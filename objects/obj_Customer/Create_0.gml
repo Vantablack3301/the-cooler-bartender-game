@@ -13,12 +13,12 @@ ordered = false
 fadeTimer = 0
 fadeIn = 80
 
-startAlarm = 60;
+startAlarm = 120;
 
 if global.gameDifficulty = "novice"
-	startAlarm = 40
+	startAlarm = 90
 if global.gameDifficulty = "expert"
-	startAlarm = 25
+	startAlarm = 60
 
 delta_alarm = startAlarm
 
