@@ -44,10 +44,8 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
                 break;
 				
 			case "Premium Ice":
-                 if (instance_exists(obj_PremiumIcespot)) {
-                    var spot = instance_find(obj_PremiumIcespot, 0);
-                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Premium_Ice;
-				 }
+				part_sys = part_system_create();
+                part_particles_burst(part_sys, obj_PremiumIcespot.x, obj_PremiumIcespot.y, Sparkles)
                 break;
 				
 			case "Tip Jar":

@@ -136,6 +136,7 @@
     {"id":{"name":"LoseEffect","path":"particles/LoseEffect/LoseEffect.yy",},},
     {"id":{"name":"OverflowEffect","path":"particles/OverflowEffect/OverflowEffect.yy",},},
     {"id":{"name":"PouringEffect","path":"particles/PouringEffect/PouringEffect.yy",},},
+    {"id":{"name":"Sparkles","path":"particles/Sparkles/Sparkles.yy",},},
     {"id":{"name":"WinEffect","path":"particles/WinEffect/WinEffect.yy",},},
     {"id":{"name":"BarBack","path":"rooms/BarBack/BarBack.yy",},},
     {"id":{"name":"BarFront","path":"rooms/BarFront/BarFront.yy",},},

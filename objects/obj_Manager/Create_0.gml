@@ -199,13 +199,18 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	}
 	
 	var tipCheck = false
+	var iceCheck = false
 	
 	for (var i = 0; i < array_length(global.shop_cosmetics); i++)
 	{
 		var item = global.shop_cosmetics[i];
+		var item1 = global.shop_cosmetics[i];
 		if (item.name == "Tip Jar") {
 			 tipCheck = item.bought
-		}
+		} 
+		if(item.name = "Premium Ice") {
+			 iceCheck = item.bought
+		} 
 	}
 	
 	if(tipCheck == true && canTip == true)
@@ -214,10 +219,14 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		if odds <= 67
 		{
 			tipReturnValue = tipReturnValue + 2.0
-			show_debug_message("TIPS")
 			part_particles_burst(part_sys, global.TipSpawnPoint[0], global.TipSpawnPoint[1], CoinParticle)
 			audio_play_sound(CoinStack, 1, false);
 		}
+	}
+	
+	if(iceCheck)
+	{
+		tipReturnValue = tipReturnValue + 2.0
 	}
 	obj_Manager.money += tipReturnValue
 	
