@@ -44,6 +44,7 @@ add_liquid = function(item, amount)
 	else
 	{
 		ds_map_add(liquids, item, amount)
+		global.pouredYet = true
 	}
 	fill.add_stuff(amount)
 	
