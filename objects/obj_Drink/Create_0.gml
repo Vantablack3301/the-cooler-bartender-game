@@ -39,6 +39,7 @@ add_liquid = function(item, amount)
 	if (ds_map_exists(liquids, item)) 
 	{ 
 		ds_map_replace(liquids, item, amount + ds_map_find_value(liquids, item))
+		global.pouredYet = true
 	}
 	else
 	{
