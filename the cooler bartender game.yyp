@@ -228,6 +228,8 @@
     {"id":{"name":"spr_Light","path":"sprites/spr_Light/spr_Light.yy",},},
     {"id":{"name":"spr_Lime_Juice","path":"sprites/spr_Lime_Juice/spr_Lime_Juice.yy",},},
     {"id":{"name":"spr_Lime_Wedge","path":"sprites/spr_Lime_Wedge/spr_Lime_Wedge.yy",},},
+    {"id":{"name":"spr_Maximize_Button","path":"sprites/spr_Maximize_Button/spr_Maximize_Button.yy",},},
+    {"id":{"name":"spr_Minimize_Button","path":"sprites/spr_Minimize_Button/spr_Minimize_Button.yy",},},
     {"id":{"name":"spr_New_Button","path":"sprites/spr_New_Button/spr_New_Button.yy",},},
     {"id":{"name":"spr_No_Button","path":"sprites/spr_No_Button/spr_No_Button.yy",},},
     {"id":{"name":"spr_Novice_Button","path":"sprites/spr_Novice_Button/spr_Novice_Button.yy",},},
