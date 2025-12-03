@@ -320,7 +320,7 @@ ds_map_add(johnCollins, "stirred", 5)
 //ds_map_add(jackAndCoke, "glass", "shortTumbler")
 ds_map_add(drinksMaster, "johnCollins", johnCollins)
 
-if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global.gameDifficulty == "expert")
+if(global.gameDifficulty == "new" || global.gameDifficulty == "novice")
 {
 	
 	ds_map_add(drinks, "whiskeyRocks", whiskeyRocks)
@@ -360,6 +360,13 @@ if(global.gameDifficulty == "expert")
 	ds_map_add(drinks, "mojito", mojito)
 	ds_map_add(drinks, "tomCollins", tomCollins)
 	ds_map_add(drinks, "johnCollins", johnCollins)
+	
+	
+	ds_map_add(drinks, "whiskeyRocks", whiskeyRocks)
+	ds_map_add(drinks, "whiskeyNeat", whiskeyNeat)
+	ds_map_add(drinks, "vodkaShot", vodkaShot)
+	ds_map_add(drinks, "tequilaShot", tequilaShot)
+	
 }
 
 if(global.gameDifficulty == "endless")

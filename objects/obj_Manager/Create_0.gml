@@ -3,7 +3,7 @@ instance_create_layer(512, 224, "Instances", obj_Customer);
 lifeList = ds_list_create()
 var numLives = 0
 // adding the first two lives for all difficulties
-if global.gameDifficulty == "new"
+if global.gameDifficulty == "new" || global.gameDifficulty == "endless" 
 	numLives = 5
 else if global.gameDifficulty = "novice"
 	numLives = 3
@@ -53,6 +53,13 @@ changeSprite = function() {
 /// @arg {Id.Instance} drinkMade
 /// @param {Id.DsMap} drinkGoal
 // Grading System
+bestTicketDrink = noone
+bestTicketDesiredDrink = ""
+bestTicketScore = 0
+worstTicketDrink = noone
+worstTicketDesiredDrink = ""
+worstTicketDrink = 100
+
 gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	
 	with (obj_Ticket_Manager) {
@@ -203,6 +210,17 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 
 	
 	//show_debug_message(totalScore)
+	if totalScore > bestTicketScore{
+		bestTicketScore = totalScore
+		bestTicketDrink = drinkMade
+		bestTicketDesiredDrink = drinkGoal
+	}
+	if totalScore < worstTicketScore{
+		worstTicketScore = totalScore
+		worstTicketDrink = drinkMade
+		worstTicketDesiredDrink = drinkGoal
+	}
+	
 	return (totalScore)
 	
 }
