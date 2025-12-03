@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Expert_Button",
-    "path":"sprites/spr_Expert_Button/spr_Expert_Button.yy",
+    "name":"spr_Endless_Button",
+    "path":"sprites/spr_Endless_Button/spr_Endless_Button.yy",
   },
   "spriteMaskId":null,
   "visible":true,
