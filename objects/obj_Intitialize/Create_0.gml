@@ -336,7 +336,7 @@ if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global
 	ds_map_add(drinks, "darkRumShot", darkRumShot)
 }
 
-if(global.gameDifficulty == "expert" || global.gameDifficulty == "novice")
+if(global.gameDifficulty == "novice" || global.gameDifficulty == "expert")
 {
 	
 	ds_map_add(drinks, "ginAndTonic", ginAndTonic)
