@@ -1,14 +1,17 @@
 // Inherit the parent event
 event_inherited();
 
-audio_play_sound(ComputerOpen, 1, false);
-with (obj_Home_Prompt)
+if(obj_Home_Prompt.visible)
 {
-    visible = false;
-	instance_deactivate_object(obj_PromptBG);
-}
+	audio_play_sound(ComputerOpen, 1, false);
+	with (obj_Home_Prompt)
+	{
+	    visible = false;
+		instance_deactivate_object(obj_PromptBG);
+	}
 
-with (obj_button_home)
-{
-    isOpen = false;
+	with (obj_button_home)
+	{
+	    isOpen = false;
+	}
 }
