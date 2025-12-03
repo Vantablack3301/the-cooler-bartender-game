@@ -209,7 +209,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		if (item.name == "Tip Jar") {
 			 tipCheck = item.bought
 		} 
-		if(item.name = "Premium Ice") {
+		if(item1.name = "Premium Ice") {
 			 iceCheck = item.bought
 		} 
 	}
