@@ -36,6 +36,7 @@ var selected = obj_Manager.selected
 	else if (selected == "Stirrer") {
 		if ds_map_size(liquids) > 0 {
 			stir()
+			currentlyStirring = true
 		}
 	}
 	

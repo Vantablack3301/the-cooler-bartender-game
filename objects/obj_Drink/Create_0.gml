@@ -3,6 +3,7 @@ hasIce = false
 garnishes = ds_list_create()
 isShaken = false
 isStirred = false
+currentlyStirring = false
 stirAmount = 0.0
 
 fill = instance_create_layer(x + sprite_width/2, y + sprite_height - 19, "Instances", obj_drink_fill);
