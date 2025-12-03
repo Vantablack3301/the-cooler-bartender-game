@@ -93,6 +93,7 @@
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
     {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},},
     {"id":{"name":"obj_button_quit","path":"objects/obj_button_quit/obj_button_quit.yy",},},
+    {"id":{"name":"obj_button_to_home","path":"objects/obj_button_to_home/obj_button_to_home.yy",},},
     {"id":{"name":"obj_Chair","path":"objects/obj_Chair/obj_Chair.yy",},},
     {"id":{"name":"obj_CosmeticDisplay","path":"objects/obj_CosmeticDisplay/obj_CosmeticDisplay.yy",},},
     {"id":{"name":"obj_Customer","path":"objects/obj_Customer/obj_Customer.yy",},},
@@ -148,6 +149,7 @@
     {"id":{"name":"DifficultyScreen","path":"rooms/DifficultyScreen/DifficultyScreen.yy",},},
     {"id":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
     {"id":{"name":"LiquidFillDemo","path":"rooms/LiquidFillDemo/LiquidFillDemo.yy",},},
+    {"id":{"name":"LoseScreen","path":"rooms/LoseScreen/LoseScreen.yy",},},
     {"id":{"name":"Shop","path":"rooms/Shop/Shop.yy",},},
     {"id":{"name":"TextScript","path":"scripts/TextScript/TextScript.yy",},},
     {"id":{"name":"liquidWaves","path":"shaders/liquidWaves/liquidWaves.yy",},},
@@ -331,6 +333,7 @@
     {"roomId":{"name":"Shop","path":"rooms/Shop/Shop.yy",},},
     {"roomId":{"name":"LiquidFillDemo","path":"rooms/LiquidFillDemo/LiquidFillDemo.yy",},},
     {"roomId":{"name":"DifficultyScreen","path":"rooms/DifficultyScreen/DifficultyScreen.yy",},},
+    {"roomId":{"name":"LoseScreen","path":"rooms/LoseScreen/LoseScreen.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

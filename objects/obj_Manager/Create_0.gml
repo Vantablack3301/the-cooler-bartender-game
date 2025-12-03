@@ -189,7 +189,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		
 		if (ds_list_empty(lifeList)) {
 			audio_stop_sound(JazzMusic)
-			room_goto(HomeScreen)
+			room_goto(LoseScreen)
 		}
 	}
 	else if totalScore >= 50 && totalScore < 90{
