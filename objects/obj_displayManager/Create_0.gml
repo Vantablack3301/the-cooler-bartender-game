@@ -1,3 +1,6 @@
+part_sys = part_system_create();
+part_system_depth(part_sys,-2000)
+
 for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
     var item = global.shop_cosmetics[i];
     if (item.bought) {
@@ -44,7 +47,6 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
                 break;
 				
 			case "Premium Ice":
-				part_sys = part_system_create();
                 part_particles_burst(part_sys, obj_PremiumIcespot.x, obj_PremiumIcespot.y, Sparkles)
                 break;
 				
