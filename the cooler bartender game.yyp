@@ -139,6 +139,7 @@
     {"id":{"name":"HomeScreen","path":"rooms/HomeScreen/HomeScreen.yy",},},
     {"id":{"name":"LiquidFillDemo","path":"rooms/LiquidFillDemo/LiquidFillDemo.yy",},},
     {"id":{"name":"Shop","path":"rooms/Shop/Shop.yy",},},
+    {"id":{"name":"TextScript","path":"scripts/TextScript/TextScript.yy",},},
     {"id":{"name":"liquidWaves","path":"shaders/liquidWaves/liquidWaves.yy",},},
     {"id":{"name":"BookNextPage","path":"sounds/BookNextPage/BookNextPage.yy",},},
     {"id":{"name":"BookOpen","path":"sounds/BookOpen/BookOpen.yy",},},

@@ -24,7 +24,7 @@ delta_alarm = startAlarm
 
 tipStart = random_range(3,10)
 tipReturn = tipStart
-
+drinkText = ""
 generateRecipe = function()
 {
 	randomize()
@@ -36,10 +36,23 @@ generateRecipe = function()
 
 	//show_debug_message(toReturn)
 	//wantedDrink = toReturn
+
+	drinkText = Format(toReturn)
+	//drinkText = toReturn
+	//for (var i = 0; i <= string_length(drinkText); i += 1) {
+	//	var char = string_char_at(drinkText, i);
+	//	if char == string_upper(char) {
+	//		drinkText = string_insert(" ", drinkText, i)
+	//		i++
+	//	}
+	//}
+	
+	//drinkText = string_upper(string_char_at(drinkText, 1)) + string_copy(drinkText, 2, string_length(drinkText) - 1)
 	return toReturn;
 }
 
 wantedDrink = generateRecipe()
+
 
 
 onClick = function() 
