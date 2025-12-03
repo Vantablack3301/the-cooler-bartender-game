@@ -361,3 +361,8 @@ if(global.gameDifficulty == "expert")
 	ds_map_add(drinks, "tomCollins", tomCollins)
 	ds_map_add(drinks, "johnCollins", johnCollins)
 }
+
+if(global.gameDifficulty == "endless")
+{
+	drinks = drinksMaster
+}

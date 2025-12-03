@@ -25,8 +25,7 @@ drinkList = obj_Intitialize.drinks
 
 currentDrinkKey = ds_map_find_first(drinkList);
 currentDrinkValue = ds_map_find_value(drinkList, currentDrinkKey)
-pageTitle = string_upper(string_char_at(currentDrinkKey, 1)) + string_copy(currentDrinkKey, 2, string_length(currentDrinkKey) - 1) // Set Page Title
-
+pageTitle = Format(currentDrinkKey)
 
 
 
@@ -38,7 +37,7 @@ nextPage = function() {
 	else {
 		// go to beginning
 	}
-	pageTitle = string_upper(string_char_at(currentDrinkKey, 1)) + string_copy(currentDrinkKey, 2, string_length(currentDrinkKey) - 1) // Set Page Title
+	pageTitle = Format(currentDrinkKey)
 	currentDrinkValue = ds_map_find_value(drinkList, currentDrinkKey)
 	makePageContents()
 }
@@ -68,7 +67,7 @@ makePageContents = function() {
 				
 				default:
 					if (drinkProp == "stirred"){
-						drinkVal = string(drinkVal) + " seconds"
+						drinkVal = "Yes"
 					}
 					else {
 						drinkVal = string(drinkVal) + " oz"

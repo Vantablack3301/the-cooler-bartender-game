@@ -9,8 +9,10 @@ else {
 fadeTimer++
 image_alpha = 0 + (fadeTimer / fadeIn);
 
+
 if room != Shop {
 delta_alarm -= delta_time / 1000000;
+
 }
 
 if (delta_alarm <= startAlarm/2) {

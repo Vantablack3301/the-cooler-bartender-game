@@ -1,5 +1,6 @@
 global.gameDifficulty = "new";
 global.tutorialShopIndicator = false
+global.pouredYet = false
 
 instance_destroy(obj_drink_fill)
 instance_destroy(obj_Drink)
