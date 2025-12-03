@@ -10,7 +10,7 @@ if (!variable_global_exists("shop_cosmetics")) {
         { name: "Tip Jar", cost: 5, bought: false, desc: "Earn more tips from customers." },
         { name: "Novice Upgrade", cost: 15, bought: false, desc: "Unlocks more difficult drinks!" },
         { name: "Expert Upgrade", cost: 30, bought: false, desc: "Unlocks the hardest drinks!" },
-		{ name: "Endless Upgrade", cost: 40, bought: false, desc: "Unlocks an endless difficulty." },
+		{ name: "Endless Mode", cost: 40, bought: false, desc: "Unlocks an endless difficulty." },
 		{ name: "Expert Trophy", cost: 100, bought: false, desc: "Buy this to beat the game!" },
     ];
     

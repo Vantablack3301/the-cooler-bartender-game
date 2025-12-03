@@ -73,7 +73,7 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
                 break;
 				
 			case "Endless Mode":
-			//endless
+				global.expertBeaten = true
                
             break;
         }

@@ -86,6 +86,7 @@
     {"id":{"name":"obj_Bottle_whiskey","path":"objects/obj_Bottle_whiskey/obj_Bottle_whiskey.yy",},},
     {"id":{"name":"obj_Bottle_whiteRum","path":"objects/obj_Bottle_whiteRum/obj_Bottle_whiteRum.yy",},},
     {"id":{"name":"obj_Bottle_whiteWine","path":"objects/obj_Bottle_whiteWine/obj_Bottle_whiteWine.yy",},},
+    {"id":{"name":"obj_button_endless","path":"objects/obj_button_endless/obj_button_endless.yy",},},
     {"id":{"name":"obj_button_expert","path":"objects/obj_button_expert/obj_button_expert.yy",},},
     {"id":{"name":"obj_button_home","path":"objects/obj_button_home/obj_button_home.yy",},},
     {"id":{"name":"obj_button_new","path":"objects/obj_button_new/obj_button_new.yy",},},
