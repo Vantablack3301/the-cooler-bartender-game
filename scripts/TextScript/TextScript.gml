@@ -5,7 +5,7 @@ function Format(str){
 				int64(char)
 			}
 			catch (_exception) {
-				if char == string_upper(char){
+				if char == string_upper(char) && char != ":"{
 					str = string_insert(" ", str, i)
 					i++
 				}
