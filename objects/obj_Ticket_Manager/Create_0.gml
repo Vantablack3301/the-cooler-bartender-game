@@ -74,3 +74,9 @@ killMe = function()
 	instance_destroy(self)
 }
 
+
+
+onClick = function()
+{
+	upTime = 5	
+}

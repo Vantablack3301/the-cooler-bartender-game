@@ -12,8 +12,11 @@
     "name":"TicketShit",
     "path":"folders/Objects/TicketShit.yy",
   },
-  "parentObjectId":null,
-  "persistent":false,
+  "parentObjectId":{
+    "name":"obj_Parent_Clickable",
+    "path":"objects/obj_Parent_Clickable/obj_Parent_Clickable.yy",
+  },
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
