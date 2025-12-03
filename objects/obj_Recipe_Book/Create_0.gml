@@ -1,6 +1,30 @@
 // I don't know if this is the best way to put the book up front but it
 // works for now...
 depth = -256
+var _forceload = BourbonShotImg
+_forceload = DarkRumShotImg
+_forceload = JagerShotImg
+_forceload = MalibuShotImg
+_forceload = RedWineImg
+_forceload = TequilaShotImg
+_forceload = VodkaShotImg
+_forceload = WhiskeyNeatImg
+_forceload = WhiskeyRocksImg
+_forceload = WhiteRumShotImg
+_forceload = WhiteWineImg
+_forceload = DaiquiriImg
+_forceload = GinAndTonicImg
+_forceload = GinBuckImg
+_forceload = DrPepperAndWhiskeyImg
+_forceload = JackAndCokeImg
+_forceload = JagerBombImg
+_forceload = VodkaCranImg
+_forceload = VodkaRedbullImg
+_forceload = VodkaSodaImg
+_forceload = VodkaSpriteImg
+_forceload = WhiskeyAndCokeImg
+_forceload = WhiskeyGingerImg
+
 
 onClick = function(){}
 bookPages = []

@@ -320,7 +320,7 @@ ds_map_add(johnCollins, "stirred", 5)
 //ds_map_add(jackAndCoke, "glass", "shortTumbler")
 ds_map_add(drinksMaster, "johnCollins", johnCollins)
 
-if(global.gameDifficulty == "new" || global.gameDifficulty == "novice" || global.gameDifficulty == "expert")
+if(global.gameDifficulty == "new")// || global.gameDifficulty == "novice" || global.gameDifficulty == "expert")
 {
 	
 	ds_map_add(drinks, "whiskeyRocks", whiskeyRocks)
