@@ -48,7 +48,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.0.207",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"the cooler bartender game",
   "resources":[
@@ -163,6 +163,7 @@
     {"id":{"name":"trashText","path":"objects/trashText/trashText.yy",},},
     {"id":{"name":"CoinParticle","path":"particles/CoinParticle/CoinParticle.yy",},},
     {"id":{"name":"FuckingVaporizeCustomer","path":"particles/FuckingVaporizeCustomer/FuckingVaporizeCustomer.yy",},},
+    {"id":{"name":"LiquidStir","path":"particles/LiquidStir/LiquidStir.yy",},},
     {"id":{"name":"LoseEffect","path":"particles/LoseEffect/LoseEffect.yy",},},
     {"id":{"name":"OverflowEffect","path":"particles/OverflowEffect/OverflowEffect.yy",},},
     {"id":{"name":"PouringEffect","path":"particles/PouringEffect/PouringEffect.yy",},},

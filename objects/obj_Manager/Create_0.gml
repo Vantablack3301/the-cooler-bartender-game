@@ -210,12 +210,10 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	}
 	
 	var tipCheck = false
-	var iceCheck = false
 	
 	for (var i = 0; i < array_length(global.shop_cosmetics); i++)
 	{
 		var item = global.shop_cosmetics[i];
-		var item1 = global.shop_cosmetics[i];
 		if (item.name == "Tip Jar") {
 			 tipCheck = item.bought
 		} 
@@ -230,6 +228,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		if odds <= 67
 		{
 			tipReturnValue = tipReturnValue + 2.0
+			show_debug_message("TIPS")
 			part_particles_burst(part_sys, global.TipSpawnPoint[0], global.TipSpawnPoint[1], CoinParticle)
 			audio_play_sound(CoinStack, 1, false);
 		}
@@ -247,7 +246,24 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	if (odds == 67 or odds = 69) //brainrot, i know
 	{
 		part_particles_burst(part_sys, mouse_x, mouse_y, FuckingVaporizeCustomer)
+		var snd = audio_play_sound(VaporizeCustomer, 1, false)
+		audio_sound_gain(snd, 100, 1800)
+		
+		if canTip
+		{
+			tipOdds = floor(random_range(1, 3))
+			if tipOdds == 3
+			{
+				tipReturnValue = tipReturnValue * 2.0
+			}
+			else if tipOdds == 1
+			{
+				tipReturnValue = tipReturnValue * -1.0
+			}
+		}
 	}
+	
+	obj_Manager.money += tipReturnValue
 
 	
 	
@@ -268,6 +284,15 @@ part_type_speed(part_type, 5, 5, 0, 0)
 part_type_gravity(part_type, 1, 267)
 part_type_direction(part_type, 283, 100, 0,0)
 part_type_alpha1(part_type, 0.1)
+
+part_system_depth(part_sys, -1000)
+
+
+//debug money
+obj_Manager.money = 10
+
+
+
 
 function CleanupParticleSystem ()
 {
