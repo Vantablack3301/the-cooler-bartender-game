@@ -1,2 +1,1 @@
-image_yscale = 0.2
 image_xscale = 1.25

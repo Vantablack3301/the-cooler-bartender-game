@@ -10,7 +10,9 @@ upTime = 0
 add_middle = function(str)
 {
 	newMiddle = instance_create_layer(0,0, "Instances", obj_Ticket_Middle)
-	newMiddle.text = str
+	newMiddle.text = Format(str)
+	if string_char_at(newMiddle.text, 1) == " "
+		newMiddle.text = string_copy(newMiddle.text, 2, string_length(newMiddle.text)-1)
 	newMiddle.depth = -1024
 	ds_list_add(middles, newMiddle)	
 }
@@ -30,7 +32,7 @@ updatePos = function()
 		top.x = currX
 		top.y = currY
 		currY += 64
-		currX += 38
+		currX += 47.5
 	}
 	
 	for (var i = 0; i < ds_list_size(middles); i++)

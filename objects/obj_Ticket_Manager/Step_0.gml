@@ -1,6 +1,6 @@
 upTime += delta_time / 1000000
 
-if upTime >= 5
+if upTime >= 50
 {
 	dx = 3
 	dy += 1
