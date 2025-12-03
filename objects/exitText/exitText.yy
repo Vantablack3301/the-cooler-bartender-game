@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_areyousureText",
+  "%Name":"exitText",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_areyousureText",
+  "name":"exitText",
   "overriddenProperties":[],
   "parent":{
     "name":"Text",
     "path":"folders/Objects/Text.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Home_Prompt",
+    "path":"objects/obj_Home_Prompt/obj_Home_Prompt.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Want_To_Quit_Text",
+    "path":"sprites/spr_Want_To_Quit_Text/spr_Want_To_Quit_Text.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
