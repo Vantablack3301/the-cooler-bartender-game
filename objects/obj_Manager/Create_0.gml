@@ -53,12 +53,6 @@ changeSprite = function() {
 /// @arg {Id.Instance} drinkMade
 /// @param {Id.DsMap} drinkGoal
 // Grading System
-bestTicketDrink = noone
-bestTicketDesiredDrink = ""
-bestTicketScore = 0
-worstTicketDrink = noone
-worstTicketDesiredDrink = ""
-worstTicketDrink = 100
 
 gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	
@@ -209,17 +203,6 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	
 
 	
-	//show_debug_message(totalScore)
-	if totalScore > bestTicketScore{
-		bestTicketScore = totalScore
-		bestTicketDrink = drinkMade
-		bestTicketDesiredDrink = drinkGoal
-	}
-	if totalScore < worstTicketScore{
-		worstTicketScore = totalScore
-		worstTicketDrink = drinkMade
-		worstTicketDesiredDrink = drinkGoal
-	}
 	
 	return (totalScore)
 	
