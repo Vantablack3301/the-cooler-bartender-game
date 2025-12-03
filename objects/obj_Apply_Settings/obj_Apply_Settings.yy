@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"GREYBOX",
-    "path":"sprites/GREYBOX/GREYBOX.yy",
+    "name":"spr_Maximize_Button",
+    "path":"sprites/spr_Maximize_Button/spr_Maximize_Button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

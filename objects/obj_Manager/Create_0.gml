@@ -1,4 +1,4 @@
-drink = instance_create_layer(960, 448, "Instances", obj_Drink);
+drink = instance_create_layer(1040, 448, "Instances", obj_Drink);
 instance_create_layer(512, 224, "Instances", obj_Customer);
 lifeList = ds_list_create()
 var numLives = 0

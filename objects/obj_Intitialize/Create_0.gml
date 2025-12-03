@@ -253,7 +253,7 @@ ds_map_add(drinksMaster, "jagerBomb", jagerBomb)
 
 painkiller = ds_map_create()
 ds_map_add(painkiller, "numLiquids", 4)
-ds_map_add(painkiller, "whiteRum", 2)
+ds_map_add(painkiller, "darkRum", 2)
 ds_map_add(painkiller, "orangeJuice", 2)
 ds_map_add(painkiller, "coconutCream", 1)
 ds_map_add(painkiller, "pineappleJuice", 4)
