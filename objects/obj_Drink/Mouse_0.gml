@@ -49,7 +49,7 @@ var selected = obj_Manager.selected
 		obj_Manager.isPouring = true
 		show_debug_message("currently selected: " + selected + "	current amount: " + string(get_liquid(selected)))
 		liqText = (selected +" " + string(get_liquid(selected)))
-		if(obj_Manager.isPouring)
+		if(obj_Manager.isPouring && obj_Manager.selected != "")
 		{
 			if (stirSoundCooldown > 0)
 				 stirSoundCooldown -= 1;

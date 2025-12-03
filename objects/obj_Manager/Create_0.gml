@@ -265,7 +265,8 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	
 	obj_Manager.money += tipReturnValue
 
-	
+	obj_Ticket_Manager.add_middle("Score:" + string(totalScore))
+
 	
 	return (totalScore)
 	
@@ -289,7 +290,7 @@ part_system_depth(part_sys, -1000)
 
 
 //debug money
-obj_Manager.money = 100
+//obj_Manager.money = 10000
 
 
 

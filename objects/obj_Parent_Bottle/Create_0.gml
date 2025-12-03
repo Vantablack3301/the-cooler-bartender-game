@@ -1,16 +1,17 @@
 visible = obj_Manager.selected != bottleName
-
+seen =  obj_Manager.selected != bottleName
 onClick = function()
 {
-	if (visible)
+	if (seen)
 	{
 		// make every bottle visible before selecting/deselecting to allow swapping on fly.
 		with(obj_Parent_Bottle)
 		{
-			self.visible = true
+			self.seen = true
 		}
 		
-		visible = false
+		seen = false
+		
 		obj_Manager.selected = bottleName
 		obj_Manager.selectedBottle = self
 		obj_Manager.selectedSprite = sprite_index
@@ -25,7 +26,8 @@ onClick = function()
 	}
 	else 
 	{
-		visible = true
+		seen = true
+		
 		obj_Manager.selected = ""
 		obj_Manager.selectedSprite = noone
 		audio_play_sound(DrinkPutDown, 1, false);

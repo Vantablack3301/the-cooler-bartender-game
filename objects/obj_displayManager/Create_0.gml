@@ -63,7 +63,6 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
                 break;
 				
 			case "Premium Ice":
-                part_particles_burst(part_sys, obj_PremiumIcespot.x, obj_PremiumIcespot.y, Sparkles)
                 break;
 				
 			case "Tip Jar":
