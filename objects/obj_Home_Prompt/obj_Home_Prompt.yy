@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Recipe_Book_Open",
-    "path":"sprites/spr_Recipe_Book_Open/spr_Recipe_Book_Open.yy",
+    "name":"Prompt_Background_Menu_Board",
+    "path":"sprites/Prompt_Background_Menu_Board/Prompt_Background_Menu_Board.yy",
   },
   "spriteMaskId":null,
   "visible":true,
