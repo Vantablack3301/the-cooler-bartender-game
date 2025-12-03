@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Glass_Red_Wine",
   "bboxMode":0,
-  "bbox_bottom":254,
+  "bbox_bottom":73,
   "bbox_left":0,
-  "bbox_right":119,
+  "bbox_right":34,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":255,
+  "height":74,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"70bf585d-e882-4f96-9ebf-710a52cdf553","blendMode":0,"displayName":"default","isLocked":false,"name":"70bf585d-e882-4f96-9ebf-710a52cdf553","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -88,5 +88,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":120,
+  "width":35,
 }

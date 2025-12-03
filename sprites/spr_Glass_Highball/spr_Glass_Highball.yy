@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Glass_Highball",
   "bboxMode":0,
-  "bbox_bottom":239,
+  "bbox_bottom":63,
   "bbox_left":0,
-  "bbox_right":93,
+  "bbox_right":24,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":240,
+  "height":64,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"54769d05-e2f4-4d79-83ba-e65d565b81c0","blendMode":0,"displayName":"default","isLocked":false,"name":"54769d05-e2f4-4d79-83ba-e65d565b81c0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -88,5 +88,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":94,
+  "width":25,
 }

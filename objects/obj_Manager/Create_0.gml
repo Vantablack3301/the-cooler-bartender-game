@@ -225,7 +225,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		}
 	}
 	
-	if(iceCheck)
+	if(iceCheck && canTip)
 	{
 		tipReturnValue = tipReturnValue + 2.0
 	}
