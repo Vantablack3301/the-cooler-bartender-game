@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"DrinkImgs",
-    "path":"folders/Sprites/DrinkImgs.yy",
+    "name":"Novice",
+    "path":"folders/Sprites/DrinkImgs/Novice.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

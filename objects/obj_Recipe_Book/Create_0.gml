@@ -24,6 +24,11 @@ _forceload = VodkaSodaImg
 _forceload = VodkaSpriteImg
 _forceload = WhiskeyAndCokeImg
 _forceload = WhiskeyGingerImg
+_forceload = JohnCollinsImg
+_forceload = MojitoImg
+_forceload = PainkillerImg
+_forceload = PinaColadaImg
+_forceload = TomCollinsImg
 
 
 onClick = function(){}
