@@ -238,7 +238,6 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	{
 		tipReturnValue = tipReturnValue + 2.0
 	}
-	obj_Manager.money += tipReturnValue
 	
 	part_particles_burst(part_sys, inst.midX, inst.midY, ticketEffect)
 	odds = floor(random_range(1, 100))
