@@ -55,8 +55,14 @@ changeSprite = function() {
 // Grading System
 gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	
+	with (obj_Ticket_Manager) {
+		killMe()
+	}
+	
+	instance_create_layer(0,0,"Instances", obj_Ticket_Manager)
+	
 	var ticketString = string(obj_Customer.wantedDrink) + "\n"
-
+	obj_Ticket_Manager.add_middle(string(obj_Customer.wantedDrink))
 	
 	var totalScore = 0
 	// Ice
@@ -64,7 +70,8 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	if drinkMade.hasIce == ds_map_find_value(drinkGoal,"ice"){
 		iceScore = 100
 	}
-	ticketString += "Ice:" + string(drinkMade.hasIce) + "Expected: " + string(ds_map_find_value(drinkGoal,"ice")) + "\n"
+	ticketString += "Ice:" + string(drinkMade.hasIce) + " -> " + string(ds_map_find_value(drinkGoal,"ice")) + "\n"
+	obj_Ticket_Manager.add_middle("Ice:" + string(drinkMade.hasIce) + " -> " + string(ds_map_find_value(drinkGoal,"ice")))
 	// Stirred
 	// Shaken
 	
@@ -87,7 +94,8 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 			tempLiquidScore = value / ds_map_find_value(drinkGoal, string(liquidName))
 			
 			//update ticket text
-			ticketString += liquidName + ": " + string(value) + "Expected: " + string(ds_map_find_value(drinkGoal, string(liquidName))) + "\n"
+			ticketString += liquidName + ": " + string(value) + " -> " + string(ds_map_find_value(drinkGoal, string(liquidName))) + "\n"
+			obj_Ticket_Manager.add_middle(liquidName + ": " + string(value) + " -> " + string(ds_map_find_value(drinkGoal, string(liquidName))))
 			
 			if tempLiquidScore > 1{
 				tempLiquidScore = 1 / tempLiquidScore
@@ -97,8 +105,9 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 			array_push(tempLiquidScores, tempLiquidScore)
 		}
 		else {
-			ticketString += liquidName + ": " + string(value) + "Expected: 0\n"
+			ticketString += liquidName + ": " + string(value) + " -> 0\n"
 			array_push(tempLiquidScores, 0) // Adds 0 if its a wrong liquid
+			obj_Ticket_Manager.add_middle( liquidName + ": " + string(value) + " -> 0")
 		}		
 		liquidName = ds_map_find_next(drinkMade.liquids, liquidName); // Get the next key in the map
 	}
@@ -108,7 +117,8 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	while(!is_undefined(reqLiqName)){
 		if reqLiqName != "ice" && reqLiqName != "stirred" && reqLiqName != "shaken" && reqLiqName != "numLiquids" && reqLiqName != "garnishes" {
 			if (is_undefined(ds_map_find_value(drinkMade.liquids, reqLiqName))) {
-				ticketString += string(reqLiqName) + ": 0Expected: " + string(ds_map_find_value(drinkGoal, reqLiqName)) + "\n"
+				ticketString += string(reqLiqName) + ": 0 ->" + string(ds_map_find_value(drinkGoal, reqLiqName)) + "\n"
+				obj_Ticket_Manager.add_middle(string(reqLiqName) + ": 0 ->" + string(ds_map_find_value(drinkGoal, reqLiqName)))
 			}
 		}
 		reqLiqName = ds_map_find_next(drinkGoal, reqLiqName)
@@ -140,7 +150,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		}
 	}
 	
-	ticketString += "Stirred:" + string(drinkMade.stirAmount) + "Expected: " + string(ds_map_find_value(drinkGoal,"stirred")) + "\n"
+	ticketString += "Stirred:" + string(drinkMade.stirAmount) + " -> " + string(ds_map_find_value(drinkGoal,"stirred")) + "\n"
 	stirScore = round(stirScore * 100)
 	
 	
@@ -161,7 +171,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	instance_destroy(obj_ticket)
 	var inst = instance_create_layer(16, 144, "Instances", obj_ticket);
 	with (inst) {
-		ticketScore = Format(ticketString)
+		ticketScore = ticketString
     }
 	
 	
@@ -192,7 +202,6 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 
 	
 	//show_debug_message(totalScore)
-
 	return (totalScore)
 	
 }
