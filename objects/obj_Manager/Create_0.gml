@@ -61,6 +61,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	}
 	
 	instance_create_layer(0,0,"Instances", obj_Ticket_Manager)
+	var canTip = false
 	
 	var ticketString = string(obj_Customer.wantedDrink) + "\n"
 	obj_Ticket_Manager.add_middle(string(obj_Customer.wantedDrink))
@@ -182,6 +183,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	if totalScore < 50 {
 		tipReturnValue = 0
 		audio_play_sound(DrinkWrong, 1, false);
+		ticketEffect = LoseEffect
 		
 		// killing a life
 		var lifeToKill = ds_list_find_value(lifeList,0);
@@ -195,12 +197,57 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	}
 	else if totalScore >= 50 && totalScore < 90{
 		audio_play_sound(DrinkCorrect, 1, false);
+		ticketEffect = WinEffect
+		if totalScore >= 80
+		{
+			canTip = true
+		}
 	}
 	else {
 		audio_play_sound(DrinkPerfect, 1, false);
+		ticketEffect = WinEffect
+		canTip = true
+	}
+	
+	var tipCheck = false
+	var iceCheck = false
+	
+	for (var i = 0; i < array_length(global.shop_cosmetics); i++)
+	{
+		var item = global.shop_cosmetics[i];
+		var item1 = global.shop_cosmetics[i];
+		if (item.name == "Tip Jar") {
+			 tipCheck = item.bought
+		} 
+		if(item1.name = "Premium Ice") {
+			 iceCheck = item.bought
+		} 
+	}
+	
+	if(tipCheck == true && canTip == true)
+	{
+		odds = floor(random_range(0, 100))
+		if odds <= 67
+		{
+			tipReturnValue = tipReturnValue + 2.0
+			part_particles_burst(part_sys, global.TipSpawnPoint[0], global.TipSpawnPoint[1], CoinParticle)
+			audio_play_sound(CoinStack, 1, false);
+		}
+	}
+	
+	if(iceCheck && canTip && drinkMade.hasIce)
+	{
+		tipReturnValue = tipReturnValue + 2.0
 	}
 	obj_Manager.money += tipReturnValue
 	
+	part_particles_burst(part_sys, inst.midX, inst.midY, ticketEffect)
+	odds = floor(random_range(1, 100))
+	show_debug_message(odds)
+	if (odds == 67 or odds = 69) //brainrot, i know
+	{
+		part_particles_burst(part_sys, mouse_x, mouse_y, FuckingVaporizeCustomer)
+	}
 
 	
 	
@@ -213,7 +260,7 @@ part_sys = part_system_create();
 part_emitter = part_emitter_create(part_sys);
 
 part_type = part_type_create();
-part_type_shape(part_type, pt_shape_ring);
+part_type_shape(part_type, pt_shape_cloud);
 part_type_life(part_type, 15,30)
 part_type_scale(part_type, 0.5, 0.5)
 part_type_size(part_type, 0.5, 1.5, -0.1, 0.5)

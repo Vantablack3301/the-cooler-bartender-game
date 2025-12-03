@@ -49,6 +49,7 @@ add_liquid = function(item, amount)
 	fill.add_stuff(amount)
 	
 	
+	
 	// I Honestly don't know how we should keep track of mixed/stirred status, would it be better to make 
 	// them floats that increment when stirring/mixing and decrement when liquids are added?
 	// it's not a prototype issue but still an eventual concern.
@@ -62,12 +63,12 @@ get_liquid = function(item)
 	
 	if (!ds_map_exists(liquids, item))
 		return 0
-	
 	return ds_map_find_value(liquids, item)
 }
 
 add_ice = function()
 {
+	audio_play_sound(IceCup, 1, false);
 	hasIce = true	
 }
 
@@ -90,7 +91,7 @@ shake = function()
 {
 	isShaken = true	
 }
-
+stirSoundCooldown = 0;
 stir = function()
 {
 	var dx = abs(mouse_x-prevStirMouseX)
@@ -104,7 +105,24 @@ stir = function()
 	show_debug_message(stirAmount)
 	
 	stirAmount += min(totalDelta/150.0, 0.10)
-	isStirred = stirAmount >= 1
+	isStirred = stirAmount >= 3
+	if (stirSoundCooldown > 0) {
+    stirSoundCooldown -= 1;
+	}
+	if (stirAmount >= 3)
+	{
+	    if (stirSoundCooldown <= 0) {
+	        audio_play_sound(StirStop, 1, false);
+	        stirSoundCooldown = room_speed * 0.125; // 0.15 seconds delay
+	    }
+	}
+	else
+	{
+	    if (stirSoundCooldown <= 0) {
+	        audio_play_sound(IceCup, 1, false);
+	        stirSoundCooldown = room_speed * 0.125; // 0.15 seconds delay
+	    }
+	}
 }
 
 /*fillObj = instance_create_layer(x, y, self.layer, LiquidFillObj)
@@ -112,3 +130,19 @@ stir = function()
 fillObj.MaskSprite = self.sprite_index
 fillObj.image_xscale = bbox_right - bbox_left
 fillObj.image_yscale = bbox_top - bbox_bottom*/
+
+
+part_sys = part_system_create();
+part_emitter = part_emitter_create(part_sys);
+
+part_type = part_type_create();
+part_type_shape(part_type, pt_shape_cloud);
+part_type_life(part_type, 15,30)
+part_type_scale(part_type, 0.5, 0.5)
+part_type_size(part_type, 0.5, 1.5, -0.1, 0.5)
+part_type_speed(part_type, 5, 5, 0, 0)
+part_type_gravity(part_type, 1, 267)
+part_type_direction(part_type, 283, 100, 0,0)
+part_type_alpha1(part_type, 0.1)
+
+part_system_depth(part_sys, -1000)

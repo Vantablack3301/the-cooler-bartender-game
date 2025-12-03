@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_Glass_Flute",
   "bboxMode":0,
-  "bbox_bottom":304,
+  "bbox_bottom":99,
   "bbox_left":0,
-  "bbox_right":75,
+  "bbox_right":24,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":305,
+  "height":100,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"109f0f93-2dbc-4f3c-b704-4be456e3fa12","blendMode":0,"displayName":"default","isLocked":false,"name":"109f0f93-2dbc-4f3c-b704-4be456e3fa12","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -88,5 +88,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":76,
+  "width":25,
 }

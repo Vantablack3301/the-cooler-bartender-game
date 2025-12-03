@@ -30,33 +30,45 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++) {
 	                }
 	                break;
 				
-				case "Open Sign":
-	                if (instance_exists(obj_OpenSignSpot)) {
-	                    var spot = instance_find(obj_OpenSignSpot, 0);
-	                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Open_Sign;
-	                }
-	                break;
+			case "Open Sign":
+                if (instance_exists(obj_OpenSignSpot)) {
+                    var spot = instance_find(obj_OpenSignSpot, 0);
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Open_Sign;
+                }
+                break;
+				
+			case "Decortive Glasses":
+                if (instance_exists(obj_DecorDrinkSpot1)) {
+                    var spot = instance_find(obj_DecorDrinkSpot1, 0);
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Glass_Martini;
+					spot = instance_find(obj_DecorDrinkSpot2, 0);
+					instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Glass_Flute;
+					spot = instance_find(obj_DecorDrinkSpot3, 0);
+					instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Glass_Highball;
+					spot = instance_find(obj_DecorDrinkSpot4, 0);
+					instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Glass_Martini;
+					spot = instance_find(obj_DecorDrinkSpot5, 0);
+					instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Glass_Red_Wine;
+                }
+                break;
 			
-				case "Bar Cat":
-	                if (instance_exists(obj_BarCatSpot)) {
-	                    var spot = instance_find(obj_BarCatSpot, 0);
-	                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Bar_Cat;
-	                }
-	                break;
+			case "Bar Cat":
+                if (instance_exists(obj_BarCatSpot)) {
+                    var spot = instance_find(obj_BarCatSpot, 0);
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Cat_Chonks;
+                }
+                break;
 				
-				case "Premium Ice":
-	                 if (instance_exists(obj_PremiumIcespot)) {
-	                    var spot = instance_find(obj_PremiumIcespot, 0);
-	                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Premium_Ice;
-					 }
-	                break;
+			case "Premium Ice":
+                break;
 				
-				case "Tip Jar":
-	               if (instance_exists(obj_TipJarSpot)) {
-	                    var spot = instance_find(obj_TipJarSpot, 0);
-	                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Tip_Jar;
-	                }
-	                break;
+			case "Tip Jar":
+               if (instance_exists(obj_TipJarSpot)) {
+                    var spot = instance_find(obj_TipJarSpot, 0);
+					global.TipSpawnPoint = [spot.x, spot.y]
+                    instance_create_layer(spot.x, spot.y, "Decor", obj_CosmeticDisplay).sprite_index = spr_Tip_Jar;
+                }
+                break;
 				
 				case "Novice Upgrade":
 					global.newBeaten = true

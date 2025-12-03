@@ -2,11 +2,16 @@ max_amount = 10
 current_amount = 0
 liqColors = ds_map_create()
 color = noone
+full = false
 
 
 add_stuff = function(amount) {
-	if current_amount < max_amount
+	if current_amount < max_amount{
 		current_amount += amount
+	}
+	else{
+		full = true
+	}
 		
 	ds_map_add(liqColors, obj_Manager.selectedBottle.bottleName, obj_Manager.selectedBottle.color3)
 	if color == noone {
