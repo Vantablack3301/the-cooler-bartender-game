@@ -217,7 +217,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		if (item.name == "Tip Jar") {
 			 tipCheck = item.bought
 		} 
-		if(item1.name = "Premium Ice") {
+		if(item.name = "Premium Ice") {
 			 iceCheck = item.bought
 		} 
 	}
@@ -289,7 +289,7 @@ part_system_depth(part_sys, -1000)
 
 
 //debug money
-obj_Manager.money = 10
+obj_Manager.money = 100
 
 
 
