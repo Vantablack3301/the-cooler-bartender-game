@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"NewDrinkUnlocked",
+  "%Name":"IceCup",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.7804084,
+  "duration":0.22283447,
   "exportDir":"",
-  "name":"NewDrinkUnlocked",
+  "name":"IceCup",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"NewDrinkUnlocked.mp3",
-  "volume":0.5,
+  "soundFile":"IceCup.mp3",
+  "volume":1.0,
 }

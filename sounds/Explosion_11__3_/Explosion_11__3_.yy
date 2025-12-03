@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"NewDrinkUnlocked",
+  "%Name":"Explosion_11__3_",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.7804084,
+  "duration":0.2,
   "exportDir":"",
-  "name":"NewDrinkUnlocked",
+  "name":"Explosion_11__3_",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"NewDrinkUnlocked.mp3",
-  "volume":0.5,
+  "soundFile":"Explosion_11__3_.wav",
+  "volume":0.25,
 }

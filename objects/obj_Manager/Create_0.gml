@@ -190,7 +190,6 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		if totalScore >= 80
 		{
 			canTip = true
-			show_debug_message("customer decided to tip")
 		}
 	}
 	else {
@@ -225,7 +224,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		}
 	}
 	
-	if(iceCheck && canTip)
+	if(iceCheck && canTip && drinkMade.hasIce)
 	{
 		tipReturnValue = tipReturnValue + 2.0
 	}

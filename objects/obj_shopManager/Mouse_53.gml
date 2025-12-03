@@ -47,7 +47,7 @@ for (var i = 0; i < array_length(global.shop_cosmetics); i++)
         }
 		else if (item.bought == false) //play sound for can't afford
 		{
-			audio_play_sound(Incorrect, 0, 0)
+			audio_play_sound(Incorrect, 1, 0)
 		}
 
         break;

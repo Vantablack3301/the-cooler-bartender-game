@@ -63,12 +63,12 @@ get_liquid = function(item)
 	
 	if (!ds_map_exists(liquids, item))
 		return 0
-	
 	return ds_map_find_value(liquids, item)
 }
 
 add_ice = function()
 {
+	audio_play_sound(IceCup, 1, false);
 	hasIce = true	
 }
 
@@ -91,7 +91,7 @@ shake = function()
 {
 	isShaken = true	
 }
-
+stirSoundCooldown = 0;
 stir = function()
 {
 	var dx = abs(mouse_x-prevStirMouseX)
@@ -105,7 +105,24 @@ stir = function()
 	show_debug_message(stirAmount)
 	
 	stirAmount += min(totalDelta/150.0, 0.10)
-	isStirred = stirAmount >= 1
+	isStirred = stirAmount >= 3
+	if (stirSoundCooldown > 0) {
+    stirSoundCooldown -= 1;
+	}
+	if (stirAmount >= 3)
+	{
+	    if (stirSoundCooldown <= 0) {
+	        audio_play_sound(StirStop, 1, false);
+	        stirSoundCooldown = room_speed * 0.125; // 0.15 seconds delay
+	    }
+	}
+	else
+	{
+	    if (stirSoundCooldown <= 0) {
+	        audio_play_sound(IceCup, 1, false);
+	        stirSoundCooldown = room_speed * 0.125; // 0.15 seconds delay
+	    }
+	}
 }
 
 /*fillObj = instance_create_layer(x, y, self.layer, LiquidFillObj)

@@ -1,4 +1,4 @@
-var selected = obj_Manager.selected	
+var selected = obj_Manager.selected
 	
 	if (selected == "ice")
 	{
@@ -48,8 +48,26 @@ var selected = obj_Manager.selected
 		obj_Manager.isPouring = true
 		show_debug_message("currently selected: " + selected + "	current amount: " + string(get_liquid(selected)))
 		liqText = (selected +" " + string(get_liquid(selected)))
+		if(obj_Manager.isPouring)
+		{
+			if (stirSoundCooldown > 0)
+				 stirSoundCooldown -= 1;
+		    if (stirSoundCooldown <= 0) {
+				var snd = audio_play_sound(WaterGlug, 1, false);
+				audio_sound_pitch(snd, random_range(0.9, 1.2));
+		        stirSoundCooldown = room_speed * 0.11;
+				//Glug2.wav by acclivity -- https://freesound.org/s/19991/ -- License: Attribution NonCommercial 4.0
+		    }
+		}
 		if (fill.full){
 			midpoint = bbox_left + ((bbox_right - bbox_left) / 2)
+			if (stirSoundCooldown > 0)
+			 stirSoundCooldown -= 1;
+	    if (stirSoundCooldown <= 0) {
+			var snd = audio_play_sound(Explosion_11__3_, 1, false);
+			audio_sound_pitch(snd, random_range(1, 1.1));
+	        stirSoundCooldown = room_speed * 0.025;
+			}
 			part_particles_burst(part_sys, midpoint, y, OverflowEffect)
 		}
 	}

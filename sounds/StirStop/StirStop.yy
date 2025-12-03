@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"NewDrinkUnlocked",
+  "%Name":"StirStop",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":4.7804084,
+  "duration":1.0971428,
   "exportDir":"",
-  "name":"NewDrinkUnlocked",
+  "name":"StirStop",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"NewDrinkUnlocked.mp3",
-  "volume":0.5,
+  "soundFile":"StirStop.mp3",
+  "volume":0.25,
 }
