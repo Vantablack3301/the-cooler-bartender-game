@@ -1,17 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Trash_Prompt",
+  "%Name":"trashText",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Trash_Prompt",
+  "name":"trashText",
   "overriddenProperties":[],
   "parent":{
-    "name":"UI",
-    "path":"folders/Objects/UI.yy",
+    "name":"Text",
+    "path":"folders/Objects/Text.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Trash_Prompt",
+    "path":"objects/obj_Trash_Prompt/obj_Trash_Prompt.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Prompt_Background_Menu_Board",
-    "path":"sprites/Prompt_Background_Menu_Board/Prompt_Background_Menu_Board.yy",
+    "name":"spr_Trash_Drink_Text",
+    "path":"sprites/spr_Trash_Drink_Text/spr_Trash_Drink_Text.yy",
   },
   "spriteMaskId":null,
   "visible":true,
