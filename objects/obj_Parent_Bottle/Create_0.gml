@@ -1,4 +1,4 @@
-visible = obj_Manager.selected != bottleName
+//visible = obj_Manager.selected != bottleName
 seen =  obj_Manager.selected != bottleName
 onClick = function()
 {
