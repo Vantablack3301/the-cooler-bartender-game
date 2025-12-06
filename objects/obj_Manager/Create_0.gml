@@ -119,8 +119,8 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	while(!is_undefined(reqLiqName)){
 		if reqLiqName != "ice" && reqLiqName != "stirred" && reqLiqName != "shaken" && reqLiqName != "numLiquids" && reqLiqName != "garnishes" {
 			if (is_undefined(ds_map_find_value(drinkMade.liquids, reqLiqName))) {
-				ticketString += string(reqLiqName) + ": 0; Expected:" + string(ds_map_find_value(drinkGoal, reqLiqName)) + "\n"
-				obj_Ticket_Manager.add_middle(string(reqLiqName) + ": 0; Expected:" + string(ds_map_find_value(drinkGoal, reqLiqName)))
+				ticketString += string(reqLiqName) + ": 0; Expected: " + string(ds_map_find_value(drinkGoal, reqLiqName)) + "\n"
+				obj_Ticket_Manager.add_middle(string(reqLiqName) + ": 0; Expected: " + string(ds_map_find_value(drinkGoal, reqLiqName)))
 			}
 		}
 		reqLiqName = ds_map_find_next(drinkGoal, reqLiqName)
@@ -264,7 +264,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	
 	obj_Manager.money += tipReturnValue
 
-	obj_Ticket_Manager.add_middle("Score:" + string(totalScore))
+	obj_Ticket_Manager.add_middle("Score: " + string(totalScore))
 
 	
 	return (totalScore)
