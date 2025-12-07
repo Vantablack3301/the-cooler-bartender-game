@@ -39,10 +39,12 @@ toggleVisibility = function() {
 
 	if visible {
 		visible = false
+		instance_deactivate_object(obj_bookBG);
 	}
 	else {
 		visible = true
 		drinkList = obj_Intitialize.drinks
+		instance_activate_object(obj_bookBG);
 
 		//currentDrinkKey = ds_map_find_first(drinkList);
 		//currentDrinkValue = ds_map_find_value(drinkList, currentDrinkKey)

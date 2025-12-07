@@ -62,6 +62,7 @@
     {"id":{"name":"obj_Apply_Settings","path":"objects/obj_Apply_Settings/obj_Apply_Settings.yy",},},
     {"id":{"name":"obj_areyousureText","path":"objects/obj_areyousureText/obj_areyousureText.yy",},},
     {"id":{"name":"obj_BarCatSpot","path":"objects/obj_BarCatSpot/obj_BarCatSpot.yy",},},
+    {"id":{"name":"obj_bookBG","path":"objects/obj_bookBG/obj_bookBG.yy",},},
     {"id":{"name":"obj_Bottle_bourbon","path":"objects/obj_Bottle_bourbon/obj_Bottle_bourbon.yy",},},
     {"id":{"name":"obj_Bottle_coconut","path":"objects/obj_Bottle_coconut/obj_Bottle_coconut.yy",},},
     {"id":{"name":"obj_Bottle_coke","path":"objects/obj_Bottle_coke/obj_Bottle_coke.yy",},},
