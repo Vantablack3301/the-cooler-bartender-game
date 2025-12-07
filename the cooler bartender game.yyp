@@ -123,6 +123,7 @@
     {"id":{"name":"obj_letterDisplay","path":"objects/obj_letterDisplay/obj_letterDisplay.yy",},},
     {"id":{"name":"obj_Life","path":"objects/obj_Life/obj_Life.yy",},},
     {"id":{"name":"obj_Light","path":"objects/obj_Light/obj_Light.yy",},},
+    {"id":{"name":"obj_looseText","path":"objects/obj_looseText/obj_looseText.yy",},},
     {"id":{"name":"obj_mainText","path":"objects/obj_mainText/obj_mainText.yy",},},
     {"id":{"name":"obj_Manager","path":"objects/obj_Manager/obj_Manager.yy",},},
     {"id":{"name":"obj_MusicManager","path":"objects/obj_MusicManager/obj_MusicManager.yy",},},

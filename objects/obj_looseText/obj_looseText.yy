@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_winText",
+  "%Name":"obj_looseText",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_winText",
+  "name":"obj_looseText",
   "overriddenProperties":[],
   "parent":{
     "name":"Text",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Congrats_Text",
-    "path":"sprites/spr_Congrats_Text/spr_Congrats_Text.yy",
+    "name":"spr_Sorry_Text",
+    "path":"sprites/spr_Sorry_Text/spr_Sorry_Text.yy",
   },
   "spriteMaskId":null,
   "visible":true,
