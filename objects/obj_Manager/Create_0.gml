@@ -227,7 +227,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 		odds = floor(random_range(0, 100))
 		if odds <= 67
 		{
-			tipReturnValue = tipReturnValue + 2.0
+			tipReturnValue = tipReturnValue + 5.0
 			show_debug_message("TIPS")
 			part_particles_burst(part_sys, global.TipSpawnPoint[0], global.TipSpawnPoint[1], CoinParticle)
 			audio_play_sound(CoinStack, 1, false);
@@ -236,7 +236,7 @@ gradeDrink = function(drinkMade, drinkGoal, tipStart) {
 	
 	if(iceCheck && canTip && drinkMade.hasIce)
 	{
-		tipReturnValue = tipReturnValue + 2.0
+		tipReturnValue = tipReturnValue + 4.0
 	}
 	
 	part_particles_burst(part_sys, inst.midX, inst.midY, ticketEffect)
